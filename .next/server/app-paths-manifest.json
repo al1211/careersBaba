@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/career/page": "app/career/page.js",
+  "/about/page": "app/about/page.js",
+  "/upsc/page": "app/upsc/page.js",
+  "/datascience/page": "app/datascience/page.js"
+}

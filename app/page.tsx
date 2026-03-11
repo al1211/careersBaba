@@ -1,3 +1,4 @@
+import ListAllCourse from '@/components/ListAllCourse';
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -7,6 +8,7 @@ const stats = [
   { value: '50+', label: 'Expert Mentors' },
   { value: '10+', label: 'Years Experience' },
 ]
+
 
 const services = [
   {
@@ -29,6 +31,10 @@ const services = [
   },
 ]
 
+
+
+
+
 const testimonials = [
   { name: 'Ravi Sharma', exam: 'CAT 2024', text: 'CareersBaba helped me crack CAT with confidence. The structured approach and mock tests made all the difference!', score: '99.2%ile' },
   { name: 'Priya Singh', exam: 'CUET 2024', text: 'Joined just 3 months before my exam—got into my dream college thanks to the focused coaching here.', score: 'Top 500' },
@@ -49,11 +55,11 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark/70 via-dark/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark/10 via-dark/10 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl ">
          
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
@@ -107,6 +113,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+      {/* list all courses */}
+  <ListAllCourse/>
+
 
       {/* Services */}
       <section className="py-24 bg-cream">
@@ -236,7 +247,7 @@ export default function Home() {
           <p className="text-brand-100 mb-8 text-lg">Join CareersBaba today and start your journey to success with expert mentors by your side.</p>
           <Link
             href="/career#apply"
-            className="bg-white text-brand-600 font-bold px-10 py-4 rounded-full hover:bg-brand-50 transition-colors text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all inline-block"
+            className="bg-white text-brand-600 font-bold px-10 py-4 rounded-full hover:bg-brand-50 transition-all text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all inline-block"
           >
             Start Your Free Demo →
           </Link>

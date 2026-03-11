@@ -69,7 +69,7 @@ export default function CareerPage() {
   return (
     <div className="pt-16">
       {/* Hero */}
-      <section className="relative py-28 bg-dark text-white overflow-hidden">
+      <section className="relative py-28  text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1920&q=80"
@@ -77,7 +77,7 @@ export default function CareerPage() {
             fill
             className="object-cover opacity-25"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark to-dark/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark to-dark/30" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">

@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
+
 
 const links = [
   { label: 'Home', href: '/' },
@@ -12,7 +14,9 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const pathname = usePathname()
+  const pathname = usePathname();
+
+  
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20)
@@ -23,18 +27,13 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm border-b border-orange-100' : 'bg-transparent'
+        scrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm border-b border-orange-100' : 'bg-cream/95 backdrop-blur-md shadow-sm border-b border-orange-100'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <span className="w-9 h-9 rounded-xl bg-brand-500 flex items-center justify-center text-white font-display font-bold text-lg group-hover:bg-brand-600 transition-colors">
-            C
-          </span>
-          <span className="font-display font-bold text-xl text-dark">
-            Careers<span className="text-brand-500">Baba</span>
-          </span>
+        <Link href="/" className="flex items-center gap-2 group ">
+        <Image src="/1.jpeg" alt='kimds' width={50} height={50} className='rounded-sm'/>
         </Link>
 
         {/* Desktop nav */}
