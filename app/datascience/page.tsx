@@ -83,32 +83,7 @@ export default function DataSciencePage() {
   return (
     <div style={{ fontFamily: "'DM Sans', sans-serif", background: "#F4F5F7", minHeight: "100vh", color: "#111" }}>
 
-      {/* NAVBAR
-      <nav style={{ background: "#fff", borderBottom: "1px solid #e4e5ea", position: "sticky", top: 0, zIndex: 100, padding: "0 24px" }}>
-        <div style={{ maxWidth: 1140, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", height: 60 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <div style={{ width: 32, height: 32, borderRadius: 8, background: "#0f7275", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <FaDatabase size={15} color="#fff" />
-            </div>
-            <span style={{ fontFamily: "'Space Mono', monospace", fontWeight: 700, fontSize: 17, color: "#0f2a2b", letterSpacing: "-0.03em" }}>DataPath</span>
-            <span style={{ color: "#ccc", margin: "0 4px" }}>|</span>
-            <span style={{ fontSize: 13, color: "#777", fontWeight: 500 }}>Data Science</span>
-          </div>
-          <div style={{ display: "flex", gap: 4 }}>
-            {NAV_LINKS.map(l => (
-              <button key={l} onClick={() => setActiveNav(l)}
-                style={{ border: "none", fontSize: 13, fontWeight: 500, padding: "6px 12px", borderRadius: 6, cursor: "pointer",
-                  color: activeNav === l ? "#0f7275" : "#555",
-                  background: activeNav === l ? "#e8f5f5" : "transparent" }}>
-                {l}
-              </button>
-            ))}
-          </div>
-          <button style={{ background: "#0f7275", color: "#fff", padding: "9px 20px", borderRadius: 8, fontSize: 13, fontWeight: 600, border: "none", cursor: "pointer" }}>
-            Free Counselling
-          </button>
-        </div>
-      </nav> */}
+
 
       {/* HERO */}
       <section style={{ background: "linear-gradient(135deg, #071a1b 0%, #0f2a2b 50%, #0a2040 100%)", padding: "72px 24px 80px", position: "relative", overflow: "hidden" }}>
@@ -116,56 +91,86 @@ export default function DataSciencePage() {
         {/* grid lines */}
         <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)", backgroundSize: "48px 48px", pointerEvents: "none" }} />
 
-        <div style={{ maxWidth: 1140, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 380px", gap: 48, alignItems: "center", position: "relative" }}>
+        <div className="max-w-[1140px] mx-auto grid grid-cols-[1fr_380px] gap-12 items-center relative">
           <div>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(15,114,117,0.2)", border: "1px solid rgba(15,114,117,0.4)", borderRadius: 20, padding: "5px 14px", marginBottom: 22 }}>
-              <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#2de0a7", display: "inline-block" }} />
-              <span style={{ fontSize: 12, color: "#2de0a7", fontFamily: "'Space Mono', monospace", fontWeight: 600 }}>India's #1 Data Science Platform</span>
+            <div className="inline-flex items-center gap-2 bg-[rgba(15,114,117,0.2)] border border-[rgba(15,114,117,0.4)] rounded-[20px] px-[14px] py-[5px] mb-[22px]">
+              <span className="w-[7px] h-[7px] rounded-full bg-[#2de0a7] inline-block" />
+              <span className="text-[12px] text-[#2de0a7] font-['Space_Mono',monospace] font-semibold">
+                India's #1 Data Science Platform
+              </span>
             </div>
-            <h1 style={{ fontFamily: "'Space Mono', monospace", fontSize: "clamp(2rem,4vw,3rem)", color: "#fff", marginBottom: 16, lineHeight: 1.2, letterSpacing: "-0.04em" }}>
+
+            <h1 className="font-['Space_Mono',monospace] text-[clamp(2rem,4vw,3rem)] text-white mb-4 leading-[1.2] tracking-[-0.04em]">
               Launch Your Career in<br />
-              <span style={{ color: "#2de0a7" }}>Data Science & AI</span>
+              <span className="text-[#2de0a7]">Data Science & AI</span>
             </h1>
-            <p style={{ fontSize: 16, color: "rgba(255,255,255,0.65)", lineHeight: 1.75, marginBottom: 32, maxWidth: 500 }}>
-              From Python basics to production ML — a structured, mentor-led program built for real job outcomes. Over <strong style={{ color: "#fff" }}>12,000+ placements</strong> at top tech, consulting, and product companies.
+
+            <p className="text-[16px] text-[rgba(255,255,255,0.65)] leading-[1.75] mb-8 max-w-[500px]">
+              From Python basics to production ML — a structured, mentor-led program built for real job outcomes. Over{" "}
+              <strong className="text-white">12,000+ placements</strong> at top tech, consulting, and product companies.
             </p>
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <button style={{ background: "#2de0a7", color: "#071a1b", padding: "13px 28px", borderRadius: 10, fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer" }}>
+
+            <div className="flex gap-3 flex-wrap">
+              <button className="bg-[#2de0a7] text-[#071a1b] px-[28px] py-[13px] rounded-[10px] text-[15px] font-bold border-none cursor-pointer">
                 Explore Courses →
               </button>
-              <button style={{ background: "rgba(255,255,255,0.07)", color: "#fff", padding: "13px 28px", borderRadius: 10, fontSize: 15, fontWeight: 600, border: "1px solid rgba(255,255,255,0.2)", cursor: "pointer" }}>
+
+              <button className="bg-[rgba(255,255,255,0.07)] text-white px-[28px] py-[13px] rounded-[10px] text-[15px] font-semibold border border-[rgba(255,255,255,0.2)] cursor-pointer">
                 ▶ Watch Free Demo
               </button>
             </div>
-            <div style={{ display: "flex", gap: 36, marginTop: 40 }}>
+
+            <div className="flex gap-9 mt-10">
               {STATS.map(([v, l]) => (
                 <div key={l}>
-                  <div style={{ fontSize: 22, fontWeight: 700, color: "#2de0a7", fontFamily: "'Space Mono', monospace" }}>{v}</div>
-                  <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", marginTop: 3 }}>{l}</div>
+                  <div className="text-[22px] font-bold text-[#2de0a7] font-['Space_Mono',monospace]">
+                    {v}
+                  </div>
+                  <div className="text-[12px] text-[rgba(255,255,255,0.45)] mt-[3px]">
+                    {l}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Lead form */}
-          <div style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 24px 64px rgba(0,0,0,0.4)" }}>
-            <h3 style={{ fontFamily: "'Space Mono', monospace", fontSize: 18, fontWeight: 700, color: "#0f2a2b", marginBottom: 6, letterSpacing: "-0.03em" }}>Get a Free Career Roadmap</h3>
-            <p style={{ fontSize: 13, color: "#888", marginBottom: 24 }}>Tailored to your background & goals</p>
+          <div className="bg-white rounded-[20px] p-8 shadow-[0_24px_64px_rgba(0,0,0,0.4)]">
+            <h3 className="font-['Space_Mono',monospace] text-[18px] font-bold text-[#0f2a2b] mb-[6px] tracking-[-0.03em]">
+              Get a Free Career Roadmap
+            </h3>
+
+            <p className="text-[13px] text-[#888] mb-6">
+              Tailored to your background & goals
+            </p>
+
             {[["Full Name", "text", "Priya Sharma"], ["Mobile Number", "tel", "+91 9876543210"], ["Email", "email", "priya@email.com"]].map(([label, type, ph]) => (
-              <div key={label} style={{ marginBottom: 16 }}>
-                <label style={{ fontSize: 12, fontWeight: 600, color: "#555", display: "block", marginBottom: 5 }}>{label}</label>
-                <input type={type} placeholder={ph} style={{ width: "100%", padding: "11px 14px", borderRadius: 8, border: "1.5px solid #e0e2ea", fontSize: 14, outline: "none", color: "#333", boxSizing: "border-box" }} />
+              <div key={label} className="mb-4">
+                <label className="text-[12px] font-semibold text-[#555] block mb-[5px]">
+                  {label}
+                </label>
+
+                <input
+                  type={type}
+                  placeholder={ph}
+                  className="w-full px-[14px] py-[11px] rounded-[8px] border-[1.5px] border-[#e0e2ea] text-[14px] outline-none text-[#333] box-border"
+                />
               </div>
             ))}
-            <div style={{ marginBottom: 20 }}>
-              <label style={{ fontSize: 12, fontWeight: 600, color: "#555", display: "block", marginBottom: 5 }}>Experience Level</label>
-              <select style={{ width: "100%", padding: "11px 14px", borderRadius: 8, border: "1.5px solid #e0e2ea", fontSize: 14, color: "#333", background: "#fff" }}>
+
+            <div className="mb-5">
+              <label className="text-[12px] font-semibold text-[#555] block mb-[5px]">
+                Experience Level
+              </label>
+
+              <select className="w-full px-[14px] py-[11px] rounded-[8px] border-[1.5px] border-[#e0e2ea] text-[14px] text-[#333] bg-white">
                 <option>Complete Beginner</option>
                 <option>Some Python Knowledge</option>
                 <option>Working Professional</option>
               </select>
             </div>
-            <button style={{ width: "100%", background: "#0f7275", color: "#fff", padding: "14px", borderRadius: 10, fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer" }}>
+
+            <button className="w-full bg-[#0f7275] text-white py-[14px] rounded-[10px] text-[15px] font-bold border-none cursor-pointer">
               Book Free Session
             </button>
           </div>
@@ -173,56 +178,116 @@ export default function DataSciencePage() {
       </section>
 
       {/* TICKER */}
-      <div style={{ background: "#0f2a2b", padding: "10px 24px" }}>
-        <div style={{ maxWidth: 1140, margin: "0 auto", display: "flex", alignItems: "center", gap: 16, overflow: "hidden" }}>
-          <span style={{ background: "#2de0a7", color: "#071a1b", fontSize: 11, fontWeight: 700, padding: "3px 10px", borderRadius: 4, whiteSpace: "nowrap", fontFamily: "'Space Mono', monospace" }}>LIVE</span>
-          <div style={{ display: "flex", gap: 36, overflow: "hidden" }}>
-            {["New Batch Starting Feb 1 — 40 Seats Left", "Hiring Partners now include 12 new unicorn startups", "Free Python Bootcamp every Saturday 10AM IST", "Placement Record: 3 offers in 8 days — Sneha K., Bootcamp 2024"].map((t, i) => (
-              <span key={i} style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", whiteSpace: "nowrap" }}>
-                <FaBell size={11} style={{ marginRight: 5, verticalAlign: "middle", opacity: 0.6 }} />{t}
+      <div className="bg-[#0f2a2b] py-[10px] px-6">
+        <div className="max-w-[1140px] mx-auto flex items-center gap-4 overflow-hidden">
+
+          <span className="bg-[#2de0a7] text-[#071a1b] text-[11px] font-bold px-[10px] py-[3px] rounded-[4px] whitespace-nowrap font-['Space_Mono',monospace]">
+            LIVE
+          </span>
+
+          <div className="flex gap-9 overflow-hidden">
+            {[
+              "New Batch Starting Feb 1 — 40 Seats Left",
+              "Hiring Partners now include 12 new unicorn startups",
+              "Free Python Bootcamp every Saturday 10AM IST",
+              "Placement Record: 3 offers in 8 days — Sneha K., Bootcamp 2024",
+            ].map((t, i) => (
+              <span
+                key={i}
+                className="text-[13px] text-[rgba(255,255,255,0.75)] whitespace-nowrap"
+              >
+                <FaBell
+                  size={11}
+                  className="mr-[5px] align-middle opacity-60"
+                />
+                {t}
               </span>
             ))}
           </div>
+
         </div>
       </div>
 
       <div style={{ maxWidth: 1140, margin: "0 auto", padding: "0 24px" }}>
 
         {/* COURSES */}
-        <section style={{ padding: "72px 0 48px" }}>
-          <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", color: "#0f7275", textTransform: "uppercase", marginBottom: 10, fontFamily: "'Space Mono', monospace" }}>Our Programs</p>
-            <h2 style={{ fontFamily: "'Space Mono', monospace", fontSize: "clamp(1.8rem,3vw,2.5rem)", color: "#111", marginBottom: 14, letterSpacing: "-0.04em" }}>Data Science Courses</h2>
-            <p style={{ color: "#777", fontSize: 15, maxWidth: 520, margin: "0 auto", lineHeight: 1.65 }}>
+        <section className="py-[72px] pb-[48px]">
+          <div className="text-center mb-12">
+            <p className="text-[12px] font-bold tracking-[0.12em] text-[#0f7275] uppercase mb-[10px] font-['Space_Mono',monospace]">
+              Our Programs
+            </p>
+
+            <h2 className="font-['Space_Mono',monospace] text-[clamp(1.8rem,3vw,2.5rem)] text-[#111] mb-[14px] tracking-[-0.04em]">
+              Data Science Courses
+            </h2>
+
+            <p className="text-[#777] text-[15px] max-w-[520px] mx-auto leading-[1.65]">
               From your first line of Python to deploying LLMs in production — choose the track that matches where you are.
             </p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(265px, 1fr))", gap: 24 }}>
+
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(265px,1fr))] gap-6">
             {COURSES.map((c, i) => (
-              <div key={i} style={{ background: "#fff", borderRadius: 18, overflow: "hidden", border: "1px solid #e4e5ea", transition: "transform 0.2s", cursor: "pointer" }}>
-                <div style={{ background: c.color, padding: "24px 24px 20px" }}>
-                  <span style={{ background: "rgba(255,255,255,0.18)", color: "#fff", fontSize: 11, fontWeight: 700, padding: "4px 10px", borderRadius: 20, display: "inline-block", marginBottom: 12 }}>{c.tag}</span>
-                  <h3 style={{ fontFamily: "'Space Mono', monospace", fontSize: 15, fontWeight: 700, color: "#fff", lineHeight: 1.4, letterSpacing: "-0.02em" }}>{c.title}</h3>
-                  <div style={{ display: "flex", gap: 16, marginTop: 14 }}>
-                    <span style={{ fontSize: 12, color: "rgba(255,255,255,0.65)" }}>⏱ {c.duration}</span>
-                    <span style={{ fontSize: 12, color: "rgba(255,255,255,0.65)" }}>📡 {c.mode}</span>
+              <div
+                key={i}
+                className="bg-white rounded-[18px] overflow-hidden border border-[#e4e5ea] transition-transform duration-200 cursor-pointer"
+              >
+                <div
+                  className="px-6 pt-6 pb-5"
+                  style={{ background: c.color }}
+                >
+                  <span className="bg-[rgba(255,255,255,0.18)] text-white text-[11px] font-bold px-[10px] py-[4px] rounded-[20px] inline-block mb-3">
+                    {c.tag}
+                  </span>
+
+                  <h3 className="font-['Space_Mono',monospace] text-[15px] font-bold text-white leading-[1.4] tracking-[-0.02em]">
+                    {c.title}
+                  </h3>
+
+                  <div className="flex gap-4 mt-[14px]">
+                    <span className="text-[12px] text-[rgba(255,255,255,0.65)]">
+                      ⏱ {c.duration}
+                    </span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.65)]">
+                      📡 {c.mode}
+                    </span>
                   </div>
                 </div>
-                <div style={{ padding: "20px 24px 24px" }}>
-                  <ul style={{ listStyle: "none", marginBottom: 20, padding: 0 }}>
-                    {c.features.map(f => (
-                      <li key={f} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, color: "#444", marginBottom: 8 }}>
+
+                <div className="px-6 pt-5 pb-6">
+                  <ul className="list-none mb-5 p-0">
+                    {c.features.map((f) => (
+                      <li
+                        key={f}
+                        className="flex items-center gap-2 text-[13px] text-[#444] mb-2"
+                      >
                         <FaCheckCircle size={13} color={c.color} /> {f}
                       </li>
                     ))}
                   </ul>
-                  <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between" }}>
+
+                  <div className="flex items-end justify-between">
                     <div>
-                      <div style={{ fontSize: 22, fontWeight: 700, color: c.color, fontFamily: "'Space Mono', monospace" }}>{c.price}</div>
-                      <div style={{ fontSize: 12, color: "#bbb", textDecoration: "line-through" }}>{c.original}</div>
-                      <div style={{ fontSize: 11, color: "#999" }}>{c.students} enrolled</div>
+                      <div
+                        className="text-[22px] font-bold font-['Space_Mono',monospace]"
+                        style={{ color: c.color }}
+                      >
+                        {c.price}
+                      </div>
+
+                      <div className="text-[12px] text-[#bbb] line-through">
+                        {c.original}
+                      </div>
+
+                      <div className="text-[11px] text-[#999]">
+                        {c.students} enrolled
+                      </div>
                     </div>
-                    <button style={{ background: c.color, color: "#fff", padding: "10px 18px", borderRadius: 10, fontSize: 13, fontWeight: 600, border: "none", cursor: "pointer" }}>
+
+                    <button
+                      className="text-white px-[18px] py-[10px] rounded-[10px] text-[13px] font-semibold border-none cursor-pointer"
+                      style={{ background: c.color }}
+                    >
                       Enroll Now
                     </button>
                   </div>
@@ -233,88 +298,161 @@ export default function DataSciencePage() {
         </section>
 
         {/* FREE RESOURCES */}
-        <section style={{ padding: "48px 0" }}>
-          <div style={{ background: "linear-gradient(135deg, #071a1b, #0f2a2b)", borderRadius: 24, padding: "48px 40px", border: "1px solid rgba(45,224,167,0.15)", position: "relative", overflow: "hidden" }}>
-            <div style={{ position: "absolute", top: -40, right: -40, width: 250, height: 250, borderRadius: "50%", background: "rgba(15,114,117,0.15)" }} />
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center", position: "relative" }}>
+        <section className="py-12">
+          <div className="bg-[linear-gradient(135deg,#071a1b,#0f2a2b)] rounded-[24px] px-[40px] py-[48px] border border-[rgba(45,224,167,0.15)] relative overflow-hidden">
+
+            {/* Decorative Circle */}
+            <div className="absolute -top-[40px] -right-[40px] w-[250px] h-[250px] rounded-full bg-[rgba(15,114,117,0.15)]" />
+
+            <div className="grid grid-cols-2 gap-12 items-center relative">
+
+              {/* Text Content */}
               <div>
-                <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", color: "#2de0a7", textTransform: "uppercase", marginBottom: 10, fontFamily: "'Space Mono', monospace" }}>100% Free</p>
-                <h2 style={{ fontFamily: "'Space Mono', monospace", fontSize: "clamp(1.6rem,2.5vw,2rem)", color: "#fff", marginBottom: 14, letterSpacing: "-0.03em" }}>
+                <p className="text-[12px] font-bold tracking-[0.12em] text-[#2de0a7] uppercase mb-[10px] font-['Space_Mono',monospace]">
+                  100% Free
+                </p>
+
+                <h2 className="font-['Space_Mono',monospace] text-[clamp(1.6rem,2.5vw,2rem)] text-white mb-[14px] tracking-[-0.03em]">
                   Free Resources to Get Started
                 </h2>
-                <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 15, lineHeight: 1.75 }}>
+
+                <p className="text-[rgba(255,255,255,0.6)] text-[15px] leading-[1.75]">
                   No signup needed. Explore our free tools to gauge where you stand — then decide if a full program is right for you.
                 </p>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+
+              {/* Resource Cards */}
+              <div className="grid grid-cols-2 gap-[14px]">
                 {RESOURCES.map((r, i) => (
-                  <div key={i} style={{ background: "rgba(255,255,255,0.06)", borderRadius: 16, padding: "18px 16px", border: "1px solid rgba(255,255,255,0.1)", display: "flex", flexDirection: "column", gap: 10, cursor: "pointer" }}>
-                    <div style={{ width: 42, height: 42, borderRadius: 10, background: r.color + "25", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <div
+                    key={i}
+                    className="bg-[rgba(255,255,255,0.06)] rounded-[16px] px-[16px] py-[18px] border border-[rgba(255,255,255,0.1)] flex flex-col gap-[10px] cursor-pointer
+                       hover:translate-y-[-3px] hover:shadow-lg transition-all duration-300"
+                  >
+                    {/* Icon */}
+                    <div
+                      className="w-[42px] h-[42px] rounded-[10px] flex items-center justify-center"
+                      style={{ background: r.color + "25" }}
+                    >
                       <r.icon size={18} color={r.color} />
                     </div>
+
+                    {/* Label and Description */}
                     <div>
-                      <div style={{ fontSize: 13, fontWeight: 600, color: "#fff", marginBottom: 3 }}>{r.label}</div>
-                      <div style={{ fontSize: 12, color: "rgba(255,255,255,0.5)" }}>{r.desc}</div>
+                      <div className="text-[13px] font-semibold text-white mb-[3px]">
+                        {r.label}
+                      </div>
+                      <div className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                        {r.desc}
+                      </div>
                     </div>
-                    <div style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 12, fontWeight: 600, color: r.color, marginTop: 2 }}>
+
+                    {/* Action */}
+                    <div
+                      className="flex items-center gap-1 text-[12px] font-semibold mt-[2px]"
+                      style={{ color: r.color }}
+                    >
                       Access Free <FaArrowRight size={11} />
                     </div>
                   </div>
                 ))}
               </div>
+
             </div>
           </div>
         </section>
 
         {/* CURRICULUM / EXAM INFO equivalent */}
-        <section style={{ padding: "48px 0" }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", color: "#0f7275", textTransform: "uppercase", marginBottom: 10, fontFamily: "'Space Mono', monospace" }}>What You'll Learn</p>
-            <h2 style={{ fontFamily: "'Space Mono', monospace", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#111", letterSpacing: "-0.04em" }}>Curriculum Overview</h2>
+        <section className="py-12">
+          {/* Header */}
+          <div className="text-center mb-10">
+            <p className="text-[12px] font-bold tracking-[0.12em] text-[#0f7275] uppercase mb-[10px] font-['Space_Mono',monospace]">
+              What You'll Learn
+            </p>
+            <h2 className="font-['Space_Mono',monospace] text-[clamp(1.8rem,3vw,2.4rem)] text-[#111] tracking-[-0.04em]">
+              Curriculum Overview
+            </h2>
           </div>
-          <div style={{ background: "#fff", borderRadius: 20, border: "1px solid #e4e5ea", overflow: "hidden" }}>
-            <div style={{ display: "flex", borderBottom: "1px solid #e4e5ea" }}>
-              {CURR_TABS.map(t => (
-                <button key={t} onClick={() => setActiveTab(t as CurrTab)}
-                  style={{ flex: 1, padding: "16px", fontSize: 14, fontWeight: 600, border: "none", cursor: "pointer",
-                    background: activeTab === t ? "#0f7275" : "#fff",
-                    color: activeTab === t ? "#fff" : "#555",
-                    fontFamily: activeTab === t ? "'Space Mono', monospace" : "inherit" }}>
+
+          {/* Tabs Container */}
+          <div className="bg-white rounded-[20px] border border-[#e4e5ea] overflow-hidden">
+
+            {/* Tabs */}
+            <div className="flex border-b border-[#e4e5ea]">
+              {CURR_TABS.map((t) => (
+                <button
+                  key={t}
+                  onClick={() => setActiveTab(t as CurrTab)}
+                  className={`flex-1 px-4 py-4 text-[14px] font-semibold cursor-pointer border-none
+                      ${activeTab === t ? "bg-[#0f7275] text-white font-['Space_Mono',monospace]" : "bg-white text-[#555]"}`}
+                >
                   {t}
                 </button>
               ))}
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0 }}>
+
+            {/* Curriculum Grid */}
+            <div className="grid grid-cols-2 gap-0">
               {CURRICULUM_DATA[activeTab].map((row, i) => (
-                <div key={i} style={{ padding: "18px 28px", borderBottom: "1px solid #f0f1f5", borderRight: i % 2 === 0 ? "1px solid #f0f1f5" : "none", display: "flex", gap: 14 }}>
-                  <FaCode size={15} color="#0f7275" style={{ marginTop: 2, flexShrink: 0 }} />
+                <div
+                  key={i}
+                  className={`flex gap-3 px-7 py-4 border-b border-[#f0f1f5] ${i % 2 === 0 ? "border-r border-[#f0f1f5]" : ""}`}
+                >
+                  <FaCode size={15} color="#0f7275" className="mt-[2px] flex-shrink-0" />
                   <div>
-                    <div style={{ fontSize: 11, fontWeight: 700, color: "#aaa", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 3 }}>{row.label}</div>
-                    <div style={{ fontSize: 14, fontWeight: 500, color: "#111" }}>{row.value}</div>
+                    <div className="text-[11px] font-bold text-[#aaa] uppercase tracking-[0.08em] mb-[3px]">
+                      {row.label}
+                    </div>
+                    <div className="text-[14px] font-medium text-[#111]">
+                      {row.value}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
+
           </div>
         </section>
 
         {/* MENTORS */}
-        <section style={{ padding: "48px 0" }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", color: "#0f7275", textTransform: "uppercase", marginBottom: 10, fontFamily: "'Space Mono', monospace" }}>Learn From The Best</p>
-            <h2 style={{ fontFamily: "'Space Mono', monospace", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#111", letterSpacing: "-0.04em" }}>Expert Mentors & Instructors</h2>
+        <section className="py-12">
+          {/* Header */}
+          <div className="text-center mb-10">
+            <p className="text-[12px] font-bold tracking-[0.12em] text-[#0f7275] uppercase mb-[10px] font-['Space_Mono',monospace]">
+              Learn From The Best
+            </p>
+            <h2 className="font-['Space_Mono',monospace] text-[clamp(1.8rem,3vw,2.4rem)] text-[#111] tracking-[-0.04em]">
+              Expert Mentors & Instructors
+            </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
+
+          {/* Mentor Grid */}
+          <div className="grid grid-cols-4 gap-5">
             {MENTORS.map((m, i) => (
-              <div key={i} style={{ background: "#fff", borderRadius: 18, padding: "28px 20px", textAlign: "center", border: "1px solid #e4e5ea" }}>
-                <div style={{ width: 72, height: 72, borderRadius: "50%", background: m.color, color: "#fff", fontSize: 22, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px", fontFamily: "'Space Mono', monospace" }}>
+              <div
+                key={i}
+                className="bg-white rounded-[18px] px-5 py-7 text-center border border-[#e4e5ea]"
+              >
+                {/* Initials Circle */}
+                <div
+                  className="w-[72px] h-[72px] rounded-full mx-auto mb-4 flex items-center justify-center text-white text-[22px] font-bold font-['Space_Mono',monospace]"
+                  style={{ background: m.color }}
+                >
                   {m.initials}
                 </div>
-                <h4 style={{ fontWeight: 700, fontSize: 15, color: "#111", marginBottom: 4 }}>{m.name}</h4>
-                <p style={{ fontSize: 12, color: m.color, fontWeight: 600, marginBottom: 6 }}>{m.role}</p>
-                <p style={{ fontSize: 12, color: "#888", lineHeight: 1.5 }}>{m.specialty}</p>
-                <div style={{ marginTop: 14, display: "flex", justifyContent: "center", gap: 2 }}>
-                  {[...Array(5)].map((_, s) => <FaStar key={s} size={12} fill="#f5a623" color="#f5a623" />)}
+
+                {/* Name & Role */}
+                <h4 className="font-bold text-[15px] text-[#111] mb-1">{m.name}</h4>
+                <p className="text-[12px] font-semibold mb-1" style={{ color: m.color }}>
+                  {m.role}
+                </p>
+                <p className="text-[12px] text-[#888] leading-[1.5]">{m.specialty}</p>
+
+                {/* Rating */}
+                <div className="mt-3 flex justify-center gap-[2px]">
+                  {[...Array(5)].map((_, s) => (
+                    <FaStar key={s} size={12} fill="#f5a623" color="#f5a623" />
+                  ))}
                 </div>
               </div>
             ))}
@@ -322,25 +460,52 @@ export default function DataSciencePage() {
         </section>
 
         {/* TOPPERS / RESULTS */}
-        <section style={{ padding: "48px 0" }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", color: "#0f7275", textTransform: "uppercase", marginBottom: 10, fontFamily: "'Space Mono', monospace" }}>Success Stories</p>
-            <h2 style={{ fontFamily: "'Space Mono', monospace", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#111", letterSpacing: "-0.04em" }}>Our Alumni Are Thriving</h2>
+        <section className="py-12">
+          {/* Header */}
+          <div className="text-center mb-10">
+            <p className="text-[12px] font-bold tracking-[0.12em] text-[#0f7275] uppercase mb-[10px] font-['Space_Mono',monospace]">
+              Success Stories
+            </p>
+            <h2 className="font-['Space_Mono',monospace] text-[clamp(1.8rem,3vw,2.4rem)] text-[#111] tracking-[-0.04em]">
+              Our Alumni Are Thriving
+            </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
+
+          {/* Alumni Grid */}
+          <div className="grid grid-cols-3 gap-6">
             {TOPPERS.map((t, i) => (
-              <div key={i} style={{ background: "#fff", borderRadius: 18, padding: 28, border: "1px solid #e4e5ea" }}>
-                <div style={{ fontSize: 38, color: "#0f7275", lineHeight: 1, marginBottom: 14, fontFamily: "'Space Mono', monospace" }}>"</div>
-                <p style={{ fontSize: 14, color: "#555", lineHeight: 1.75, marginBottom: 20 }}>{t.quote}</p>
-                <div style={{ display: "flex", alignItems: "center", gap: 12, paddingTop: 16, borderTop: "1px solid #f0f1f5" }}>
-                  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#0f7275", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 16 }}>
+              <div
+                key={i}
+                className="bg-white rounded-[18px] p-7 border border-[#e4e5ea]"
+              >
+                {/* Quote Symbol */}
+                <div className="text-[38px] text-[#0f7275] leading-[1] mb-3 font-['Space_Mono',monospace]">
+                  &quot;
+                </div>
+
+                {/* Quote Text */}
+                <p className="text-[14px] text-[#555] leading-[1.75] mb-5">
+                  {t.quote}
+                </p>
+
+                {/* Alumni Info */}
+                <div className="flex items-center gap-3 pt-4 border-t border-[#f0f1f5]">
+
+                  {/* Initial Circle */}
+                  <div className="w-[44px] h-[44px] rounded-full bg-[#0f7275] text-white flex items-center justify-center font-bold text-[16px]">
                     {t.name[0]}
                   </div>
+
+                  {/* Name & Role */}
                   <div>
-                    <div style={{ fontWeight: 700, fontSize: 14, color: "#111" }}>{t.name}</div>
-                    <div style={{ fontSize: 12, color: "#888" }}>{t.role}</div>
+                    <div className="font-bold text-[14px] text-[#111]">{t.name}</div>
+                    <div className="text-[12px] text-[#888]">{t.role}</div>
                   </div>
-                  <span style={{ background: "#e8f5f5", color: "#0f7275", fontSize: 10, fontWeight: 700, padding: "3px 8px", borderRadius: 20, marginLeft: "auto" }}>{t.batch}</span>
+
+                  {/* Batch Badge */}
+                  <span className="ml-auto bg-[#e8f5f5] text-[#0f7275] text-[10px] font-bold px-2 py-[3px] rounded-[20px]">
+                    {t.batch}
+                  </span>
                 </div>
               </div>
             ))}
@@ -348,48 +513,92 @@ export default function DataSciencePage() {
         </section>
 
         {/* FAQs */}
-        <section style={{ padding: "48px 0 72px" }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", color: "#0f7275", textTransform: "uppercase", marginBottom: 10, fontFamily: "'Space Mono', monospace" }}>Got Questions?</p>
-            <h2 style={{ fontFamily: "'Space Mono', monospace", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#111", letterSpacing: "-0.04em" }}>Frequently Asked Questions</h2>
+       <section className="py-12 pb-18">
+  {/* Header */}
+  <div className="text-center mb-10">
+    <p className="text-[12px] font-bold tracking-[0.12em] text-[#0f7275] uppercase mb-[10px] font-['Space_Mono',monospace]">
+      Got Questions?
+    </p>
+    <h2 className="font-['Space_Mono',monospace] text-[clamp(1.8rem,3vw,2.4rem)] text-[#111] tracking-[-0.04em]">
+      Frequently Asked Questions
+    </h2>
+  </div>
+
+  {/* FAQ Items Container */}
+  <div className="max-w-[780px] mx-auto">
+    {FAQS.map((f, i) => (
+      <div
+        key={i}
+        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+        className="bg-white rounded-[14px] mb-2.5 border border-[#e4e5ea] overflow-hidden cursor-pointer"
+      >
+        {/* Question Header */}
+        <div className="flex items-center justify-between px-6 py-4">
+          <span className="text-[14px] font-semibold text-[#111] pr-5">{f.q}</span>
+          <FaChevronDown
+            size={16}
+            color="#888"
+            className={`flex-shrink-0 transition-transform duration-200 ${openFaq === i ? "rotate-180" : ""}`}
+          />
+        </div>
+
+        {/* Answer */}
+        {openFaq === i && (
+          <div className="px-6 pt-4 pb-5 text-[14px] text-[#666] leading-[1.75] border-t border-[#f0f1f5]">
+            {f.a}
           </div>
-          <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            {FAQS.map((f, i) => (
-              <div key={i} onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                style={{ background: "#fff", borderRadius: 14, marginBottom: 10, border: "1px solid #e4e5ea", overflow: "hidden", cursor: "pointer" }}>
-                <div style={{ padding: "18px 24px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                  <span style={{ fontSize: 14, fontWeight: 600, color: "#111", paddingRight: 20 }}>{f.q}</span>
-                  <FaChevronDown size={16} color="#888" style={{ transform: openFaq === i ? "rotate(180deg)" : "none", transition: "transform 0.2s", flexShrink: 0 }} />
-                </div>
-                {openFaq === i && (
-                  <div style={{ padding: "0 24px 20px", paddingTop: 16, fontSize: 14, color: "#666", lineHeight: 1.75, borderTop: "1px solid #f0f1f5" }}>
-                    {f.a}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
+        )}
+      </div>
+    ))}
+  </div>
+</section>
       </div>
 
       {/* FOOTER CTA */}
-      <div style={{ background: "linear-gradient(135deg, #071a1b, #0f2a2b)", padding: "60px 24px", textAlign: "center", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(45,224,167,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(45,224,167,0.04) 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
-        <div style={{ position: "relative" }}>
-          <h2 style={{ fontFamily: "'Space Mono', monospace", fontSize: "clamp(1.8rem,3vw,2.5rem)", color: "#fff", marginBottom: 12, letterSpacing: "-0.04em" }}>
-            Your Data Career Starts <span style={{ color: "#2de0a7", fontStyle: "italic" }}>Now</span>
-          </h2>
-          <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 15, marginBottom: 32 }}>Join 12,000+ data professionals who launched their careers with us.</p>
-          <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <button style={{ background: "#2de0a7", color: "#071a1b", padding: "14px 32px", borderRadius: 10, fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer" }}>
-              Start Free Trial
-            </button>
-            <button style={{ background: "rgba(255,255,255,0.07)", color: "#fff", padding: "14px 32px", borderRadius: 10, fontSize: 15, fontWeight: 600, border: "1px solid rgba(255,255,255,0.2)", cursor: "pointer" }}>
-              Download Syllabus
-            </button>
-          </div>
-        </div>
-      </div>
+     <div className="relative bg-[linear-gradient(135deg,#071a1b,#0f2a2b)] px-6 py-15 text-center overflow-hidden">
+  {/* Background grid overlay */}
+  <div
+    className="absolute inset-0 pointer-events-none"
+    style={{
+      backgroundImage:
+        "linear-gradient(rgba(45,224,167,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(45,224,167,0.04) 1px, transparent 1px)",
+      backgroundSize: "40px 40px",
+    }}
+  />
+
+  {/* Content */}
+ <div className="relative bg-[linear-gradient(135deg,#071a1b,#0f2a2b)] px-6 py-15 text-center overflow-hidden">
+  {/* Background grid overlay */}
+  <div
+    className="absolute inset-0 pointer-events-none"
+    style={{
+      backgroundImage:
+        "linear-gradient(rgba(45,224,167,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(45,224,167,0.04) 1px, transparent 1px)",
+      backgroundSize: "40px 40px",
+    }}
+  />
+
+  {/* Content */}
+  <div className="relative py-12">
+    <h2 className="font-['Space_Mono',monospace] text-[clamp(1.8rem,3vw,2.5rem)] text-white mb-3 tracking-[-0.04em]">
+      Your Data Career Starts <span className="text-[#2de0a7] italic">Now</span>
+    </h2>
+    <p className="text-[15px] text-[rgba(255,255,255,0.55)] mb-8">
+      Join 12,000+ data professionals who launched their careers with us.
+    </p>
+
+    {/* Buttons */}
+    <div className="flex flex-wrap justify-center gap-4">
+      <button className="bg-[#2de0a7] text-[#071a1b] px-8 py-3 rounded-[10px] text-[15px] font-bold border-none cursor-pointer">
+        Start Free Trial
+      </button>
+      <button className="bg-[rgba(255,255,255,0.07)] text-white px-8 py-3 rounded-[10px] text-[15px] font-semibold border border-[rgba(255,255,255,0.2)] cursor-pointer">
+        Download Syllabus
+      </button>
+    </div>
+  </div>
+</div>
+</div>
     </div>
   );
 }

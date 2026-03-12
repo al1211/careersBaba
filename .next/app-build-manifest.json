@@ -21,15 +21,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/datascience/page.js"
     ],
+    "/career/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/career/page.js"
+    ],
     "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/page.js"
     ],
-    "/career/page": [
+    "/cuet/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/career/page.js"
+      "static/chunks/app/cuet/page.js"
     ]
   }
 }

@@ -82,32 +82,7 @@ export default function UPSCPage() {
     <div style={{ fontFamily: "'DM Sans', sans-serif", background: "#F5F4F0", minHeight: "100vh", color: "#1a1a1a"}}>
    
 
-      {/* NAVBAR */}
-      {/* <nav style={{ background: "#fff", borderBottom: "1px solid #e8e7e2", position: "sticky", top: 0, zIndex: 100, padding: "0 24px" }}>
-        <div style={{ maxWidth: 1140, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", height: 60 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <div style={{ width: 32, height: 32, borderRadius: 8, background: "#1a3a6b", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <FaShieldAlt size={16} color="#fff" />
-            </div>
-            <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 18, color: "#1a3a6b" }}>StudyPath</span>
-            <span style={{ color: "#ccc", margin: "0 4px" }}>|</span>
-            <span style={{ fontSize: 13, color: "#666", fontWeight: 500 }}>UPSC</span>
-          </div>
-          <div style={{ display: "flex", gap: 6 }}>
-            {NAV_LINKS.map(l => (
-              <button key={l} className="nav-link" onClick={() => setActiveNav(l)}
-                style={{  border: "none", fontSize: 13, fontWeight: 500, padding: "6px 12px", borderRadius: 6, cursor: "pointer",
-                  color: activeNav === l ? "#1a3a6b" : "#555",
-                  background: activeNav === l ? "#eef1f8" : "transparent" }}>
-                {l}
-              </button>
-            ))}
-          </div>
-          <button className="btn-primary" style={{ background: "#1a3a6b", color: "#fff", padding: "9px 20px", borderRadius: 8, fontSize: 13, fontWeight: 600 }}>
-            Free Counselling
-          </button>
-        </div>
-      </nav> */}
+      
 
       {/* HERO */}
       <section style={{ background: "linear-gradient(135deg, #0f2448 0%, #1a3a6b 55%, #1e4d8c 100%)", padding: "72px 24px 80px", position: "relative", overflow: "hidden" }}>

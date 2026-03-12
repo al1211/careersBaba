@@ -3,5 +3,5 @@
   "/career/page": "app/career/page.js",
   "/about/page": "app/about/page.js",
   "/upsc/page": "app/upsc/page.js",
-  "/datascience/page": "app/datascience/page.js"
+  "/cuet/page": "app/cuet/page.js"
 }
