@@ -1,7 +1,7 @@
 
 "use client"
 import { useState } from "react";
-import { 
+import {
   FaBookOpen, FaVideo, FaFileAlt, FaPen, FaAward, FaChevronDown,
   FaChevronRight, FaStar, FaUsers, FaClock, FaChartLine, FaCheckCircle,
   FaBell, FaDownload, FaPlay, FaArrowRight, FaShieldAlt, FaBullseye, FaBolt
@@ -24,7 +24,7 @@ const RESOURCES = [
 ];
 
 const EXAM_DATA = {
-    Prelims: [
+  Prelims: [
     { label: "Date", value: "May 25, 2026 (Expected)" },
     { label: "Papers", value: "GS Paper I + CSAT (Paper II)" },
     { label: "Total Marks", value: "400 (200 each)" },
@@ -64,14 +64,14 @@ const TOPPERS = [
 ];
 
 const FAQS = [
-    { q: "What is the eligibility for UPSC CSE?", a: "Candidates must hold a Bachelor's degree from a recognised university. The minimum age is 21 years and maximum is 32 (with relaxations for reserved categories). General candidates can attempt up to 6 times." },
-    { q: "How long does UPSC preparation typically take?", a: "Most aspirants take 1–2 years for serious preparation. With a strong academic background and dedicated strategy, 12–14 months of focused study can yield results in the first attempt." },
-    { q: "Which optional subject is best for UPSC Mains?", a: "The best optional depends on your academic background, interest level, and overlap with GS syllabus. Popular choices include Anthropology, PSIR, History, Geography, and Sociology." },
-    { q: "Does your institute offer offline classes?", a: "Yes, we offer classroom coaching in major cities alongside live online and recorded options. Our hybrid model ensures flexibility without compromising on quality." },
-    { q: "What free resources do you provide for UPSC?", a: "We provide free Previous Year Papers, a full-length Prelims Mock Test, the official UPSC Syllabus PDF, and 30+ hours of introductory video lectures — all without registration." },
+  { q: "What is the eligibility for UPSC CSE?", a: "Candidates must hold a Bachelor's degree from a recognised university. The minimum age is 21 years and maximum is 32 (with relaxations for reserved categories). General candidates can attempt up to 6 times." },
+  { q: "How long does UPSC preparation typically take?", a: "Most aspirants take 1–2 years for serious preparation. With a strong academic background and dedicated strategy, 12–14 months of focused study can yield results in the first attempt." },
+  { q: "Which optional subject is best for UPSC Mains?", a: "The best optional depends on your academic background, interest level, and overlap with GS syllabus. Popular choices include Anthropology, PSIR, History, Geography, and Sociology." },
+  { q: "Does your institute offer offline classes?", a: "Yes, we offer classroom coaching in major cities alongside live online and recorded options. Our hybrid model ensures flexibility without compromising on quality." },
+  { q: "What free resources do you provide for UPSC?", a: "We provide free Previous Year Papers, a full-length Prelims Mock Test, the official UPSC Syllabus PDF, and 30+ hours of introductory video lectures — all without registration." },
 ];
 type ExamTab = "Prelims" | "Mains" | "Interview";
-const EXAM_TABS:ExamTab[] = ["Prelims", "Mains", "Interview"];
+const EXAM_TABS: ExamTab[] = ["Prelims", "Mains", "Interview"];
 
 export default function UPSCPage() {
   const [activeTab, setActiveTab] = useState<ExamTab>("Prelims");
@@ -79,10 +79,10 @@ export default function UPSCPage() {
   const [activeNav, setActiveNav] = useState("Overview");
 
   return (
-    <div style={{ fontFamily: "'DM Sans', sans-serif", background: "#F5F4F0", minHeight: "100vh", color: "#1a1a1a"}}>
-   
+    <div style={{ fontFamily: "'DM Sans', sans-serif", background: "#F5F4F0", minHeight: "100vh", color: "#1a1a1a" }}>
 
-      
+
+
 
       {/* HERO */}
       <section style={{ background: "linear-gradient(135deg, #0f2448 0%, #1a3a6b 55%, #1e4d8c 100%)", padding: "72px 24px 80px", position: "relative", overflow: "hidden" }}>
@@ -207,34 +207,79 @@ export default function UPSCPage() {
         </section>
 
         {/* FREE RESOURCES */}
-        <section style={{ padding: "48px 0" }}>
-          <div style={{ background: "linear-gradient(135deg, #fdf9f0, #fff8eb)", borderRadius: 24, padding: "48px 40px", border: "1px solid #ede8da" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center" }}>
+        <section className="px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+          <div
+            className="rounded-2xl p-6 sm:p-8 lg:p-12 border border-[#ede8da]"
+            style={{ background: "linear-gradient(135deg, #fdf9f0, #fff8eb)" }}
+          >
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+
+              {/* ── LEFT: Text ── */}
               <div>
-                <p className="section-label" style={{ marginBottom: 10, color: "#B5451B" }}>100% Free</p>
-                <h2 className="section-title" style={{ fontSize: "clamp(1.6rem,2.8vw,2.2rem)", color: "#1a1a1a", marginBottom: 14 }}>
-                  Free Resources for UPSC Preparation
-                </h2>
-                <p style={{ color: "#777", fontSize: 15, lineHeight: 1.7 }}>
-                  Before committing to a full program, test yourself. Our free tools give every aspirant a fair shot at evaluating their preparation level — no signup needed.
+                <p className="text-[12px] font-bold tracking-[0.12em] uppercase text-[#B5451B] mb-3 font-mono">
+                  100% Free
                 </p>
+                <h2 className="font-display text-[clamp(1.5rem,3vw,2.2rem)] font-bold text-[#1a1a1a] leading-snug mb-4 tracking-tight">
+                  Free Resources for<br className="hidden sm:block" /> UPSC Preparation
+                </h2>
+                <p className="text-[#777] text-[15px] leading-[1.75] max-w-md">
+                  Before committing to a full program, test yourself. Our free tools give every
+                  aspirant a fair shot at evaluating their preparation level — no signup needed.
+                </p>
+
+                {/* CTA visible only on mobile, below text */}
+                <a
+                  href="#all-resources"
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#B5451B] hover:gap-3 transition-all lg:hidden"
+                >
+                  View all free resources <FaArrowRight size={12} />
+                </a>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+
+              {/* ── RIGHT: Cards grid ── */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {RESOURCES.map((r, i) => (
-                  <div key={i} className="resource-card" style={{ background: "#fff", borderRadius: 16, padding: "20px 18px", border: "1.5px solid #ebe8df", display: "flex", flexDirection: "column", gap: 10 }}>
-                    <div style={{ width: 44, height: 44, borderRadius: 12, background: r.color + "15", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <div
+                    key={i}
+                    className="
+                  bg-white rounded-2xl p-4 sm:p-5
+                  border-[1.5px] border-[#ebe8df]
+                  flex flex-col gap-3
+                  hover:-translate-y-1 hover:shadow-md hover:border-[#d9d4c8]
+                  transition-all duration-200 cursor-pointer
+                  group
+                "
+                  >
+                    {/* Icon */}
+                    <div
+                      className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                      style={{ background: r.color + "15" }}
+                    >
                       <r.icon size={20} color={r.color} />
                     </div>
-                    <div>
-                      <div style={{ fontSize: 13, fontWeight: 600, color: "#1a1a1a", marginBottom: 3 }}>{r.label}</div>
-                      <div style={{ fontSize: 12, color: "#888" }}>{r.desc}</div>
+
+                    {/* Text */}
+                    <div className="flex-1">
+                      <div className="text-[13px] font-semibold text-[#1a1a1a] mb-1 leading-snug">
+                        {r.label}
+                      </div>
+                      <div className="text-[12px] text-[#888] leading-[1.5]">
+                        {r.desc}
+                      </div>
                     </div>
-                    <div style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 12, fontWeight: 600, color: r.color, marginTop: 4 }}>
-                      Access Free <FaArrowRight size={12} />
+
+                    {/* Action */}
+                    <div
+                      className="flex items-center gap-1.5 text-[12px] font-semibold group-hover:gap-2.5 transition-all"
+                      style={{ color: r.color }}
+                    >
+                      Access Free
+                      <FaArrowRight size={11} className="group-hover:translate-x-0.5 transition-transform" />
                     </div>
                   </div>
                 ))}
               </div>
+
             </div>
           </div>
         </section>
@@ -269,53 +314,127 @@ export default function UPSCPage() {
         </section>
 
         {/* MENTORS */}
-        <section style={{ padding: "48px 0" }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p className="section-label" style={{ marginBottom: 10 }}>Learn From The Best</p>
-            <h2 className="section-title" style={{ fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#1a1a1a" }}>Top UPSC Mentors in India</h2>
+        <section className="px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+
+          {/* Header */}
+          <div className="text-center mb-8 sm:mb-10">
+            <p className="text-[12px] font-bold tracking-[0.12em] uppercase text-[#B5451B] mb-2.5 font-mono">
+              Learn From The Best
+            </p>
+            <h2 className="font-display text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-[#1a1a1a] tracking-tight">
+              Top UPSC Mentors in India
+            </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
+
+          {/* Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {MENTORS.map((m, i) => (
-              <div key={i} className="mentor-card" style={{ background: "#fff", borderRadius: 18, padding: "28px 20px", textAlign: "center", border: "1px solid #ebe9e2" }}>
-                <div style={{ width: 72, height: 72, borderRadius: "50%", background: m.color, color: "#fff", fontSize: 24, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px", fontFamily: "'Playfair Display',serif" }}>
+              <div
+                key={i}
+                className="
+              bg-white rounded-[18px] px-5 py-7
+              text-center border border-[#ebe9e2]
+              hover:-translate-y-1 hover:shadow-md hover:border-[#d9d4c8]
+              transition-all duration-200
+            "
+              >
+                {/* Avatar */}
+                <div
+                  className="w-[72px] h-[72px] rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold"
+                  style={{ background: m.color, fontFamily: "'Playfair Display', serif" }}
+                >
                   {m.initials}
                 </div>
-                <h4 style={{ fontWeight: 700, fontSize: 15, color: "#1a1a1a", marginBottom: 4 }}>{m.name}</h4>
-                <p style={{ fontSize: 12, color: m.color, fontWeight: 600, marginBottom: 6 }}>{m.role}</p>
-                <p style={{ fontSize: 12, color: "#888", lineHeight: 1.5 }}>{m.specialty}</p>
-                <div style={{ marginTop: 16, display: "flex", justifyContent: "center", gap: 2 }}>
-                  {[...Array(5)].map((_, s) => <FaStar key={s} size={12} fill="#ffd44d" color="#ffd44d" />)}
+
+                {/* Name */}
+                <h4 className="font-bold text-[15px] text-[#1a1a1a] mb-1 leading-snug">
+                  {m.name}
+                </h4>
+
+                {/* Role */}
+                <p className="text-[12px] font-semibold mb-2" style={{ color: m.color }}>
+                  {m.role}
+                </p>
+
+                {/* Specialty */}
+                <p className="text-[12px] text-[#888] leading-[1.55]">
+                  {m.specialty}
+                </p>
+
+                {/* Stars */}
+                <div className="mt-4 flex justify-center gap-[3px]">
+                  {[...Array(5)].map((_, s) => (
+                    <FaStar key={s} size={12} fill="#ffd44d" color="#ffd44d" />
+                  ))}
                 </div>
               </div>
             ))}
           </div>
+
         </section>
 
         {/* TOPPERS */}
-        <section style={{ padding: "48px 0" }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p className="section-label" style={{ marginBottom: 10 }}>Success Stories</p>
-            <h2 className="section-title" style={{ fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#1a1a1a" }}>What Our UPSC Toppers Say</h2>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
-            {TOPPERS.map((t, i) => (
-              <div key={i} className="topper-card" style={{ background: "#fff", borderRadius: 18, padding: 28, border: "1px solid #ebe9e2" }}>
-                <div style={{ fontSize: 36, color: "#1a3a6b", lineHeight: 1, marginBottom: 16, fontFamily: "Georgia, serif" }}>"</div>
-                <p style={{ fontSize: 14, color: "#555", lineHeight: 1.7, marginBottom: 20 }}>{t.quote}</p>
-                <div style={{ display: "flex", alignItems: "center", gap: 12, paddingTop: 16, borderTop: "1px solid #f0efe9" }}>
-                  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#1a3a6b", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 16 }}>
-                    {t.name[0]}
-                  </div>
-                  <div>
-                    <div style={{ fontWeight: 700, fontSize: 14, color: "#1a1a1a" }}>{t.name}</div>
-                    <div style={{ fontSize: 12, color: "#888" }}>{t.rank} · {t.batch}</div>
-                  </div>
-                  <span className="badge" style={{ background: "#eef1f8", color: "#1a3a6b", marginLeft: "auto", fontSize: 10 }}>{t.rank}</span>
-                </div>
+       <section className="px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+
+      {/* Header */}
+      <div className="text-center mb-8 sm:mb-10">
+        <p className="text-[12px] font-bold tracking-[0.12em] uppercase text-[#B5451B] mb-2.5 font-mono">
+          Success Stories
+        </p>
+        <h2 className="font-display text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-[#1a1a1a] tracking-tight">
+          What Our UPSC Toppers Say
+        </h2>
+      </div>
+
+      {/* Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        {TOPPERS.map((t, i) => (
+          <div
+            key={i}
+            className="
+              bg-white rounded-[18px] p-6 sm:p-7
+              border border-[#ebe9e2]
+              hover:-translate-y-1 hover:shadow-md hover:border-[#d9d4c8]
+              transition-all duration-200
+              flex flex-col
+            "
+          >
+            {/* Quote mark */}
+            <div
+              className="text-[36px] leading-none mb-4 text-[#1a3a6b] select-none"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
+              &ldquo;
+            </div>
+
+            {/* Quote text — grows to fill card */}
+            <p className="text-[14px] text-[#555] leading-[1.75] mb-5 flex-1">
+              {t.quote}
+            </p>
+
+            {/* Footer */}
+            <div className="flex items-center gap-3 pt-4 border-t border-[#f0efe9]">
+              {/* Avatar */}
+              <div className="w-11 h-11 rounded-full bg-[#1a3a6b] text-white flex items-center justify-center font-bold text-[16px] flex-shrink-0">
+                {t.name[0]}
               </div>
-            ))}
+
+              {/* Name + meta */}
+              <div className="min-w-0">
+                <div className="font-bold text-[14px] text-[#1a1a1a] truncate">{t.name}</div>
+                <div className="text-[12px] text-[#888] truncate">{t.batch}</div>
+              </div>
+
+              {/* Rank badge */}
+              <span className="ml-auto flex-shrink-0 bg-[#eef1f8] text-[#1a3a6b] text-[10px] font-bold px-2.5 py-1 rounded-full whitespace-nowrap">
+                {t.rank}
+              </span>
+            </div>
           </div>
-        </section>
+        ))}
+      </div>
+
+    </section>
 
         {/* FAQs */}
         <section style={{ padding: "48px 0 72px" }}>

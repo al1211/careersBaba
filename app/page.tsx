@@ -1,3 +1,4 @@
+import Crausel from '@/components/Crausel';
 import ListAllCourse from '@/components/ListAllCourse';
 import Image from 'next/image'
 import Link from 'next/link'
@@ -43,10 +44,10 @@ const testimonials = [
 
 export default function Home() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
-        {/* Background */}
+    <div className='mt-16'>
+  
+      {/* <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
+        
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1557989048-03456d01a26e?auto=format&fit=crop&w=1920&q=80"
@@ -63,9 +64,9 @@ export default function Home() {
          
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Your Dream College{' '}
+              Your Dream of{' '}
               <span className="text-brand-400 relative">
-                Starts Here
+               Our Success
                 <svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 300 8" fill="none">
                   <path d="M0 4 Q150 0 300 4" stroke="#f97316" strokeWidth="3" strokeLinecap="round" fill="none" />
                 </svg>
@@ -93,14 +94,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
+      
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
           <span className="text-white/50 text-xs tracking-widest uppercase">Scroll</span>
           <div className="w-px h-10 bg-gradient-to-b from-white/40 to-transparent" />
         </div>
-      </section>
+      </section> */}
 
-      {/* Stats */}
+      <Crausel/>
+
+      {/* Stats
       <section className="bg-brand-500 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -112,7 +115,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* list all courses */}

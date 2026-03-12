@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 mb-32 ${
         scrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm border-b border-orange-100' : 'bg-cream/95 backdrop-blur-md shadow-sm border-b border-orange-100'
       }`}
     >
@@ -34,6 +34,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group ">
         <Image src="/1.jpeg" alt='kimds' width={50} height={50} className='rounded-sm'/>
+         <span className="font-display font-extrabold text-xl text-indigo-950 uppercase ">Careers<span className="text-brand-400">Baba</span></span>
         </Link>
 
         {/* Desktop nav */}

@@ -59,7 +59,7 @@ const categories: Category[] = [
   { icon: "Calculator", title: "CA", color: "#0A7E8C", light: "#e6f6f7" },
   { icon: "faDataBase", title: "Data Science", color: "#1A6B8A", light: "#e8f4f8" },
   { icon: "faschool", title: "IX", color: "#A8325E", light: "#faedf3" },
-  { icon: "faUserGraduated", title: "XI", color: "#A8325E", light: "#faedf3" },
+  { icon: "faUserGraduated", title: "X", color: "#A8325E", light: "#faedf3" },
   { icon: "faUserGraduated", title: "XI", color: "#A8325E", light: "#faedf3" },
   { icon: "faUserGraduated", title: "XII", color: "#A8325E", light: "#faedf3" }
 ];
@@ -74,7 +74,7 @@ export default function ListAllCourse(): JSX.Element {
   }
 
   return (
-    <div className=" bg-[#F7F5F0] flex flex-col items-center py-12 px-6">
+    <div className=" bg-[#F7F5F0]  flex flex-col items-center py-12 px-6">
       {/* Header */}
       <div className="text-center mb-12 max-w-xl">
         <p className="font-sans font-medium text-[12px] tracking-widest text-gray-400 uppercase mb-3">
@@ -124,10 +124,10 @@ export default function ListAllCourse(): JSX.Element {
         })}
       </div>
 
-      {/* Footer hint */}
+      {/* Footer hint
       <p className="mt-10 text-xs text-gray-400 tracking-wide">
         10 categories · updated weekly
-      </p>
+      </p> */}
     </div>
   );
 }

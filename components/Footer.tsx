@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebookF, FaLinkedinIn, FaTwitter,FaYoutube, FaInstagram,FaWhatsapp }   from "react-icons/fa";
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -12,7 +13,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-9 h-9 rounded-xl bg-brand-500 flex items-center justify-center text-white font-bold text-lg">C</span>
+                      <Image src="/1.jpeg" alt='kimds' width={50} height={50} className='rounded-full'/>
+              
               <span className="font-display font-bold text-xl text-white">Careers<span className="text-brand-400">Baba</span></span>
             </div>
             <p className="text-sm leading-relaxed text-white/60 max-w-xs">
