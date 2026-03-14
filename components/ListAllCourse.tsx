@@ -54,7 +54,6 @@ const categories: Category[] = [
   { icon: "GraduationCap", title: "MBA", color: "#FF6B35", light: "#fff3ee" },
   { icon: "Code", title: "Python", color: "#7B2FBE", light: "#f3eafa" },
   { icon: "MachineLearning", title: "Machine Learning", color: "#7B2FBE", light: "#f3eafa" },
-  { icon: "AIML", title: "AI/ML", color: "#7B2FBE", light: "#f3eafa" },
   { icon: "Briefcase", title: "Govt Jobs", color: "#B5451B", light: "#fdf0ec" },
   { icon: "Calculator", title: "CA", color: "#0A7E8C", light: "#e6f6f7" },
   { icon: "faDataBase", title: "Data Science", color: "#1A6B8A", light: "#e8f4f8" },
