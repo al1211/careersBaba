@@ -61,7 +61,8 @@ const ARTICLES: CAArticle[] = [
     category: "International Relations",
     categoryColor: "#0f3460",
     title: "India-EU Trade & Technology Council: Third Ministerial Meeting Outcomes",
-    summary: "The third ministerial meeting of the India-EU Trade and Technology Council concluded with agreements on semiconductor supply chains, digital connectivity, and clean energy partnerships. Both sides agreed to accelerate negotiations on the Bilateral Investment Treaty.",
+    summary:
+      "The third ministerial meeting of the India-EU Trade and Technology Council concluded with agreements on semiconductor supply chains, digital connectivity, and clean energy partnerships. Both sides agreed to accelerate negotiations on the Bilateral Investment Treaty.",
     gsPaper: "GS II — IR",
     tags: ["EU", "Trade", "Technology", "Diplomacy"],
     isHot: true,
@@ -72,7 +73,8 @@ const ARTICLES: CAArticle[] = [
     category: "Economy",
     categoryColor: "#14532d",
     title: "RBI Monetary Policy Committee Keeps Repo Rate Unchanged at 6.25%",
-    summary: "The MPC unanimously voted to maintain the repo rate at 6.25% while shifting the stance to 'neutral'. Retail inflation eased to 4.1% in February, and GDP growth projection for FY27 set at 7.2%. Key focus on rural consumption and credit offtake.",
+    summary:
+      "The MPC unanimously voted to maintain the repo rate at 6.25% while shifting the stance to 'neutral'. Retail inflation eased to 4.1% in February, and GDP growth projection for FY27 set at 7.2%. Key focus on rural consumption and credit offtake.",
     gsPaper: "GS III — Economy",
     tags: ["RBI", "Monetary Policy", "Inflation", "GDP"],
     isHot: true,
@@ -83,7 +85,8 @@ const ARTICLES: CAArticle[] = [
     category: "Environment",
     categoryColor: "#166534",
     title: "IPCC AR7 Synthesis Report: South Asia Faces Heightened Climate Risk",
-    summary: "The IPCC's seventh assessment synthesis report warns of accelerated glacial retreat in the Himalayas, increased frequency of extreme heat events, and threats to monsoon reliability. India's coastal cities face compounded risks from sea-level rise and cyclone intensification.",
+    summary:
+      "The IPCC's seventh assessment synthesis report warns of accelerated glacial retreat in the Himalayas, increased frequency of extreme heat events, and threats to monsoon reliability. India's coastal cities face compounded risks from sea-level rise and cyclone intensification.",
     gsPaper: "GS III — Environment",
     tags: ["IPCC", "Climate Change", "South Asia", "Himalayas"],
   },
@@ -93,7 +96,8 @@ const ARTICLES: CAArticle[] = [
     category: "Polity & Governance",
     categoryColor: "#7b1a1a",
     title: "Supreme Court Constitution Bench Upholds 'One Rank One Pension' Formula",
-    summary: "A 5-judge Constitution Bench upheld the revised OROP formula, ruling it consistent with Article 14. The bench also directed the government to resolve pension anomalies within 6 months and establish a permanent review mechanism for defence pension revisions.",
+    summary:
+      "A 5-judge Constitution Bench upheld the revised OROP formula, ruling it consistent with Article 14. The bench also directed the government to resolve pension anomalies within 6 months and establish a permanent review mechanism for defence pension revisions.",
     gsPaper: "GS II — Polity",
     tags: ["Supreme Court", "OROP", "Armed Forces", "Article 14"],
   },
@@ -103,7 +107,8 @@ const ARTICLES: CAArticle[] = [
     category: "Science & Technology",
     categoryColor: "#1e3a5f",
     title: "ISRO Successfully Tests Reusable Launch Vehicle RLV-TD Autonomous Landing",
-    summary: "ISRO's Reusable Launch Vehicle Technology Demonstrator completed its fourth autonomous landing experiment at Chitradurga aeronautical test range. The test validated critical deceleration algorithms at 1.6 Mach, a major milestone towards India's own space shuttle capability by 2028.",
+    summary:
+      "ISRO's Reusable Launch Vehicle Technology Demonstrator completed its fourth autonomous landing experiment at Chitradurga aeronautical test range. The test validated critical deceleration algorithms at 1.6 Mach, a major milestone towards India's own space shuttle capability by 2028.",
     gsPaper: "GS III — S&T",
     tags: ["ISRO", "RLV", "Space Technology", "Reusable Rocket"],
     isHot: true,
@@ -114,7 +119,8 @@ const ARTICLES: CAArticle[] = [
     category: "Social Issues",
     categoryColor: "#78350f",
     title: "Census 2026 — Socio-Economic Data to Be Released in Phases Starting April",
-    summary: "The Registrar General of India announced a phased release of Census 2026 data beginning April 1. The socio-economic data will include first-ever caste enumeration since 1931, literacy rate disaggregation by gender and district, and data on housing and sanitation access.",
+    summary:
+      "The Registrar General of India announced a phased release of Census 2026 data beginning April 1. The socio-economic data will include first-ever caste enumeration since 1931, literacy rate disaggregation by gender and district, and data on housing and sanitation access.",
     gsPaper: "GS I — Society",
     tags: ["Census", "Caste Enumeration", "Demographics", "Social Data"],
   },
@@ -183,10 +189,12 @@ const WEEKLY_DIGESTS: WeeklyDigest[] = [
 
 const DAILY_QUIZ: Quiz[] = [
   {
-    question: "Which article of the Indian Constitution deals with the composition of the Union Public Service Commission?",
+    question:
+      "Which article of the Indian Constitution deals with the composition of the Union Public Service Commission?",
     options: ["Article 312", "Article 315", "Article 320", "Article 323"],
     correct: 1,
-    explanation: "Article 315 provides for the establishment of Public Service Commissions for the Union and the States. It specifies that there shall be a Public Service Commission for the Union and for each State.",
+    explanation:
+      "Article 315 provides for the establishment of Public Service Commissions for the Union and the States. It specifies that there shall be a Public Service Commission for the Union and for each State.",
   },
   {
     question: "The 'Repo Rate' is the rate at which:",
@@ -197,15 +205,16 @@ const DAILY_QUIZ: Quiz[] = [
       "Government borrows from RBI",
     ],
     correct: 1,
-    explanation: "The Repo Rate (Repurchase Rate) is the rate at which the Reserve Bank of India lends money to commercial banks for short-term requirements against government securities. It is a key instrument of monetary policy.",
+    explanation:
+      "The Repo Rate (Repurchase Rate) is the rate at which the Reserve Bank of India lends money to commercial banks for short-term requirements against government securities. It is a key instrument of monetary policy.",
   },
 ];
 
 const GS_MAPPING: { paper: string; color: string; todayCount: number; weekCount: number }[] = [
-  { paper: "GS Paper I", color: "#0f3460", todayCount: 3, weekCount: 18 },
+  { paper: "GS Paper I",  color: "#0f3460", todayCount: 3, weekCount: 18 },
   { paper: "GS Paper II", color: "#7b1a1a", todayCount: 5, weekCount: 31 },
-  { paper: "GS Paper III", color: "#14532d", todayCount: 6, weekCount: 37 },
-  { paper: "GS Paper IV", color: "#78350f", todayCount: 1, weekCount: 8 },
+  { paper: "GS Paper III",color: "#14532d", todayCount: 6, weekCount: 37 },
+  { paper: "GS Paper IV", color: "#78350f", todayCount: 1, weekCount: 8  },
   { paper: "Essay Topics", color: "#1e3a5f", todayCount: 2, weekCount: 12 },
 ];
 
@@ -213,11 +222,11 @@ const GS_MAPPING: { paper: string; color: string; todayCount: number; weekCount:
 
 export default function CurrentAffairsPage() {
   const [activeCategory, setActiveCategory] = useState("All Topics");
-  const [bookmarked, setBookmarked] = useState<Set<number>>(new Set());
-  const [quizIndex, setQuizIndex] = useState(0);
+  const [bookmarked, setBookmarked]         = useState<Set<number>>(new Set());
+  const [quizIndex, setQuizIndex]           = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery]       = useState("");
 
   const toggleBookmark = (id: number) => {
     setBookmarked((prev) => {
@@ -236,7 +245,7 @@ export default function CurrentAffairsPage() {
   const currentQuiz = DAILY_QUIZ[quizIndex % DAILY_QUIZ.length];
 
   const filteredArticles = ARTICLES.filter((a) => {
-    const matchCat = activeCategory === "All Topics" || a.category === activeCategory;
+    const matchCat    = activeCategory === "All Topics" || a.category === activeCategory;
     const matchSearch =
       !searchQuery ||
       a.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -245,184 +254,63 @@ export default function CurrentAffairsPage() {
   });
 
   return (
-    <div
-      style={{
-        fontFamily: "'Crimson Pro', Georgia, serif",
-        background: "#F5F3EE",
-        minHeight: "100vh",
-        color: "#111",
-      }}
-    >
-      {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section
-        style={{
-          background: "linear-gradient(160deg, #06112a 0%, #0f2044 50%, #091830 100%)",
-          padding: "64px 24px 72px",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
-        {/* ambient glow */}
+    <div className="font-serif bg-[#F5F3EE] min-h-screen text-[#111]">
+
+      {/* ── HERO ──────────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden pt-16 pb-[72px] px-6 bg-[linear-gradient(160deg,#06112a_0%,#0f2044_50%,#091830_100%)]">
+
+        {/* Ambient glow */}
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_75%_25%,rgba(255,153,0,0.13)_0%,transparent_45%),radial-gradient(circle_at_15%_75%,rgba(19,136,8,0.07)_0%,transparent_45%)]" />
+
+        {/* Dot grid */}
         <div
+          className="absolute inset-0 pointer-events-none"
           style={{
-            position: "absolute",
-            inset: 0,
             backgroundImage:
-              "radial-gradient(circle at 75% 25%, rgba(255,153,0,0.13) 0%, transparent 45%), radial-gradient(circle at 15% 75%, rgba(19,136,8,0.07) 0%, transparent 45%)",
-            pointerEvents: "none",
-          }}
-        />
-        {/* grid */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage:
-              "linear-gradient(rgba(255,153,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,153,0,0.03) 1px, transparent 1px)",
+              "linear-gradient(rgba(255,153,0,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,153,0,0.03) 1px,transparent 1px)",
             backgroundSize: "52px 52px",
-            pointerEvents: "none",
           }}
         />
-        {/* polity text watermark */}
-        <div
-          style={{
-            position: "absolute",
-            top: 56,
-            right: 440,
-            color: "rgba(255,153,0,0.07)",
-            fontFamily: "'Crimson Pro', Georgia, serif",
-            fontSize: 12,
-            lineHeight: 2,
-            pointerEvents: "none",
-          }}
-        >
-          <div>GS II — Governance & IR | GS III — Economy & Environment</div>
-          <div>GS I — Society, Heritage & Geography | GS IV — Ethics</div>
-          <div>Prelims — Current Events of National & International Importance</div>
+
+        {/* Watermark text */}
+        <div className="absolute top-14 right-[440px] pointer-events-none text-[rgba(255,153,0,0.07)] font-serif text-xs leading-loose">
+          <div>GS II — Governance &amp; IR | GS III — Economy &amp; Environment</div>
+          <div>GS I — Society, Heritage &amp; Geography | GS IV — Ethics</div>
+          <div>Prelims — Current Events of National &amp; International Importance</div>
         </div>
 
-        <div
-          style={{
-            maxWidth: 1140,
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "1fr 340px",
-            gap: 48,
-            alignItems: "center",
-            position: "relative",
-          }}
-        >
+        <div className="max-w-[1140px] mx-auto grid grid-cols-[1fr_340px] gap-12 items-center relative">
+
+          {/* Left column */}
           <div>
-            {/* badge */}
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 8,
-                background: "rgba(255,153,0,0.12)",
-                border: "1px solid rgba(255,153,0,0.4)",
-                borderRadius: 20,
-                padding: "5px 14px",
-                marginBottom: 22,
-              }}
-            >
-              <span
-                style={{
-                  width: 7,
-                  height: 7,
-                  borderRadius: "50%",
-                  background: "#ff9900",
-                  display: "inline-block",
-                  animation: "pulse 1.5s infinite",
-                }}
-              />
-              <span
-                style={{
-                  fontSize: 12,
-                  color: "#ffb84d",
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: "0.06em",
-                }}
-              >
+            {/* Live badge */}
+            <div className="inline-flex items-center gap-2 bg-[rgba(255,153,0,0.12)] border border-[rgba(255,153,0,0.4)] rounded-full px-3.5 py-1.5 mb-6">
+              <span className="w-2 h-2 rounded-full bg-[#ff9900] inline-block animate-pulse" />
+              <span className="text-xs text-[#ffb84d] font-mono font-bold tracking-widest">
                 Updated Daily by 7AM IST
               </span>
             </div>
 
-            <h1
-              style={{
-                fontFamily: "'Crimson Pro', Georgia, serif",
-                fontSize: "clamp(2rem, 4vw, 3rem)",
-                color: "white",
-                marginBottom: 16,
-                lineHeight: 1.2,
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
-              }}
-            >
-              Current Affairs for UPSC,
-              <br />
-              <span style={{ color: "#ff9900" }}>SSC &amp; Banking Exams</span>
+            <h1 className="font-serif text-[clamp(2rem,4vw,3rem)] text-white mb-4 leading-tight font-bold tracking-tight">
+              Current Affairs for UPSC,<br />
+              <span className="text-[#ff9900]">SSC &amp; Banking Exams</span>
             </h1>
 
-            <p
-              style={{
-                fontSize: 16,
-                color: "rgba(255,255,255,0.65)",
-                lineHeight: 1.75,
-                marginBottom: 32,
-                maxWidth: 520,
-              }}
-            >
+            <p className="text-base text-white/65 leading-relaxed mb-8 max-w-[520px]">
               Every news item is tagged to its{" "}
-              <span
-                style={{
-                  background: "rgba(255,153,0,0.15)",
-                  color: "#ffb84d",
-                  padding: "2px 8px",
-                  borderRadius: 4,
-                  fontFamily: "monospace",
-                  fontSize: 14,
-                }}
-              >
+              <span className="bg-[rgba(255,153,0,0.15)] text-[#ffb84d] px-2 py-0.5 rounded font-mono text-sm">
                 GS Paper
               </span>{" "}
               and{" "}
-              <span
-                style={{
-                  background: "rgba(255,153,0,0.15)",
-                  color: "#ffb84d",
-                  padding: "2px 8px",
-                  borderRadius: 4,
-                  fontFamily: "monospace",
-                  fontSize: 14,
-                }}
-              >
+              <span className="bg-[rgba(255,153,0,0.15)] text-[#ffb84d] px-2 py-0.5 rounded font-mono text-sm">
                 Exam Topic
               </span>
               . Daily briefs, weekly consolidations, monthly magazines — all exam-mapped. Study smarter, not more.
             </p>
 
-            {/* search bar */}
-            <div
-              style={{
-                display: "flex",
-                gap: 0,
-                background: "white",
-                borderRadius: 12,
-                overflow: "hidden",
-                maxWidth: 480,
-                boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
-              }}
-            >
-              <div
-                style={{
-                  padding: "0 16px",
-                  display: "flex",
-                  alignItems: "center",
-                  color: "#aaa",
-                }}
-              >
+            {/* Search bar */}
+            <div className="flex max-w-[480px] bg-white rounded-xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
+              <div className="px-4 flex items-center text-gray-400">
                 <FaSearch size={15} />
               </div>
               <input
@@ -430,184 +318,66 @@ export default function CurrentAffairsPage() {
                 placeholder="Search topics, schemes, bills, reports…"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                style={{
-                  flex: 1,
-                  padding: "13px 0",
-                  border: "none",
-                  outline: "none",
-                  fontSize: 14,
-                  color: "#333",
-                  fontFamily: "sans-serif",
-                }}
+                className="flex-1 py-3.5 border-none outline-none text-sm text-[#333] font-sans"
               />
-              <button
-                style={{
-                  background: "#d97706",
-                  color: "white",
-                  border: "none",
-                  padding: "0 20px",
-                  fontWeight: 700,
-                  fontSize: 13,
-                  cursor: "pointer",
-                  fontFamily: "monospace",
-                }}
-              >
+              <button className="bg-[#d97706] text-white border-none px-5 font-bold text-sm font-mono cursor-pointer">
                 Search
               </button>
             </div>
 
-            {/* quick stats */}
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 32,
-                marginTop: 36,
-              }}
-            >
+            {/* Quick stats */}
+            <div className="flex flex-wrap gap-8 mt-9">
               {[
-                ["248", "Articles This Month"],
-                ["7AM", "Daily Brief Time"],
+                ["248",   "Articles This Month"],
+                ["7AM",   "Daily Brief Time"],
                 ["50 pg", "Monthly Magazine"],
-                ["12", "GS-Mapped Topics"],
+                ["12",    "GS-Mapped Topics"],
               ].map(([v, l]) => (
                 <div key={l}>
-                  <div
-                    style={{
-                      fontSize: 20,
-                      fontWeight: 700,
-                      color: "#ff9900",
-                      fontFamily: "monospace",
-                    }}
-                  >
-                    {v}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 11,
-                      color: "rgba(255,255,255,0.45)",
-                      marginTop: 3,
-                      fontFamily: "sans-serif",
-                    }}
-                  >
-                    {l}
-                  </div>
+                  <div className="text-xl font-bold text-[#ff9900] font-mono">{v}</div>
+                  <div className="text-[11px] text-white/45 mt-1 font-sans">{l}</div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Today's Brief Card */}
-          <div
-            style={{
-              background: "white",
-              borderRadius: 20,
-              overflow: "hidden",
-              boxShadow: "0 24px 64px rgba(0,0,0,0.45)",
-            }}
-          >
-            <div
-              style={{
-                background: "#06112a",
-                padding: "16px 20px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <div
-                style={{
-                  fontFamily: "monospace",
-                  fontSize: 12,
-                  color: "#ffb84d",
-                  fontWeight: 700,
-                }}
-              >
+          {/* Today's Brief card */}
+          <div className="bg-white rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.45)]">
+            <div className="bg-[#06112a] px-5 py-4 flex items-center justify-between">
+              <span className="font-mono text-xs text-[#ffb84d] font-bold">
                 📰 Today's Brief — Mar 15, 2026
-              </div>
-              <span
-                style={{
-                  background: "rgba(255,153,0,0.2)",
-                  color: "#ff9900",
-                  fontSize: 10,
-                  fontWeight: 700,
-                  padding: "3px 8px",
-                  borderRadius: 20,
-                  fontFamily: "monospace",
-                }}
-              >
+              </span>
+              <span className="bg-[rgba(255,153,0,0.2)] text-[#ff9900] text-[10px] font-bold px-2 py-0.5 rounded-full font-mono">
                 6 Stories
               </span>
             </div>
-            <div style={{ padding: "16px 20px" }}>
+
+            <div className="p-5">
               {ARTICLES.slice(0, 5).map((a, i) => (
                 <div
                   key={a.id}
-                  style={{
-                    display: "flex",
-                    gap: 10,
-                    paddingBottom: 12,
-                    marginBottom: 12,
-                    borderBottom: i < 4 ? "1px solid #f5f0e8" : "none",
-                  }}
+                  className={`flex gap-2.5 pb-3 mb-3 ${i < 4 ? "border-b border-[#f5f0e8]" : ""}`}
                 >
                   <div
-                    style={{
-                      width: 6,
-                      height: 6,
-                      borderRadius: "50%",
-                      background: a.categoryColor,
-                      marginTop: 6,
-                      flexShrink: 0,
-                    }}
+                    className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0"
+                    style={{ background: a.categoryColor }}
                   />
-                  <div style={{ flex: 1 }}>
-                    <div
-                      style={{
-                        fontSize: 12,
-                        fontWeight: 600,
-                        color: "#111",
-                        lineHeight: 1.4,
-                        fontFamily: "sans-serif",
-                        marginBottom: 3,
-                      }}
-                    >
+                  <div className="flex-1">
+                    <div className="text-xs font-semibold text-[#111] leading-snug font-sans mb-1">
                       {a.title.length > 62 ? a.title.slice(0, 62) + "…" : a.title}
                     </div>
                     <span
-                      style={{
-                        fontSize: 10,
-                        fontWeight: 700,
-                        color: a.categoryColor,
-                        fontFamily: "monospace",
-                        background: a.categoryColor + "18",
-                        padding: "2px 6px",
-                        borderRadius: 4,
-                      }}
+                      className="text-[10px] font-bold font-mono px-1.5 py-0.5 rounded"
+                      style={{ color: a.categoryColor, background: a.categoryColor + "18" }}
                     >
                       {a.gsPaper}
                     </span>
                   </div>
-                  {a.isHot && (
-                    <FaFireAlt size={11} color="#d97706" style={{ marginTop: 2, flexShrink: 0 }} />
-                  )}
+                  {a.isHot && <FaFireAlt size={11} color="#d97706" className="mt-0.5 shrink-0" />}
                 </div>
               ))}
-              <button
-                style={{
-                  width: "100%",
-                  background: "#0f3460",
-                  color: "white",
-                  padding: "11px",
-                  borderRadius: 10,
-                  fontSize: 13,
-                  fontWeight: 700,
-                  border: "none",
-                  cursor: "pointer",
-                  fontFamily: "monospace",
-                  marginTop: 4,
-                }}
-              >
+
+              <button className="w-full bg-[#0f3460] text-white py-3 rounded-xl text-sm font-bold font-mono cursor-pointer mt-1">
                 Read Full Brief →
               </button>
             </div>
@@ -615,32 +385,13 @@ export default function CurrentAffairsPage() {
         </div>
       </section>
 
-      {/* ── TICKER ───────────────────────────────────────────────────────── */}
-      <div style={{ background: "#06112a", padding: "10px 24px", overflow: "hidden" }}>
-        <div
-          style={{
-            maxWidth: 1140,
-            margin: "0 auto",
-            display: "flex",
-            alignItems: "center",
-            gap: 16,
-          }}
-        >
-          <span
-            style={{
-              background: "#d97706",
-              color: "white",
-              fontSize: 11,
-              fontWeight: 700,
-              padding: "3px 10px",
-              borderRadius: 4,
-              whiteSpace: "nowrap",
-              fontFamily: "monospace",
-            }}
-          >
+      {/* ── TICKER ────────────────────────────────────────────────────── */}
+      <div className="bg-[#06112a] px-6 py-2.5 overflow-hidden">
+        <div className="max-w-[1140px] mx-auto flex items-center gap-4">
+          <span className="bg-[#d97706] text-white text-[11px] font-bold px-2.5 py-0.5 rounded font-mono whitespace-nowrap">
             TODAY
           </span>
-          <div style={{ display: "flex", gap: 36, overflow: "hidden" }}>
+          <div className="flex gap-9 overflow-hidden">
             {[
               "RBI MPC holds repo at 6.25% — neutral stance 💹",
               "ISRO RLV fourth autonomous landing test SUCCESS 🚀",
@@ -648,18 +399,8 @@ export default function CurrentAffairsPage() {
               "Census 2026 data release from April 1 — caste data after 95 years 📊",
               "India-EU TTC: semiconductor & clean energy deal signed 🤝",
             ].map((t, i) => (
-              <span
-                key={i}
-                style={{
-                  fontSize: 13,
-                  color: "rgba(255,255,255,0.75)",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                <FaBell
-                  size={11}
-                  style={{ marginRight: 5, verticalAlign: "middle", opacity: 0.6 }}
-                />
+              <span key={i} className="text-sm text-white/75 whitespace-nowrap">
+                <FaBell size={11} className="mr-1.5 align-middle opacity-60 inline" />
                 {t}
               </span>
             ))}
@@ -667,177 +408,80 @@ export default function CurrentAffairsPage() {
         </div>
       </div>
 
-      {/* ── MAIN CONTENT ─────────────────────────────────────────────────── */}
-      <div style={{ maxWidth: 1140, margin: "0 auto", padding: "0 24px" }}>
+      {/* ── MAIN CONTENT ──────────────────────────────────────────────── */}
+      <div className="max-w-[1140px] mx-auto px-6">
 
         {/* GS PAPER MAPPING STRIP */}
-        <section style={{ padding: "40px 0 0" }}>
-          <div
-            style={{
-              background: "white",
-              borderRadius: 20,
-              border: "1px solid #e4d9c8",
-              padding: "24px 32px",
-            }}
-          >
-            <p
-              style={{
-                fontSize: 11,
-                fontWeight: 700,
-                letterSpacing: "0.12em",
-                color: "#0f3460",
-                textTransform: "uppercase",
-                marginBottom: 20,
-                fontFamily: "sans-serif",
-              }}
-            >
+        <section className="pt-10">
+          <div className="bg-white rounded-2xl border border-[#e4d9c8] px-8 py-6">
+            <p className="text-[11px] font-bold tracking-[0.12em] text-[#0f3460] uppercase mb-5 font-sans">
               📌 GS Paper Mapping — Today's Coverage
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 16 }}>
+            <div className="grid grid-cols-5 gap-4">
               {GS_MAPPING.map((g, i) => (
-                <div key={i} style={{ textAlign: "center" }}>
-                  <div
-                    style={{
-                      height: 6,
-                      borderRadius: 3,
-                      background: "#f0ece4",
-                      marginBottom: 10,
-                      overflow: "hidden",
-                    }}
-                  >
+                <div key={i} className="text-center">
+                  <div className="h-1.5 rounded bg-[#f0ece4] mb-2.5 overflow-hidden">
                     <div
+                      className="h-full rounded"
                       style={{
-                        height: "100%",
                         width: `${Math.min((g.todayCount / 8) * 100, 100)}%`,
                         background: g.color,
-                        borderRadius: 3,
                       }}
                     />
                   </div>
-                  <div
-                    style={{
-                      fontSize: 18,
-                      fontWeight: 700,
-                      color: g.color,
-                      fontFamily: "monospace",
-                      marginBottom: 4,
-                    }}
-                  >
+                  <div className="text-lg font-bold font-mono mb-1" style={{ color: g.color }}>
                     {g.todayCount}
                   </div>
-                  <div
-                    style={{
-                      fontSize: 11,
-                      color: "#888",
-                      fontFamily: "sans-serif",
-                      lineHeight: 1.4,
-                    }}
-                  >
-                    {g.paper}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 10,
-                      color: "#bbb",
-                      fontFamily: "monospace",
-                      marginTop: 2,
-                    }}
-                  >
-                    {g.weekCount} this week
-                  </div>
+                  <div className="text-[11px] text-[#888] font-sans leading-snug">{g.paper}</div>
+                  <div className="text-[10px] text-[#bbb] font-mono mt-0.5">{g.weekCount} this week</div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ── CATEGORY FILTERS + ARTICLES ──────────────────────────────── */}
-        <section style={{ padding: "48px 0" }}>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "220px 1fr",
-              gap: 32,
-              alignItems: "start",
-            }}
-          >
-            {/* Sidebar Filters */}
+        {/* ── CATEGORY FILTERS + ARTICLES ───────────────────────────── */}
+        <section className="py-12">
+          <div className="grid grid-cols-[220px_1fr] gap-8 items-start">
+
+            {/* Sidebar */}
             <div>
-              <div
-                style={{
-                  background: "white",
-                  borderRadius: 18,
-                  border: "1px solid #e4d9c8",
-                  overflow: "hidden",
-                  marginBottom: 20,
-                }}
-              >
-                <div
-                  style={{
-                    padding: "16px 20px",
-                    borderBottom: "1px solid #f5f0e8",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 8,
-                  }}
-                >
+              {/* Filter box */}
+              <div className="bg-white rounded-[18px] border border-[#e4d9c8] overflow-hidden mb-5">
+                <div className="px-5 py-4 border-b border-[#f5f0e8] flex items-center gap-2">
                   <FaFilter size={12} color="#d97706" />
-                  <span
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 700,
-                      color: "#111",
-                      fontFamily: "sans-serif",
-                      letterSpacing: "0.06em",
-                      textTransform: "uppercase",
-                    }}
-                  >
+                  <span className="text-xs font-bold text-[#111] font-sans tracking-[0.06em] uppercase">
                     Filter by Topic
                   </span>
                 </div>
+
                 {CATEGORIES.map((cat, i) => (
                   <button
                     key={i}
                     onClick={() => setActiveCategory(cat.label)}
+                    className="w-full flex items-center justify-between px-5 py-3 border-none cursor-pointer transition-all duration-150"
                     style={{
-                      width: "100%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                      padding: "12px 20px",
-                      border: "none",
                       background: activeCategory === cat.label ? cat.color + "12" : "transparent",
-                      borderLeft:
-                        activeCategory === cat.label
-                          ? `3px solid ${cat.color}`
-                          : "3px solid transparent",
-                      cursor: "pointer",
-                      transition: "all 0.15s",
+                      borderLeft: activeCategory === cat.label
+                        ? `3px solid ${cat.color}`
+                        : "3px solid transparent",
                     }}
                   >
-                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                    <div className="flex items-center gap-2.5">
                       <cat.icon size={13} color={cat.color} />
                       <span
+                        className="text-sm font-sans"
                         style={{
-                          fontSize: 13,
                           fontWeight: activeCategory === cat.label ? 700 : 500,
                           color: activeCategory === cat.label ? cat.color : "#555",
-                          fontFamily: "sans-serif",
                         }}
                       >
                         {cat.label}
                       </span>
                     </div>
                     <span
-                      style={{
-                        fontSize: 10,
-                        fontWeight: 700,
-                        color: cat.color,
-                        background: cat.color + "18",
-                        padding: "2px 7px",
-                        borderRadius: 20,
-                        fontFamily: "monospace",
-                      }}
+                      className="text-[10px] font-bold px-1.5 py-0.5 rounded-full font-mono"
+                      style={{ color: cat.color, background: cat.color + "18" }}
                     >
                       {cat.count}
                     </span>
@@ -845,108 +489,53 @@ export default function CurrentAffairsPage() {
                 ))}
               </div>
 
-              {/* Daily Quiz Widget */}
-              <div
-                style={{
-                  background: "linear-gradient(135deg, #06112a, #0f2044)",
-                  borderRadius: 18,
-                  border: "1px solid rgba(255,153,0,0.2)",
-                  overflow: "hidden",
-                  padding: "20px",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 8,
-                    marginBottom: 16,
-                  }}
-                >
+              {/* Daily Quiz */}
+              <div className="rounded-[18px] border border-[rgba(255,153,0,0.2)] overflow-hidden p-5 bg-[linear-gradient(135deg,#06112a,#0f2044)]">
+                <div className="flex items-center gap-2 mb-4">
                   <FaStar size={13} color="#d97706" />
-                  <span
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 700,
-                      color: "#ffb84d",
-                      fontFamily: "monospace",
-                      letterSpacing: "0.06em",
-                    }}
-                  >
+                  <span className="text-xs font-bold text-[#ffb84d] font-mono tracking-[0.06em]">
                     DAILY QUIZ
                   </span>
                 </div>
-                <p
-                  style={{
-                    fontSize: 13,
-                    color: "rgba(255,255,255,0.85)",
-                    lineHeight: 1.6,
-                    marginBottom: 14,
-                    fontFamily: "sans-serif",
-                  }}
-                >
+
+                <p className="text-sm text-white/85 leading-relaxed mb-3.5 font-sans">
                   {currentQuiz.question}
                 </p>
-                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+
+                <div className="flex flex-col gap-2">
                   {currentQuiz.options.map((opt, i) => {
-                    let bg = "rgba(255,255,255,0.07)";
+                    let bg          = "rgba(255,255,255,0.07)";
                     let borderColor = "rgba(255,255,255,0.12)";
-                    let textColor = "rgba(255,255,255,0.75)";
+                    let textColor   = "rgba(255,255,255,0.75)";
                     if (selectedOption !== null) {
                       if (i === currentQuiz.correct) {
-                        bg = "rgba(20,83,45,0.5)";
-                        borderColor = "#16a34a";
-                        textColor = "#86efac";
+                        bg = "rgba(20,83,45,0.5)"; borderColor = "#16a34a"; textColor = "#86efac";
                       } else if (i === selectedOption) {
-                        bg = "rgba(123,26,26,0.5)";
-                        borderColor = "#ef4444";
-                        textColor = "#fca5a5";
+                        bg = "rgba(123,26,26,0.5)"; borderColor = "#ef4444"; textColor = "#fca5a5";
                       }
                     }
                     return (
                       <button
                         key={i}
                         onClick={() => handleOptionSelect(i)}
+                        className="px-3 py-2.5 rounded-lg text-xs text-left font-sans leading-snug transition-all duration-150"
                         style={{
-                          padding: "9px 12px",
-                          borderRadius: 8,
-                          border: `1px solid ${borderColor}`,
                           background: bg,
+                          border: `1px solid ${borderColor}`,
                           color: textColor,
-                          fontSize: 12,
-                          textAlign: "left",
                           cursor: selectedOption !== null ? "default" : "pointer",
-                          fontFamily: "sans-serif",
-                          lineHeight: 1.4,
-                          transition: "all 0.15s",
                         }}
                       >
-                        <span style={{ fontFamily: "monospace", marginRight: 6 }}>
-                          {String.fromCharCode(65 + i)}.
-                        </span>
+                        <span className="font-mono mr-1.5">{String.fromCharCode(65 + i)}.</span>
                         {opt}
                       </button>
                     );
                   })}
                 </div>
+
                 {showExplanation && (
-                  <div
-                    style={{
-                      marginTop: 12,
-                      padding: "10px 12px",
-                      background: "rgba(255,153,0,0.12)",
-                      borderRadius: 8,
-                      border: "1px solid rgba(255,153,0,0.25)",
-                    }}
-                  >
-                    <p
-                      style={{
-                        fontSize: 11,
-                        color: "rgba(255,255,255,0.7)",
-                        lineHeight: 1.6,
-                        fontFamily: "sans-serif",
-                      }}
-                    >
+                  <div className="mt-3 p-3 bg-[rgba(255,153,0,0.12)] rounded-lg border border-[rgba(255,153,0,0.25)]">
+                    <p className="text-[11px] text-white/70 leading-relaxed font-sans">
                       💡 {currentQuiz.explanation}
                     </p>
                     <button
@@ -955,16 +544,7 @@ export default function CurrentAffairsPage() {
                         setSelectedOption(null);
                         setShowExplanation(false);
                       }}
-                      style={{
-                        marginTop: 8,
-                        fontSize: 11,
-                        fontWeight: 700,
-                        color: "#ffb84d",
-                        background: "none",
-                        border: "none",
-                        cursor: "pointer",
-                        fontFamily: "monospace",
-                      }}
+                      className="mt-2 text-[11px] font-bold text-[#ffb84d] bg-transparent border-none cursor-pointer font-mono"
                     >
                       Next Question →
                     </button>
@@ -973,391 +553,144 @@ export default function CurrentAffairsPage() {
               </div>
             </div>
 
-            {/* Articles */}
+            {/* Articles list */}
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  marginBottom: 24,
-                }}
-              >
+              <div className="flex items-center justify-between mb-6">
                 <div>
-                  <h2
-                    style={{
-                      fontFamily: "'Crimson Pro', Georgia, serif",
-                      fontSize: "1.8rem",
-                      color: "#111",
-                      marginBottom: 4,
-                    }}
-                  >
+                  <h2 className="font-serif text-[1.8rem] text-[#111] mb-1">
                     {activeCategory === "All Topics" ? "Latest Articles" : activeCategory}
                   </h2>
-                  <p
-                    style={{ fontSize: 13, color: "#888", fontFamily: "sans-serif" }}
-                  >
+                  <p className="text-sm text-[#888] font-sans">
                     {filteredArticles.length} articles • Updated Mar 15, 2026
                   </p>
                 </div>
-                <button
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 6,
-                    padding: "8px 16px",
-                    borderRadius: 8,
-                    border: "1.5px solid #e4d9c8",
-                    background: "white",
-                    fontSize: 12,
-                    fontWeight: 600,
-                    color: "#555",
-                    cursor: "pointer",
-                    fontFamily: "sans-serif",
-                  }}
-                >
+                <button className="flex items-center gap-1.5 px-4 py-2 rounded-lg border-[1.5px] border-[#e4d9c8] bg-white text-xs font-semibold text-[#555] cursor-pointer font-sans">
                   <FaFilter size={11} /> Filter
                 </button>
               </div>
 
-              <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              <div className="flex flex-col gap-4">
                 {filteredArticles.map((a) => (
                   <div
                     key={a.id}
-                    style={{
-                      background: "white",
-                      borderRadius: 18,
-                      padding: "24px 28px",
-                      border: "1px solid #e4d9c8",
-                      transition: "transform 0.2s, box-shadow 0.2s",
-                      cursor: "pointer",
-                      position: "relative",
-                      overflow: "hidden",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = "translateY(-2px)";
-                      e.currentTarget.style.boxShadow = "0 8px 32px rgba(0,0,0,0.08)";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = "translateY(0)";
-                      e.currentTarget.style.boxShadow = "none";
-                    }}
+                    className="bg-white rounded-[18px] px-7 py-6 border border-[#e4d9c8] relative overflow-hidden cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)]"
                   >
-                    {/* left accent bar */}
+                    {/* Left accent bar */}
                     <div
-                      style={{
-                        position: "absolute",
-                        left: 0,
-                        top: 0,
-                        bottom: 0,
-                        width: 4,
-                        background: a.categoryColor,
-                        borderRadius: "0 0 0 0",
-                      }}
+                      className="absolute left-0 top-0 bottom-0 w-1"
+                      style={{ background: a.categoryColor }}
                     />
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "flex-start",
-                        justifyContent: "space-between",
-                        marginBottom: 10,
-                      }}
-                    >
-                      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+
+                    {/* Top meta row */}
+                    <div className="flex items-start justify-between mb-2.5">
+                      <div className="flex items-center gap-2.5">
                         <span
-                          style={{
-                            fontSize: 11,
-                            fontWeight: 700,
-                            color: a.categoryColor,
-                            background: a.categoryColor + "14",
-                            padding: "3px 10px",
-                            borderRadius: 20,
-                            fontFamily: "monospace",
-                          }}
+                          className="text-[11px] font-bold px-2.5 py-0.5 rounded-full font-mono"
+                          style={{ color: a.categoryColor, background: a.categoryColor + "14" }}
                         >
                           {a.category}
                         </span>
-                        <span
-                          style={{
-                            fontSize: 10,
-                            color: "#aaa",
-                            fontFamily: "sans-serif",
-                          }}
-                        >
-                          {a.date}
-                        </span>
+                        <span className="text-[10px] text-[#aaa] font-sans">{a.date}</span>
                         {a.isHot && (
-                          <span
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              gap: 4,
-                              fontSize: 10,
-                              fontWeight: 700,
-                              color: "#d97706",
-                              background: "#fef3c7",
-                              padding: "2px 8px",
-                              borderRadius: 20,
-                              fontFamily: "monospace",
-                            }}
-                          >
+                          <span className="flex items-center gap-1 text-[10px] font-bold text-[#d97706] bg-[#fef3c7] px-2 py-0.5 rounded-full font-mono">
                             <FaFireAlt size={9} /> HOT
                           </span>
                         )}
                       </div>
                       <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          toggleBookmark(a.id);
-                        }}
-                        style={{
-                          background: "none",
-                          border: "none",
-                          cursor: "pointer",
-                          color: bookmarked.has(a.id) ? "#d97706" : "#ccc",
-                          padding: 4,
-                        }}
+                        onClick={(e) => { e.stopPropagation(); toggleBookmark(a.id); }}
+                        className="bg-transparent border-none cursor-pointer p-1"
+                        style={{ color: bookmarked.has(a.id) ? "#d97706" : "#ccc" }}
                       >
                         <FaBookmark size={14} />
                       </button>
                     </div>
 
-                    <h3
-                      style={{
-                        fontFamily: "'Crimson Pro', Georgia, serif",
-                        fontSize: "1.15rem",
-                        fontWeight: 700,
-                        color: "#111",
-                        marginBottom: 10,
-                        lineHeight: 1.35,
-                      }}
-                    >
+                    <h3 className="font-serif text-[1.15rem] font-bold text-[#111] mb-2.5 leading-snug">
                       {a.title}
                     </h3>
 
-                    <p
-                      style={{
-                        fontSize: 13.5,
-                        color: "#555",
-                        lineHeight: 1.75,
-                        marginBottom: 16,
-                        fontFamily: "sans-serif",
-                      }}
-                    >
+                    <p className="text-[13.5px] text-[#555] leading-relaxed mb-4 font-sans">
                       {a.summary}
                     </p>
 
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                    <div className="flex items-center justify-between">
+                      <div className="flex gap-2 flex-wrap">
                         <span
-                          style={{
-                            fontSize: 11,
-                            fontWeight: 700,
-                            color: a.categoryColor,
-                            background: a.categoryColor + "18",
-                            padding: "3px 10px",
-                            borderRadius: 6,
-                            fontFamily: "monospace",
-                          }}
+                          className="text-[11px] font-bold px-2.5 py-0.5 rounded font-mono"
+                          style={{ color: a.categoryColor, background: a.categoryColor + "18" }}
                         >
                           📌 {a.gsPaper}
                         </span>
                         {a.tags.slice(0, 3).map((tag) => (
                           <span
                             key={tag}
-                            style={{
-                              fontSize: 11,
-                              color: "#888",
-                              background: "#f0ece4",
-                              padding: "3px 10px",
-                              borderRadius: 6,
-                              fontFamily: "sans-serif",
-                            }}
+                            className="text-[11px] text-[#888] bg-[#f0ece4] px-2.5 py-0.5 rounded font-sans"
                           >
                             #{tag}
                           </span>
                         ))}
                       </div>
                       <button
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: 5,
-                          fontSize: 12,
-                          fontWeight: 700,
-                          color: a.categoryColor,
-                          background: "none",
-                          border: "none",
-                          cursor: "pointer",
-                          fontFamily: "monospace",
-                        }}
+                        className="flex items-center gap-1.5 text-xs font-bold bg-transparent border-none cursor-pointer font-mono"
+                        style={{ color: a.categoryColor }}
                       >
                         Read More <FaArrowRight size={10} />
                       </button>
                     </div>
                   </div>
                 ))}
-              </div>
 
-              {filteredArticles.length === 0 && (
-                <div
-                  style={{
-                    textAlign: "center",
-                    padding: "60px 20px",
-                    background: "white",
-                    borderRadius: 18,
-                    border: "1px solid #e4d9c8",
-                  }}
-                >
-                  <div style={{ fontSize: 36, marginBottom: 12 }}>🔍</div>
-                  <p
-                    style={{
-                      fontSize: 15,
-                      color: "#888",
-                      fontFamily: "sans-serif",
-                    }}
-                  >
-                    No articles found. Try a different search or category.
-                  </p>
-                </div>
-              )}
+                {filteredArticles.length === 0 && (
+                  <div className="text-center py-16 px-5 bg-white rounded-[18px] border border-[#e4d9c8]">
+                    <div className="text-4xl mb-3">🔍</div>
+                    <p className="text-[15px] text-[#888] font-sans">
+                      No articles found. Try a different search or category.
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </section>
 
-        {/* ── WEEKLY DIGEST ────────────────────────────────────────────── */}
-        <section style={{ paddingBottom: 48 }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p
-              style={{
-                fontSize: 12,
-                fontWeight: 700,
-                letterSpacing: "0.12em",
-                color: "#d97706",
-                textTransform: "uppercase",
-                marginBottom: 10,
-                fontFamily: "sans-serif",
-              }}
-            >
+        {/* ── WEEKLY DIGEST ─────────────────────────────────────────── */}
+        <section className="pb-12">
+          <div className="text-center mb-10">
+            <p className="text-xs font-bold tracking-[0.12em] text-[#d97706] uppercase mb-2.5 font-sans">
               Weekly Consolidation
             </p>
-            <h2
-              style={{
-                fontFamily: "'Crimson Pro', Georgia, serif",
-                fontSize: "clamp(1.8rem,3vw,2.4rem)",
-                color: "#111",
-              }}
-            >
+            <h2 className="font-serif text-[clamp(1.8rem,3vw,2.4rem)] text-[#111]">
               Weekly Digest Archives
             </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+
+          <div className="grid grid-cols-2 gap-6">
             {WEEKLY_DIGESTS.map((w, i) => (
-              <div
-                key={i}
-                style={{
-                  background: "white",
-                  borderRadius: 18,
-                  padding: "28px",
-                  border: "1px solid #e4d9c8",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    marginBottom: 18,
-                  }}
-                >
-                  <div>
-                    <div
-                      style={{
-                        fontSize: 14,
-                        fontWeight: 700,
-                        color: "#111",
-                        fontFamily: "monospace",
-                      }}
-                    >
-                      📅 {w.weekRange}
-                    </div>
+              <div key={i} className="bg-white rounded-[18px] p-7 border border-[#e4d9c8]">
+                <div className="flex items-center justify-between mb-[18px]">
+                  <div className="text-sm font-bold text-[#111] font-mono">
+                    📅 {w.weekRange}
                   </div>
-                  <span
-                    style={{
-                      background: "#fef3c7",
-                      color: "#92400e",
-                      fontSize: 10,
-                      fontWeight: 700,
-                      padding: "4px 10px",
-                      borderRadius: 20,
-                      fontFamily: "monospace",
-                    }}
-                  >
+                  <span className="bg-[#fef3c7] text-[#92400e] text-[10px] font-bold px-2.5 py-1 rounded-full font-mono">
                     Exam Relevance: {w.examRelevance}
                   </span>
                 </div>
-                <ul style={{ listStyle: "none", padding: 0, margin: "0 0 20px" }}>
+
+                <ul className="list-none p-0 m-0 mb-5">
                   {w.highlights.map((h, j) => (
-                    <li
-                      key={j}
-                      style={{
-                        display: "flex",
-                        gap: 10,
-                        fontSize: 13,
-                        color: "#444",
-                        lineHeight: 1.5,
-                        marginBottom: 10,
-                        fontFamily: "sans-serif",
-                      }}
-                    >
-                      <FaCheckCircle
-                        size={13}
-                        color="#d97706"
-                        style={{ marginTop: 2, flexShrink: 0 }}
-                      />
+                    <li key={j} className="flex gap-2.5 text-sm text-[#444] leading-snug mb-2.5 font-sans">
+                      <FaCheckCircle size={13} color="#d97706" className="mt-0.5 shrink-0" />
                       {h}
                     </li>
                   ))}
                 </ul>
-                <div style={{ display: "flex", gap: 10 }}>
-                  <button
-                    style={{
-                      flex: 1,
-                      background: "#0f3460",
-                      color: "white",
-                      padding: "10px",
-                      borderRadius: 10,
-                      fontSize: 12,
-                      fontWeight: 700,
-                      border: "none",
-                      cursor: "pointer",
-                      fontFamily: "monospace",
-                    }}
-                  >
+
+                <div className="flex gap-2.5">
+                  <button className="flex-1 bg-[#0f3460] text-white py-2.5 rounded-xl text-xs font-bold font-mono cursor-pointer border-none">
                     Read Full Digest
                   </button>
-                  <button
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 6,
-                      padding: "10px 16px",
-                      borderRadius: 10,
-                      border: "1.5px solid #e4d9c8",
-                      background: "white",
-                      fontSize: 12,
-                      fontWeight: 600,
-                      color: "#555",
-                      cursor: "pointer",
-                      fontFamily: "sans-serif",
-                    }}
-                  >
+                  <button className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl border-[1.5px] border-[#e4d9c8] bg-white text-xs font-semibold text-[#555] cursor-pointer font-sans">
                     <FaDownload size={11} /> PDF
                   </button>
                 </div>
@@ -1366,156 +699,62 @@ export default function CurrentAffairsPage() {
           </div>
         </section>
 
-        {/* ── MONTHLY MAGAZINES ────────────────────────────────────────── */}
-        <section style={{ paddingBottom: 48 }}>
-          <div
-            style={{
-              background: "linear-gradient(135deg, #06112a, #0f2044)",
-              borderRadius: 24,
-              padding: "48px 40px",
-              border: "1px solid rgba(255,153,0,0.15)",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                top: -40,
-                right: -40,
-                width: 250,
-                height: 250,
-                borderRadius: "50%",
-                background: "rgba(217,119,6,0.12)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                bottom: 24,
-                right: 40,
-                color: "rgba(255,153,0,0.05)",
-                fontFamily: "monospace",
-                fontSize: 11,
-                lineHeight: 2,
-                pointerEvents: "none",
-              }}
-            >
+        {/* ── MONTHLY MAGAZINES ─────────────────────────────────────── */}
+        <section className="pb-12">
+          <div className="bg-[linear-gradient(135deg,#06112a,#0f2044)] rounded-3xl p-12 border border-[rgba(255,153,0,0.15)] relative overflow-hidden">
+            {/* Decorative circle */}
+            <div className="absolute -top-10 -right-10 w-[250px] h-[250px] rounded-full bg-[rgba(217,119,6,0.12)]" />
+
+            {/* Watermark */}
+            <div className="absolute bottom-6 right-10 pointer-events-none text-[rgba(255,153,0,0.05)] font-mono text-[11px] leading-loose">
               <div>Part XVIII — Emergency Provisions (Art. 352–360)</div>
               <div>Part XIX — Miscellaneous (Art. 361–367)</div>
             </div>
 
-            <div style={{ position: "relative" }}>
-              <div style={{ marginBottom: 36 }}>
-                <p
-                  style={{
-                    fontSize: 12,
-                    fontWeight: 700,
-                    letterSpacing: "0.12em",
-                    color: "#ff9900",
-                    textTransform: "uppercase",
-                    marginBottom: 10,
-                    fontFamily: "sans-serif",
-                  }}
-                >
+            <div className="relative">
+              <div className="mb-9">
+                <p className="text-xs font-bold tracking-[0.12em] text-[#ff9900] uppercase mb-2.5 font-sans">
                   Monthly Magazine — Free Download
                 </p>
-                <h2
-                  style={{
-                    fontFamily: "'Crimson Pro', Georgia, serif",
-                    fontSize: "clamp(1.6rem,2.5vw,2rem)",
-                    color: "white",
-                    marginBottom: 8,
-                  }}
-                >
+                <h2 className="font-serif text-[clamp(1.6rem,2.5vw,2rem)] text-white mb-2">
                   Current Affairs Monthly Magazine
                 </h2>
-                <p
-                  style={{
-                    color: "rgba(255,255,255,0.6)",
-                    fontSize: 15,
-                    fontFamily: "sans-serif",
-                  }}
-                >
+                <p className="text-[#ffffff99] text-[15px] font-sans">
                   50+ pages of exam-mapped current affairs. No login required.
                 </p>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
+              <div className="grid grid-cols-3 gap-5">
                 {MONTHLY_MAGS.map((mag, i) => (
                   <div
                     key={i}
-                    style={{
-                      background: "rgba(255,255,255,0.06)",
-                      borderRadius: 16,
-                      padding: "24px 20px",
-                      border: "1px solid rgba(255,255,255,0.1)",
-                      transition: "transform 0.2s",
-                      cursor: "pointer",
-                    }}
-                    onMouseEnter={(e) =>
-                      (e.currentTarget.style.transform = "translateY(-4px)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.currentTarget.style.transform = "translateY(0)")
-                    }
+                    className="bg-white/[0.06] rounded-2xl p-6 border border-white/10 transition-transform duration-200 cursor-pointer hover:-translate-y-1"
                   >
-                    {/* magazine cover mock */}
+                    {/* Cover mock */}
                     <div
-                      style={{
-                        background: mag.color,
-                        borderRadius: 10,
-                        padding: "16px",
-                        marginBottom: 16,
-                        textAlign: "center",
-                        position: "relative",
-                        overflow: "hidden",
-                      }}
+                      className="rounded-xl p-4 mb-4 text-center relative overflow-hidden"
+                      style={{ background: mag.color }}
                     >
                       <div
+                        className="absolute inset-0"
                         style={{
-                          position: "absolute",
-                          inset: 0,
                           backgroundImage:
-                            "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
+                            "linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)",
                           backgroundSize: "20px 20px",
                         }}
                       />
-                      <FaNewspaper size={28} color="rgba(255,255,255,0.6)" style={{ marginBottom: 8 }} />
-                      <div
-                        style={{
-                          fontSize: 14,
-                          fontWeight: 700,
-                          color: "white",
-                          fontFamily: "'Crimson Pro', serif",
-                        }}
-                      >
+                      <FaNewspaper size={28} color="rgba(255,255,255,0.6)" className="mb-2 mx-auto" />
+                      <div className="text-sm font-bold text-white font-serif">
                         {mag.month} {mag.year}
                       </div>
-                      <div
-                        style={{
-                          fontSize: 11,
-                          color: "rgba(255,255,255,0.6)",
-                          fontFamily: "monospace",
-                        }}
-                      >
-                        {mag.pages}
-                      </div>
+                      <div className="text-[11px] text-white/60 font-mono">{mag.pages}</div>
                     </div>
 
-                    <div style={{ marginBottom: 14 }}>
+                    <div className="mb-3.5">
                       {mag.topics.map((t, j) => (
                         <div
                           key={j}
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 6,
-                            fontSize: 12,
-                            color: "rgba(255,255,255,0.65)",
-                            marginBottom: 6,
-                            fontFamily: "sans-serif",
-                          }}
+                          className="flex items-center gap-1.5 text-xs text-white/65 mb-1.5 font-sans"
                         >
                           <FaCheckCircle size={10} color="#d97706" />
                           {t}
@@ -1523,38 +762,11 @@ export default function CurrentAffairsPage() {
                       ))}
                     </div>
 
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        paddingTop: 12,
-                        borderTop: "1px solid rgba(255,255,255,0.1)",
-                      }}
-                    >
-                      <span
-                        style={{
-                          fontSize: 10,
-                          color: "rgba(255,255,255,0.4)",
-                          fontFamily: "monospace",
-                        }}
-                      >
+                    <div className="flex items-center justify-between pt-3 border-t border-white/10">
+                      <span className="text-[10px] text-white/40 font-mono">
                         {mag.downloadCount} downloads
                       </span>
-                      <button
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: 5,
-                          fontSize: 12,
-                          fontWeight: 700,
-                          color: "#ffb84d",
-                          background: "none",
-                          border: "none",
-                          cursor: "pointer",
-                          fontFamily: "monospace",
-                        }}
-                      >
+                      <button className="flex items-center gap-1.5 text-xs font-bold text-[#ffb84d] bg-transparent border-none cursor-pointer font-mono">
                         <FaDownload size={10} /> Free PDF
                       </button>
                     </div>
@@ -1565,103 +777,33 @@ export default function CurrentAffairsPage() {
           </div>
         </section>
 
-        {/* ── SUBSCRIPTION CTA ─────────────────────────────────────────── */}
-        <section style={{ paddingBottom: 80 }}>
-          <div
-            style={{
-              background: "white",
-              borderRadius: 24,
-              border: "1px solid #e4d9c8",
-              padding: "48px 40px",
-              textAlign: "center",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                backgroundImage:
-                  "radial-gradient(circle at 20% 50%, rgba(15,52,96,0.04) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(217,119,6,0.04) 0%, transparent 50%)",
-                pointerEvents: "none",
-              }}
-            />
-            <div style={{ position: "relative" }}>
-              <div style={{ fontSize: 32, marginBottom: 12 }}>📬</div>
-              <h2
-                style={{
-                  fontFamily: "'Crimson Pro', Georgia, serif",
-                  fontSize: "clamp(1.6rem,2.5vw,2.2rem)",
-                  color: "#111",
-                  marginBottom: 10,
-                }}
-              >
+        {/* ── SUBSCRIPTION CTA ──────────────────────────────────────── */}
+        <section className="pb-20">
+          <div className="bg-white rounded-3xl border border-[#e4d9c8] px-10 py-12 text-center relative overflow-hidden">
+            <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_20%_50%,rgba(15,52,96,0.04)_0%,transparent_50%),radial-gradient(circle_at_80%_50%,rgba(217,119,6,0.04)_0%,transparent_50%)]" />
+
+            <div className="relative">
+              <div className="text-4xl mb-3">📬</div>
+              <h2 className="font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] text-[#111] mb-2.5">
                 Never Miss a News Story That Matters
               </h2>
-              <p
-                style={{
-                  fontSize: 15,
-                  color: "#777",
-                  marginBottom: 28,
-                  maxWidth: 480,
-                  margin: "0 auto 28px",
-                  lineHeight: 1.65,
-                  fontFamily: "sans-serif",
-                }}
-              >
+              <p className="text-[15px] text-[#777] max-w-[480px] mx-auto mb-7 leading-relaxed font-sans">
                 Get the daily 2-page Current Affairs brief in your inbox every morning by 7AM IST.
                 Free forever — no credit card.
               </p>
-              <div
-                style={{
-                  display: "flex",
-                  gap: 0,
-                  maxWidth: 440,
-                  margin: "0 auto 16px",
-                  background: "#f5f3ee",
-                  borderRadius: 12,
-                  border: "1.5px solid #e4d9c8",
-                  overflow: "hidden",
-                }}
-              >
+
+              <div className="flex max-w-[440px] mx-auto mb-4 bg-[#f5f3ee] rounded-xl border-[1.5px] border-[#e4d9c8] overflow-hidden">
                 <input
                   type="email"
                   placeholder="your@email.com"
-                  style={{
-                    flex: 1,
-                    padding: "13px 18px",
-                    border: "none",
-                    outline: "none",
-                    fontSize: 14,
-                    background: "transparent",
-                    color: "#333",
-                    fontFamily: "sans-serif",
-                  }}
+                  className="flex-1 px-4 py-3.5 border-none outline-none text-sm bg-transparent text-[#333] font-sans"
                 />
-                <button
-                  style={{
-                    background: "#d97706",
-                    color: "white",
-                    border: "none",
-                    padding: "0 24px",
-                    fontWeight: 700,
-                    fontSize: 13,
-                    cursor: "pointer",
-                    fontFamily: "monospace",
-                    whiteSpace: "nowrap",
-                  }}
-                >
+                <button className="bg-[#d97706] text-white border-none px-6 font-bold text-sm cursor-pointer font-mono whitespace-nowrap">
                   Subscribe Free →
                 </button>
               </div>
-              <p
-                style={{
-                  fontSize: 11,
-                  color: "#bbb",
-                  fontFamily: "sans-serif",
-                }}
-              >
+
+              <p className="text-[11px] text-[#bbb] font-sans">
                 Join 2,80,000+ aspirants • Unsubscribe anytime • No spam
               </p>
             </div>
@@ -1669,102 +811,38 @@ export default function CurrentAffairsPage() {
         </section>
       </div>
 
-      {/* ── FOOTER CTA ───────────────────────────────────────────────────── */}
-      <div
-        style={{
-          background: "linear-gradient(135deg, #06112a, #0f2044)",
-          padding: "80px 24px",
-          textAlign: "center",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
+      {/* ── FOOTER CTA ────────────────────────────────────────────────── */}
+      <div className="bg-[linear-gradient(135deg,#06112a,#0f2044)] px-6 py-20 text-center relative overflow-hidden">
         <div
+          className="absolute inset-0 pointer-events-none"
           style={{
-            position: "absolute",
-            inset: 0,
-            pointerEvents: "none",
             backgroundImage:
-              "linear-gradient(rgba(255,153,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,153,0,0.03) 1px, transparent 1px)",
+              "linear-gradient(rgba(255,153,0,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,153,0,0.03) 1px,transparent 1px)",
             backgroundSize: "40px 40px",
           }}
         />
-        <div
-          style={{
-            position: "absolute",
-            bottom: 32,
-            left: 48,
-            color: "rgba(255,153,0,0.05)",
-            fontFamily: "monospace",
-            fontSize: 12,
-            lineHeight: 2,
-            pointerEvents: "none",
-            textAlign: "left",
-          }}
-        >
+        <div className="absolute bottom-8 left-12 pointer-events-none text-[rgba(255,153,0,0.05)] font-mono text-xs leading-loose text-left">
           <div>while not_selected:</div>
           <div>&nbsp;&nbsp;read_current_affairs()</div>
           <div>&nbsp;&nbsp;revise()</div>
           <div>&nbsp;&nbsp;attempt()</div>
         </div>
-        <div style={{ position: "relative", padding: "16px 0" }}>
-          <div style={{ fontSize: 32, marginBottom: 12 }}>🏛️</div>
-          <h2
-            style={{
-              fontFamily: "'Crimson Pro', Georgia, serif",
-              fontSize: "clamp(1.8rem,3vw,2.5rem)",
-              color: "white",
-              marginBottom: 12,
-            }}
-          >
+
+        <div className="relative py-4">
+          <div className="text-4xl mb-3">🏛️</div>
+          <h2 className="font-serif text-[clamp(1.8rem,3vw,2.5rem)] text-white mb-3">
             Stay Informed. Stay Ahead.{" "}
-            <em style={{ color: "#ff9900" }}>Crack the Exam.</em>
+            <em className="text-[#ff9900]">Crack the Exam.</em>
           </h2>
-          <p
-            style={{
-              fontSize: 15,
-              color: "rgba(255,255,255,0.55)",
-              marginBottom: 32,
-              fontFamily: "sans-serif",
-            }}
-          >
+          <p className="text-[15px] text-white/55 mb-8 font-sans">
             Pair Current Affairs with our full prep courses and give yourself the best shot.
           </p>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              gap: 16,
-            }}
-          >
-            <button
-              style={{
-                background: "#d97706",
-                color: "white",
-                padding: "12px 32px",
-                borderRadius: 10,
-                fontSize: 15,
-                fontWeight: 700,
-                border: "none",
-                cursor: "pointer",
-                fontFamily: "'Crimson Pro', serif",
-              }}
-            >
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <button className="bg-[#d97706] text-white px-8 py-3 rounded-xl text-[15px] font-bold border-none cursor-pointer font-serif">
               Explore Full Courses
             </button>
-            <button
-              style={{
-                background: "rgba(255,255,255,0.07)",
-                color: "white",
-                padding: "12px 32px",
-                borderRadius: 10,
-                fontSize: 15,
-                fontWeight: 600,
-                border: "1px solid rgba(255,255,255,0.2)",
-                cursor: "pointer",
-              }}
-            >
+            <button className="bg-white/[0.07] text-white px-8 py-3 rounded-xl text-[15px] font-semibold border border-white/20 cursor-pointer">
               Download March Magazine PDF
             </button>
           </div>
