@@ -19,11 +19,13 @@ import {
 import { GoLaw } from "react-icons/go";
 import { AiOutlineRobot } from "react-icons/ai";
 import { MdPsychology } from "react-icons/md";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
+import { FaLandmark,FaChalkboardTeacher } from "react-icons/fa";
 
 // Map string names to actual icons
 const iconMap = {
   GraduationCap: FaGraduationCap,
+  SSC:FaLandmark,
   BookOpen: FaBookOpen,
   Laptop: GoLaw,
   Code: FaCode,
@@ -38,7 +40,8 @@ const iconMap = {
   faschool:FaSchool,
   faUserGraduated: FaUserGraduate,
   faDataBase:FaDatabase,
-  AIML:MdPsychology
+  AIML:MdPsychology,
+  Teacher:FaChalkboardTeacher
 } as const;
 
 type Category = {
@@ -50,10 +53,12 @@ type Category = {
 
 const categories: Category[] = [
   { icon: "BookOpen", title: "UPSC", color: "#2D6A4F", light: "#eaf4ef" },
+  { icon: "SSC", title: "SSC", color: "#2D6A4F", light: "#eaf5ea" },
   { icon: "GraduationCap", title: "CUET", color: "#1B4FCC", light: "#eaeffd" },
   { icon: "GraduationCap", title: "MBA", color: "#FF6B35", light: "#fff3ee" },
+  { icon: "Teacher", title: "Teacher", color: "#2563EB", light: "#EAF1FF" },
   { icon: "Code", title: "Python", color: "#7B2FBE", light: "#f3eafa" },
-  { icon: "MachineLearning", title: "Machine Learning", color: "#7B2FBE", light: "#f3eafa" },
+  { icon: "MachineLearning", title: "AI/ML", color: "#7B2FBE", light: "#f3eafa" },
   { icon: "Briefcase", title: "Govt Jobs", color: "#B5451B", light: "#fdf0ec" },
   { icon: "Calculator", title: "CA", color: "#0A7E8C", light: "#e6f6f7" },
   { icon: "faDataBase", title: "Data Science", color: "#1A6B8A", light: "#e8f4f8" },
@@ -68,9 +73,12 @@ export default function ListAllCourse(): JSX.Element {
   const [active, setActive] = useState<number | null>(null);
   const naviage=useRouter();
 
+
   const getDynamicRoute=(title:string)=>{
-    naviage.push(`/${encodeURIComponent(title.toLowerCase().replace(" ",""))}`)
+    naviage.push(`/${encodeURIComponent(title.toLowerCase().replace(/[ /]/g,""))}`)
   }
+
+
 
   return (
     <div className=" bg-[#F7F5F0]  flex flex-col items-center py-12 px-6">
@@ -93,6 +101,7 @@ export default function ListAllCourse(): JSX.Element {
         {categories.map((cat, i) => {
           const Icon = iconMap[cat.icon];
           const isHovered = hovered === i;
+          console.log(cat.title);
 
           return (
             <div
@@ -113,7 +122,7 @@ export default function ListAllCourse(): JSX.Element {
               >
                 <Icon size={24} color={cat.color} />
               </div>
-              <span className="text-center font-sans font-medium text-lg text-gray-900">
+              <span className="text-center font-sans font-bold  text-xl text-gray-900">
                 {cat.title}
               </span>
 
@@ -123,10 +132,7 @@ export default function ListAllCourse(): JSX.Element {
         })}
       </div>
 
-      {/* Footer hint
-      <p className="mt-10 text-xs text-gray-400 tracking-wide">
-        10 categories · updated weekly
-      </p> */}
+     
     </div>
   );
 }
