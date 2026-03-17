@@ -160,12 +160,12 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden">
-                <Image
+                {/* <Image
                   src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
                   alt="Coaching classroom"
                   fill
                   className="object-cover"
-                />
+                /> */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-500/20 to-transparent" />
               </div>
               {/* Floating card */}
