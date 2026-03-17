@@ -427,13 +427,13 @@ export default function DataSciencePage() {
           </div>
 
           {/* Mentor Grid */}
-          <div className="grid grid-cols-4 gap-5">
+          {/* <div className="grid grid-cols-4 gap-5">
             {MENTORS.map((m, i) => (
               <div
                 key={i}
                 className="bg-white rounded-[18px] px-5 py-7 text-center border border-[#e4e5ea]"
               >
-                {/* Initials Circle */}
+               
                 <div
                   className="w-[72px] h-[72px] rounded-full mx-auto mb-4 flex items-center justify-center text-white text-[22px] font-bold font-['Space_Mono',monospace]"
                   style={{ background: m.color }}
@@ -441,14 +441,14 @@ export default function DataSciencePage() {
                   {m.initials}
                 </div>
 
-                {/* Name & Role */}
+               
                 <h4 className="font-bold text-[15px] text-[#111] mb-1">{m.name}</h4>
                 <p className="text-[12px] font-semibold mb-1" style={{ color: m.color }}>
                   {m.role}
                 </p>
                 <p className="text-[12px] text-[#888] leading-[1.5]">{m.specialty}</p>
 
-                {/* Rating */}
+                
                 <div className="mt-3 flex justify-center gap-[2px]">
                   {[...Array(5)].map((_, s) => (
                     <FaStar key={s} size={12} fill="#f5a623" color="#f5a623" />
@@ -456,7 +456,7 @@ export default function DataSciencePage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* TOPPERS / RESULTS */}
@@ -472,44 +472,43 @@ export default function DataSciencePage() {
           </div>
 
           {/* Alumni Grid */}
-          <div className="grid grid-cols-3 gap-6">
+          {/* <div className="grid grid-cols-3 gap-6">
             {TOPPERS.map((t, i) => (
               <div
                 key={i}
                 className="bg-white rounded-[18px] p-7 border border-[#e4e5ea]"
               >
-                {/* Quote Symbol */}
+               
                 <div className="text-[38px] text-[#0f7275] leading-[1] mb-3 font-['Space_Mono',monospace]">
                   &quot;
                 </div>
 
-                {/* Quote Text */}
+                
                 <p className="text-[14px] text-[#555] leading-[1.75] mb-5">
                   {t.quote}
                 </p>
 
-                {/* Alumni Info */}
+              
                 <div className="flex items-center gap-3 pt-4 border-t border-[#f0f1f5]">
 
-                  {/* Initial Circle */}
                   <div className="w-[44px] h-[44px] rounded-full bg-[#0f7275] text-white flex items-center justify-center font-bold text-[16px]">
                     {t.name[0]}
                   </div>
 
-                  {/* Name & Role */}
+             
                   <div>
                     <div className="font-bold text-[14px] text-[#111]">{t.name}</div>
                     <div className="text-[12px] text-[#888]">{t.role}</div>
                   </div>
 
-                  {/* Batch Badge */}
+            
                   <span className="ml-auto bg-[#e8f5f5] text-[#0f7275] text-[10px] font-bold px-2 py-[3px] rounded-[20px]">
                     {t.batch}
                   </span>
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* FAQs */}

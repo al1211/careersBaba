@@ -748,7 +748,7 @@ export default function Class12Page() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-3 gap-6">
+          {/* <div className="grid grid-cols-3 gap-6">
             {TOPPERS.map((t, i) => (
               <div key={i} className="bg-white rounded-[18px] p-7 border border-[#e4d9c8]">
                 <div className="flex items-center justify-between mb-4">
@@ -772,7 +772,7 @@ export default function Class12Page() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* ── FAQs ──────────────────────────────────────────────────── */}

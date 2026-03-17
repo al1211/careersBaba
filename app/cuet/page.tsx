@@ -470,7 +470,7 @@ export default function CUETPage() {
               Expert CUET Educators
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {MENTORS.map((m, i) => (
               <div key={i} className="bg-white rounded-[18px] px-5 py-7 text-center border border-[#e4e5ea] hover:-translate-y-1 transition-transform duration-200">
                 <div
@@ -489,7 +489,7 @@ export default function CUETPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* TOPPERS / RESULTS */}

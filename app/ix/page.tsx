@@ -1143,7 +1143,7 @@ export default function Class9Page() {
             </h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
+          {/* <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
             {TOPPERS.map((t, i) => (
               <div
                 key={i}
@@ -1227,7 +1227,7 @@ export default function Class9Page() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* ── FAQs ─────────────────────────────────────────────────────── */}

@@ -590,7 +590,7 @@ export default function GovJobsPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-4 gap-5">
+          {/* <div className="grid grid-cols-4 gap-5">
             {MENTORS.map((m, i) => (
               <div
                 key={i}
@@ -614,7 +614,7 @@ export default function GovJobsPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* TOPPERS */}
@@ -628,7 +628,7 @@ export default function GovJobsPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-3 gap-6">
+          {/* <div className="grid grid-cols-3 gap-6">
             {TOPPERS.map((t, i) => (
               <div key={i} className="bg-white rounded-[18px] p-7 border border-[#e4d9c8]">
                 <div className="flex items-center justify-between mb-4">
@@ -652,7 +652,7 @@ export default function GovJobsPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* FAQs */}

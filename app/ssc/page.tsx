@@ -477,7 +477,7 @@ export default function SSCPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {MENTORS.map((m, i) => (
               <div
                 key={i}
@@ -501,11 +501,11 @@ export default function SSCPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* ── TOPPERS ── */}
-        <section className="py-10">
+        {/* <section className="py-10">
           <div className="text-center mb-10">
             <p className="text-[12px] font-bold tracking-[0.12em] uppercase text-[#C0392B] mb-3 font-mono">
               Success Stories
@@ -543,7 +543,7 @@ export default function SSCPage() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* ── FAQs ── */}
         <section className="py-12 pb-20">

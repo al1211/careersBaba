@@ -467,7 +467,7 @@ export default function MachineLearningPage() {
             <p className="text-[12px] font-bold tracking-[0.12em] text-[#1a3fa8] uppercase mb-[10px] font-['Space_Mono',monospace]">Learn From The Best</p>
             <h2 className="font-['Space_Mono',monospace] text-[clamp(1.8rem,3vw,2.4rem)] text-[#111] tracking-[-0.04em]">Expert ML Instructors</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {MENTORS.map((m, i) => (
               <div key={i} className="bg-white rounded-[18px] px-5 py-7 text-center border border-[#e4e5ea] hover:-translate-y-1 transition-transform duration-200">
                 <div className="w-[72px] h-[72px] rounded-full mx-auto mb-4 flex items-center justify-center text-white text-[22px] font-bold font-['Space_Mono',monospace]" style={{ background: m.color }}>
@@ -481,7 +481,7 @@ export default function MachineLearningPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* TOPPERS */}
@@ -490,7 +490,7 @@ export default function MachineLearningPage() {
             <p className="text-[12px] font-bold tracking-[0.12em] text-[#1a3fa8] uppercase mb-[10px] font-['Space_Mono',monospace]">Success Stories</p>
             <h2 className="font-['Space_Mono',monospace] text-[clamp(1.8rem,3vw,2.4rem)] text-[#111] tracking-[-0.04em]">Our Students Are Building & Earning</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {TOPPERS.map((t, i) => (
               <div key={i} className="bg-white rounded-[18px] p-7 border border-[#e4e5ea]">
                 <div className="flex items-center justify-between mb-4">
@@ -508,7 +508,7 @@ export default function MachineLearningPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* FAQs */}
