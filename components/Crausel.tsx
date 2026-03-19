@@ -108,7 +108,7 @@ export default function Crausel() {
 
   return (
     <section
-      className="relative max-h-3/4 flex items-center overflow-hidden pt-16"
+      className="relative max-h-3/4  flex items-center overflow-hidden pt-16"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -116,16 +116,18 @@ export default function Crausel() {
       {SLIDES.map((s, i) => (
         <div
           key={i}
-          className="absolute inset-0 z-0 transition-opacity duration-[800ms] ease-in-out"
+          className="absolute   inset-0 z-0 transition-opacity duration-[800ms] ease-in-out"
           style={{ opacity: i === current ? 1 : 0, pointerEvents: i === current ? "auto" : "none" }}
         >
+          
           <Image
             src={s.image}
             alt={s.highlight}
             fill
-            className="object-cover"
+            className="object-cover object-right"
             priority={i === 0}
-            sizes="100vw"
+            style={{ objectPosition: "80% center" }}
+           
           />
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/20" />
@@ -184,7 +186,7 @@ export default function Crausel() {
           {/* Tag */}
           <div
             key={`tag-${current}`}
-            className="inline-block text-sm text-white/60 mb-10 animate-[fadeSlideUp_0.7s_0.15s_ease_both]"
+            className="inline-block text-lg text-white/60 mb-10 animate-[fadeSlideUp_0.7s_0.15s_ease_both]"
           >
             {slide.tag}
           </div>
@@ -284,7 +286,7 @@ export default function Crausel() {
 
       {/* ── SCROLL INDICATOR ── */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-        <span className="text-white/40 text-xs tracking-widest uppercase">Scroll</span>
+        {/* <span className="text-white/40 text-xs tracking-widest uppercase">Scroll</span> */}
         <div className="w-px h-10 bg-gradient-to-b from-white/40 to-transparent" />
       </div>
 

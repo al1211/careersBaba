@@ -42,13 +42,13 @@ export default function AboutPage() {
   return (
     <div className="pt-16">
       {/* Hero */}
-      <section className="relative py-28 overflow-hidden bg-dark text-white">
+      <section className="relative py-28 overflow-hidden  text-white">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             fill
             alt='about_image'
-            className="object-cover opacity-30"
+            className="object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-dark/60 to-dark" />
         </div>
@@ -70,16 +70,13 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80"
+                  src="/5.jpeg  "
                   alt="Students learning"
                   fill
                   className="object-cover"
                 />
               </div>
-              {/* <div className="absolute -bottom-5 -right-5 bg-brand-500 text-white rounded-xl p-6 shadow-xl max-w-xs">
-                <p className="font-display text-sm italic">"Every student deserves the best shot at their dream."</p>
-                <p className="text-brand-200 text-xs mt-2">— Dr. Anand Verma, Founder</p>
-              </div> */}
+             
             </div>
             <div>
               <span className="text-brand-500 text-sm font-semibold tracking-widest uppercase">Who We Are</span>

@@ -84,14 +84,14 @@ export default function ListAllCourse(): JSX.Element {
     <div className=" bg-[#F7F5F0]  flex flex-col items-center py-12 px-6">
       {/* Header */}
       <div className="text-center mb-12 max-w-xl">
-        <p className="font-sans font-medium text-[12px] tracking-widest text-gray-400 uppercase mb-3">
+        {/* <p className="font-sans font-medium text-[12px] tracking-widest text-gray-400 uppercase mb-3">
           Explore by Category
-        </p>
+        </p> */}
         <h1 className="text-[clamp(2rem,5vw,3.2rem)] font-extrabold text-gray-900 leading-tight">
           What are you <br />
           <span className=" text-[#FF6B35]">preparing for?</span>
         </h1>
-        <p className=" font-light text-sm text-gray-600 mt-3 leading-relaxed">
+        <p className=" font-light text-lg text-gray-600 mt-3 leading-relaxed">
           Choose your path — curated resources, expert guidance, and structured learning await.
         </p>
       </div>

@@ -1,5 +1,6 @@
 import Crausel from '@/components/Crausel';
 import ListAllCourse from '@/components/ListAllCourse';
+import Testimonials from '@/components/Testimonials';
 import TextMarquee from '@/components/TextMarquee';
 import Video from '@/components/Video';
 import Image from 'next/image'
@@ -92,39 +93,9 @@ export default function Home() {
       <Crausel/>
       <TextMarquee/>
       <ListAllCourse/>
+        {/* <Testimonials/> */}
 
-
-      {/* Services */}
-      {/* <section className="py-24 bg-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-brand-500 text-sm font-semibold tracking-widest uppercase">What We Offer</span>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-dark mt-2 mb-4">Our Services</h2>
-            <p className="text-dark/30 max-w-xl mx-auto">Personalized coaching for exams like CUET, CAT, CLAT, and more—designed for every kind of learner.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((s, i) => (
-              <div
-                key={i}
-                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="relative h-52 overflow-hidden">
-                  <Image src={s.img} alt={s.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-display text-xl font-semibold mb-2">{s.title}</h3>
-                  <p className="text-dark/60 text-sm leading-relaxed">{s.desc}</p>
-                  <Link href="/career" className="mt-4 inline-flex items-center gap-1 text-brand-500 text-sm font-medium hover:gap-2 transition-all">
-                    Learn more <span>→</span>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
+      
 
       {/* Why Us */}
       <section className="py-24 bg-dark text-white overflow-hidden">

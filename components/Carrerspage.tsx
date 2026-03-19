@@ -20,7 +20,7 @@ const roles = [
   { title: "Faculty — CUET / CAT / CLAT Preparation", badge: "Teaching" },
   { title: "Academic Counselors", badge: "Student Guidance" },
   { title: "Content Writers", badge: "Education · Exam Prep" },
-  { title: "Digital Marketing Executives", badge: "Growth" },
+  // { title: "Digital Marketing Executives", badge: "Growth" },
   { title: "Student Support Executives", badge: "Operations" },
 ];
 
@@ -45,7 +45,7 @@ export default function CareersPage() {
 
           <h1 className="font-serif text-5xl md:text-7xl font-black leading-[1.05] max-w-2xl">
             Shape the Future of{" "}
-            <em className="italic text-[#e8620a] not-italic" style={{ fontStyle: "italic" }}>
+            <em className="italic text-[#e8620a] " style={{ fontStyle: "italic" }}>
               Student Success
             </em>
           </h1>
