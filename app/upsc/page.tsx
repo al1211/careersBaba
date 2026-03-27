@@ -83,65 +83,92 @@ export default function UPSCPage() {
 
 
       {/* HERO */}
-      <section style={{ background: "linear-gradient(135deg, #0f2448 0%, #1a3a6b 55%, #1e4d8c 100%)", padding: "72px 24px 80px", position: "relative", overflow: "hidden" }}>
-        {/* bg decor */}
-        <div style={{ position: "absolute", top: -60, right: -60, width: 400, height: 400, borderRadius: "50%", background: "rgba(255,255,255,0.03)" }} />
-        <div style={{ position: "absolute", bottom: -80, left: "30%", width: 300, height: 300, borderRadius: "50%", background: "rgba(255,255,255,0.04)" }} />
-        <div style={{ maxWidth: 1140, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 380px", gap: 48, alignItems: "center" }}>
-          <div className="hero-anim">
-            <span className="badge" style={{ background: "rgba(255,200,60,0.15)", color: "#ffd44d", marginBottom: 20 }}>
-              ★ India's #1 UPSC Coaching Platform
-            </span>
-            <h1 className="section-title" style={{ fontSize: "clamp(2rem,4vw,3.2rem)", color: "#fff", marginBottom: 16 }}>
-              Crack UPSC CSE <br />
-              <span style={{ fontStyle: "italic", color: "#ffd44d" }}>with Expert Guidance</span>
-            </h1>
-            <p style={{ fontSize: 16, color: "rgba(255,255,255,0.72)", lineHeight: 1.7, marginBottom: 32, maxWidth: 520 }}>
-              From Prelims strategy to Interview coaching — a complete ecosystem built for serious aspirants. Over <strong style={{ color: "#fff" }}>15,000+ selections</strong> across IAS, IPS, IFS and allied services.
-            </p>
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <button className="btn-primary" style={{ background: "#ffd44d", color: "#1a1a1a", padding: "13px 28px", borderRadius: 10, fontSize: 15, fontWeight: 700 }}>
-                Explore Courses →
-              </button>
-              <button className="btn-primary" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", padding: "13px 28px", borderRadius: 10, fontSize: 15, fontWeight: 600, border: "1px solid rgba(255,255,255,0.25)" }}>
-                ▶ Watch Free Demo
-              </button>
-            </div>
-            <div style={{ display: "flex", gap: 32, marginTop: 36 }}>
-              {[ ["5.0*", "Student Rating"]].map(([v, l]) => (
-                <div key={l}>
-                  <div style={{ fontSize: 22, fontWeight: 700, color: "#ffd44d", fontFamily: "'Playfair Display', serif" }}>{v}</div>
-                  <div style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", marginTop: 2 }}>{l}</div>
-                </div>
-              ))}
-            </div>
-          </div>
+     <section className="relative overflow-hidden bg-[linear-gradient(135deg,#0f2448_0%,#1a3a6b_55%,#1e4d8c_100%)] px-6 pt-[72px] pb-20">
+  {/* bg decor */}
+  <div className="absolute -top-[60px] -right-[60px] h-[400px] w-[400px] rounded-full bg-white/5" />
+  <div className="absolute -bottom-[80px] left-[30%] h-[300px] w-[300px] rounded-full bg-white/[0.04]" />
 
-          {/* Lead form */}
-          <div style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 24px 64px rgba(0,0,0,0.25)" }}>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: "#1a3a6b", marginBottom: 6 }}>Get 1:1 UPSC Guidance</h3>
-            <p style={{ fontSize: 13, color: "#888", marginBottom: 24 }}>Speak with an expert counsellor — free</p>
-            {[["Full Name", "text", "Rahul Sharma"], ["Mobile Number", "tel", "+91 9876543210"], ["Email", "email", "rahul@email.com"]].map(([label, type, ph]) => (
-              <div key={label} style={{ marginBottom: 16 }}>
-                <label style={{ fontSize: 12, fontWeight: 600, color: "#555", display: "block", marginBottom: 5 }}>{label}</label>
-                <input type={type} placeholder={ph} style={{ width: "100%", padding: "11px 14px", borderRadius: 8, border: "1.5px solid #e2e0da", fontSize: 14, outline: "none", color: "#333" }} />
-              </div>
-            ))}
-            <div style={{ marginBottom: 20 }}>
-              <label style={{ fontSize: 12, fontWeight: 600, color: "#555", display: "block", marginBottom: 5 }}>Target Year</label>
-              <select style={{ width: "100%", padding: "11px 14px", borderRadius: 8, border: "1.5px solid #e2e0da", fontSize: 14, color: "#333", background: "#fff" }}>
-                <option>CSE 2026</option>
-                <option>CSE 2027</option>
-                <option>Not decided yet</option>
-              </select>
+  <div className="mx-auto grid max-w-[1140px] items-center gap-12 lg:grid-cols-[1fr_380px]">
+    <div className="hero-anim">
+      <span className="mb-5 inline-block rounded-full bg-[rgba(255,200,60,0.15)] px-4 py-2 text-sm font-semibold text-[#ffd44d]">
+        ★ India&apos;s #1 UPSC Coaching Platform
+      </span>
+
+      <h1 className="mb-4 text-[clamp(2rem,4vw,3.2rem)] font-bold leading-tight text-white">
+        Crack UPSC CSE <br />
+        <span className="italic text-[#ffd44d]">with Expert Guidance</span>
+      </h1>
+
+      <p className="mb-8 max-w-[520px] text-base leading-[1.7] text-white/70">
+        From Prelims strategy to Interview coaching — a complete ecosystem built for serious aspirants. Over{" "}
+        <strong className="text-white">15,000+ selections</strong> across IAS, IPS, IFS and allied services.
+      </p>
+
+      <div className="flex flex-wrap gap-3">
+        <button className="rounded-[10px] bg-[#ffd44d] px-7 py-[13px] text-[15px] font-bold text-[#1a1a1a] transition hover:opacity-90">
+          Explore Courses →
+        </button>
+
+        <button className="rounded-[10px] border border-white/25 bg-white/10 px-7 py-[13px] text-[15px] font-semibold text-white transition hover:bg-white/15">
+          ▶ Watch Free Demo
+        </button>
+      </div>
+
+      <div className="mt-9 flex gap-8">
+        {[
+          ["5.0*", "Student Rating"],
+        ].map(([v, l]) => (
+          <div key={l}>
+            <div className="text-[22px] font-bold text-[#ffd44d] [font-family:'Playfair_Display',serif]">
+              {v}
             </div>
-            <button className="btn-primary" style={{ width: "100%", background: "#1a3a6b", color: "#fff", padding: "14px", borderRadius: 10, fontSize: 15, fontWeight: 700 }}>
-              Book Free Session
-            </button>
+            <div className="mt-0.5 text-xs text-white/55">{l}</div>
           </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Lead form */}
+    <div className="rounded-[20px] bg-white p-8 shadow-[0_24px_64px_rgba(0,0,0,0.25)]">
+      <h3 className="mb-1 text-[20px] font-bold text-[#1a3a6b] [font-family:'Playfair_Display',serif]">
+        Get 1:1 UPSC Guidance
+      </h3>
+      <p className="mb-6 text-[13px] text-[#888]">Speak with an expert counsellor — free</p>
+
+      {[
+        ["Full Name", "text", "Rahul Sharma"],
+        ["Mobile Number", "tel", "+91 9876543210"],
+        ["Email", "email", "rahul@email.com"],
+      ].map(([label, type, ph]) => (
+        <div key={label} className="mb-4">
+          <label className="mb-[5px] block text-xs font-semibold text-[#555]">
+            {label}
+          </label>
+          <input
+            type={type}
+            placeholder={ph}
+            className="w-full rounded-lg border-[1.5px] border-[#e2e0da] px-[14px] py-[11px] text-sm text-[#333] outline-none placeholder:text-gray-400 focus:border-[#1a3a6b]"
+          />
         </div>
-      </section>
+      ))}
 
+      <div className="mb-5">
+        <label className="mb-[5px] block text-xs font-semibold text-[#555]">
+          Target Year
+        </label>
+        <select className="w-full rounded-lg border-[1.5px] border-[#e2e0da] bg-white px-[14px] py-[11px] text-sm text-[#333] outline-none focus:border-[#1a3a6b]">
+          <option>CSE 2026</option>
+          <option>CSE 2027</option>
+          <option>Not decided yet</option>
+        </select>
+      </div>
+
+      <button className="w-full rounded-[10px] bg-[#1a3a6b] py-[14px] text-[15px] font-bold text-white transition hover:bg-[#153159]">
+        Book Free Session
+      </button>
+    </div>
+  </div>
+</section>
       {/* UPDATES TICKER */}
       <div style={{ background: "#1a3a6b", padding: "10px 24px" }}>
         <div style={{ maxWidth: 1140, margin: "0 auto", display: "flex", alignItems: "center", gap: 16 }}>
@@ -189,11 +216,7 @@ export default function UPSCPage() {
                     ))}
                   </ul>
                   <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between" }}>
-                    {/* <div>
-                      <div style={{ fontSize: 22, fontWeight: 700, color: c.color, fontFamily: "'Playfair Display',serif" }}>{c.price}</div>
-                      <div style={{ fontSize: 12, color: "#aaa", textDecoration: "line-through" }}>{c.original}</div>
-                      <div style={{ fontSize: 11, color: "#888" }}>{c.students} enrolled</div>
-                    </div> */}
+                  
                     <button className="btn-primary" style={{ background: c.color, color: "#fff", padding: "10px 18px", borderRadius: 10, fontSize: 13, fontWeight: 600 }}>
                       Enroll Now
                     </button>
@@ -384,53 +407,7 @@ export default function UPSCPage() {
         </h2>
       </div>
 
-      {/* Grid */}
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-        {TOPPERS.map((t, i) => (
-          <div
-            key={i}
-            className="
-              bg-white rounded-[18px] p-6 sm:p-7
-              border border-[#ebe9e2]
-              hover:-translate-y-1 hover:shadow-md hover:border-[#d9d4c8]
-              transition-all duration-200
-              flex flex-col
-            "
-          >
-            
-            <div
-              className="text-[36px] leading-none mb-4 text-[#1a3a6b] select-none"
-              style={{ fontFamily: "Georgia, serif" }}
-            >
-              &ldquo;
-            </div>
-
-           
-            <p className="text-[14px] text-[#555] leading-[1.75] mb-5 flex-1">
-              {t.quote}
-            </p>
-
-         
-            <div className="flex items-center gap-3 pt-4 border-t border-[#f0efe9]">
-             
-              <div className="w-11 h-11 rounded-full bg-[#1a3a6b] text-white flex items-center justify-center font-bold text-[16px] flex-shrink-0">
-                {t.name[0]}
-              </div>
-
-           
-              <div className="min-w-0">
-                <div className="font-bold text-[14px] text-[#1a1a1a] truncate">{t.name}</div>
-                <div className="text-[12px] text-[#888] truncate">{t.batch}</div>
-              </div>
-
-             
-              <span className="ml-auto flex-shrink-0 bg-[#eef1f8] text-[#1a3a6b] text-[10px] font-bold px-2.5 py-1 rounded-full whitespace-nowrap">
-                {t.rank}
-              </span>
-            </div>
-          </div>
-        ))}
-      </div> */}
+      
 
     </section>
 
