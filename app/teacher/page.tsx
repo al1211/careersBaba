@@ -372,12 +372,12 @@ export default function TeacherPage() {
 
                   {/* Price + CTA */}
                   <div className="flex items-center justify-between pt-3 border-t border-[#f0efe9]">
-                    <div>
-                      <span className="text-[19px] font-black text-[#1a1a1a]">{c.price}</span>
-                      {c.original && (
+                    {/* <div> */}
+                      {/* <span className="text-[19px] font-black text-[#1a1a1a]">{c.price}</span> */}
+                      {/* {c.original && (
                         <span className="text-[13px] text-[#aaa] line-through ml-2">{c.original}</span>
-                      )}
-                    </div>
+                      )} */}
+                    {/* </div> */}
                     <button
                       className="text-white text-[12px] font-bold px-4 py-2 rounded-xl hover:opacity-90 transition-opacity"
                       style={{ background: c.color }}
@@ -560,7 +560,7 @@ export default function TeacherPage() {
         <h2 className="text-[clamp(1.6rem,3vw,2.4rem)] font-black text-white mb-3 tracking-tight"
           style={{ fontFamily: "'Playfair Display', serif" }}>
           Start Learning with{" "}
-          <span className="italic text-[#ffd44d]">Ravi Sir Today</span>
+          <span className="italic text-[#ffd44d]">Ankur Sir Today</span>
         </h2>
         <p className="text-white/60 text-[15px] mb-8 max-w-[440px] mx-auto">
           Join 80,000+ students who cracked SSC QA with India's most trusted Maths faculty.
