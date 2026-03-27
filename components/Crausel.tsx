@@ -21,7 +21,7 @@ const SLIDES = [
     tag: "🎯 #1 CUET Platform in India",
   },
   {
-    image: "/4.jpeg",
+    image: "https://images.unsplash.com/photo-1540563283646-b6e0f4762a5f?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     badge: "CUET 2026",
     heading: "Your Success,",
     highlight: "Our Vision",
@@ -29,7 +29,7 @@ const SLIDES = [
     tag: "🎯 #1 CUET Platform in India",
   },
   {
-    image: "/5.jpeg",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     badge: "CUET 2026",
     heading: "Your Success,",
     highlight: "Our Vision",
