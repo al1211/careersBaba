@@ -75,8 +75,8 @@ const STATS = [
 ];
 
 export default function DataSciencePage() {
-  const [activeTab, setActiveTab] = useState("Foundations");
-  const [openFaq, setOpenFaq] = useState(null);
+  const [activeTab, setActiveTab] = useState<string | any >("Foundations");
+  const [openFaq, setOpenFaq] = useState<null | number>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
