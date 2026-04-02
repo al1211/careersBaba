@@ -108,7 +108,13 @@ export default function Crausel() {
 
   return (
     <section
-      className="relative max-h-3/4  flex items-center overflow-hidden pt-16"
+      className="  relative 
+    h-[50vh] 
+    md:h-[50vh] 
+    lg:h-[70vh] 
+    flex items-center 
+    overflow-hidden 
+    pt-16 "
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -116,22 +122,29 @@ export default function Crausel() {
       {SLIDES.map((s, i) => (
         <div
           key={i}
-          className="absolute   inset-0 z-0 transition-opacity duration-[800ms] ease-in-out"
-          style={{ opacity: i === current ? 1 : 0, pointerEvents: i === current ? "auto" : "none" }}
+          className="absolute inset-0 z-0 transition-opacity duration-[800ms] ease-in-out"
+          style={{
+            opacity: i === current ? 1 : 0,
+            pointerEvents: i === current ? "auto" : "none",
+          }}
         >
-          
           <Image
             src={s.image}
             alt={s.highlight}
             fill
-            className="object-cover object-right"
             priority={i === 0}
-            style={{ objectPosition: "80% center" }}
-           
+            className="
+        object-cover
+        object-center
+        sm:object-center
+        md:object-[70%_center]
+        lg:object-right
+      "
           />
+
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
         </div>
       ))}
 
@@ -233,7 +246,7 @@ export default function Crausel() {
       <button
         onClick={goToPrev}
         aria-label="Previous slide"
-        className="absolute left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-all"
+        className="absolute  hidden  left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm md:flex items-center justify-center text-white hover:bg-white/20 transition-all"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -242,7 +255,7 @@ export default function Crausel() {
       <button
         onClick={next}
         aria-label="Next slide"
-        className="absolute right-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-all"
+        className="absolute  hidden right-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm sm:flex items-center justify-center text-white hover:bg-white/20 transition-all"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -269,20 +282,6 @@ export default function Crausel() {
         ))}
       </div>
 
-      {/* ── THUMBNAIL STRIP (bottom-right) ──
-      <div className="absolute bottom-16 right-8 z-20 hidden lg:flex flex-col gap-2">
-        {SLIDES.map((s, i) => (
-          <button
-            key={i}
-            onClick={() => goTo(i)}
-            aria-label={`Slide ${i + 1}`}
-            className="relative w-16 h-10 rounded-lg overflow-hidden border-2 transition-all duration-300"
-            style={{ borderColor: i === current ? "#f97316" : "rgba(255,255,255,0.2)", opacity: i === current ? 1 : 0.5 }}
-          >
-            <Image src={s.image} alt={s.highlight} fill className="object-cover" sizes="64px" />
-          </button>
-        ))}
-      </div> */}
 
       {/* ── SCROLL INDICATOR ── */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
