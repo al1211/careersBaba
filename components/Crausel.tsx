@@ -246,7 +246,7 @@ export default function Crausel() {
       <button
         onClick={goToPrev}
         aria-label="Previous slide"
-        className="absolute  hidden  left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm md:flex items-center justify-center text-white hover:bg-white/20 transition-all"
+        className="absolute  hidden  left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm md:xflex items-center justify-center text-white hover:bg-white/20 transition-all"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />

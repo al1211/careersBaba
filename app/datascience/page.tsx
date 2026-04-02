@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 
-const NAV_LINKS = ["Overview", "Courses", "Free Resources", "Curriculum", "Mentors", "Results", "FAQs"];
+
 
 const COURSES = [
   { title: "Data Science Bootcamp 2026", tag: "Most Popular", price: "₹22,999", original: "₹35,000", duration: "9 months", mode: "Live Online", students: "18,400+", color: "#0f7275", features: ["Python & ML", "Deep Learning", "Real Projects", "Placement Support"] },
@@ -42,8 +42,9 @@ const CURRICULUM_DATA = {
     { label: "Assessment", value: "End-to-End Deployment Review" },
     { label: "Mode", value: "Project-based + Career Prep" },
   ],
-};
+} as const;
 
+type CurriculumCategory = keyof typeof CURRICULUM_DATA;
 const MENTORS = [
   { name: "Dr. Kavita Iyer", role: "Ex-Google AI | PhD IIT Bombay", specialty: "Deep Learning & NLP", color: "#0f7275", initials: "KI" },
   { name: "Sameer Bose", role: "Ex-Amazon DS | 14 yrs exp", specialty: "ML Systems & MLOps", color: "#6a3de8", initials: "SB" },
@@ -65,7 +66,7 @@ const FAQS = [
   { q: "Which tools and languages will I learn?", a: "Core stack: Python, SQL, Pandas, Scikit-learn, TensorFlow/PyTorch, Tableau/Power BI, and cloud platforms (AWS/GCP). For the advanced track: Docker, Airflow, FastAPI, and HuggingFace transformers." },
 ];
 
-const CURR_TABS = ["Foundations", "ML & AI", "Deployment"];
+const CURR_TABS = Object.keys(CURRICULUM_DATA) as CurriculumCategory[];
 
 const STATS = [
   ["12,000+", "Placements"],
@@ -75,7 +76,7 @@ const STATS = [
 ];
 
 export default function DataSciencePage() {
-  const [activeTab, setActiveTab] = useState<string | any >("Foundations");
+  const [activeTab, setActiveTab] = useState<CurriculumCategory>("Foundations");
   const [openFaq, setOpenFaq] = useState<null | number>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -296,7 +297,7 @@ export default function DataSciencePage() {
 
             {/* Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2">
-              {CURRICULUM_DATA[activeTab].map((row :string, i:number) => (
+              {CURRICULUM_DATA[activeTab].map((row, i) => (
                 <div key={i} className={`flex gap-3 px-5 sm:px-7 py-4 border-b border-gray-100 ${i % 2 === 0 ? "sm:border-r border-gray-100" : ""}`}>
                   <span className="text-[#0f7275] mt-0.5 flex-shrink-0 text-sm">⚡</span>
                   <div>
