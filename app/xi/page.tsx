@@ -10,6 +10,7 @@ import {
   FaDna, FaMicroscope, FaInfinity, FaRocket
 } from "react-icons/fa";
 import type { IconType } from "react-icons";
+import Class11Dashboard from "@/components/ClassX|Dashboard";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -267,1099 +268,202 @@ export default function Class11Page() {
       }}
     >
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section
+     <section className="relative overflow-hidden bg-[#06000f] py-12 px-6 lg:py-20 lg:px-12">
+      {/* Background Gradients & Ambient Glow */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
         style={{
-          background: "linear-gradient(160deg, #06000f 0%, #0d0a2e 50%, #04000c 100%)",
-          padding: "72px 24px 80px",
-          position: "relative",
-          overflow: "hidden",
+          background: "linear-gradient(160deg, #06000f 0%, #0d0a2e 50%, #04000c 100%)"
         }}
-      >
-        {/* ambient glow */}
-        <div
-          style={{
-            position: "absolute", inset: 0,
-            backgroundImage:
-              "radial-gradient(circle at 70% 20%, rgba(120,80,255,0.14) 0%, transparent 45%), radial-gradient(circle at 10% 80%, rgba(255,60,120,0.08) 0%, transparent 45%)",
-            pointerEvents: "none",
-          }}
-        />
-        {/* dot grid */}
-        <div
-          style={{
-            position: "absolute", inset: 0,
-            backgroundImage:
-              "linear-gradient(rgba(130,100,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(130,100,255,0.05) 1px, transparent 1px)",
-            backgroundSize: "52px 52px",
-            pointerEvents: "none",
-          }}
-        />
-        {/* NCERT watermark */}
-        <div
-          style={{
-            position: "absolute", top: 52, right: 440,
-            color: "rgba(140,110,255,0.07)",
-            fontFamily: "'Crimson Pro', Georgia, serif",
-            fontSize: 12, lineHeight: 2, pointerEvents: "none",
-          }}
-        >
-          <div>Ch 1 — Sets | Relations & Functions — Ch 2</div>
-          <div>Physics: Laws of Motion · Gravitation · Thermodynamics</div>
-          <div>Biology: Cell Biology · Biomolecules · Plant Kingdom</div>
-        </div>
+      />
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `
+            radial-gradient(circle at 70% 20%, rgba(120,80,255,0.14) 0%, transparent 45%), 
+            radial-gradient(circle at 10% 80%, rgba(255,60,120,0.08) 0%, transparent 45%)
+          `
+        }}
+      />
 
-        <div
-          style={{
-            maxWidth: 1140, margin: "0 auto",
-            display: "grid", gridTemplateColumns: "1fr 380px",
-            gap: 48, alignItems: "center", position: "relative",
-          }}
-        >
-          {/* LEFT */}
-          <div>
-            <div
-              style={{
-                display: "inline-flex", alignItems: "center", gap: 8,
-                background: "rgba(130,100,255,0.12)",
-                border: "1px solid rgba(130,100,255,0.4)",
-                borderRadius: 20, padding: "5px 14px", marginBottom: 22,
-              }}
-            >
-              <span
-                style={{
-                  width: 7, height: 7, borderRadius: "50%",
-                  background: "#a07fff", display: "inline-block",
-                }}
-              />
-              <span
-                style={{
-                  fontSize: 12, color: "#c0aaff",
-                  fontFamily: "monospace", fontWeight: 700, letterSpacing: "0.06em",
-                }}
-              >
-                CBSE Class 11 — Session 2025–26 · PCM · PCB · Commerce
-              </span>
-            </div>
+      {/* Animated Dot Grid */}
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-50"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(130,100,255,0.1) 1px, transparent 1px), 
+            linear-gradient(90deg, rgba(130,100,255,0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: "52px 52px"
+        }}
+      />
 
-            <h1
-              style={{
-                fontFamily: "'Crimson Pro', Georgia, serif",
-                fontSize: "clamp(2rem, 4vw, 3rem)",
-                color: "white", marginBottom: 16,
-                lineHeight: 1.2, fontWeight: 700, letterSpacing: "-0.02em",
-              }}
-            >
-              Class 11 Board + Entrance Prep —<br />
-              <span style={{ color: "#a07fff" }}>Score 95+ & Crack JEE / NEET</span>
-            </h1>
+      {/* NCERT Watermark - Hidden on small screens */}
+      <div className="absolute top-12 right-[10%] hidden xl:block text-[rgba(140,110,255,0.08)] font-serif text-xs leading-loose pointer-events-none select-none">
+        <div>Ch 1 — Sets | Relations & Functions — Ch 2</div>
+        <div>Physics: Laws of Motion · Gravitation · Thermodynamics</div>
+        <div>Biology: Cell Biology · Biomolecules · Plant Kingdom</div>
+      </div>
 
-            <p
-              style={{
-                fontSize: 16, color: "rgba(255,255,255,0.65)",
-                lineHeight: 1.75, marginBottom: 32, maxWidth: 500,
-              }}
-            >
-              Maths · Physics · Chemistry · Biology · English — complete Class 11
-              preparation with{" "}
-              <span
-                style={{
-                  background: "rgba(130,100,255,0.15)", color: "#c0aaff",
-                  padding: "2px 8px", borderRadius: 4,
-                  fontFamily: "monospace", fontSize: 14,
-                }}
-              >
-                HD videos
-              </span>
-              ,{" "}
-              <span
-                style={{
-                  background: "rgba(130,100,255,0.15)", color: "#c0aaff",
-                  padding: "2px 8px", borderRadius: 4,
-                  fontFamily: "monospace", fontSize: 14,
-                }}
-              >
-                JEE/NEET foundation
-              </span>
-              , and NCERT solutions. Trusted by{" "}
-              <strong style={{ color: "white" }}>1,50,000+ Class 11 students</strong> across India.
-            </p>
-
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <button
-                style={{
-                  background: "#6d28d9", color: "white",
-                  padding: "13px 28px", borderRadius: 10,
-                  fontSize: 15, fontWeight: 700, border: "none",
-                  cursor: "pointer", fontFamily: "inherit",
-                }}
-              >
-                Start Learning Free →
-              </button>
-              <button
-                style={{
-                  background: "rgba(255,255,255,0.07)", color: "white",
-                  padding: "13px 28px", borderRadius: 10, fontSize: 15,
-                  fontWeight: 600,
-                  border: "1px solid rgba(255,255,255,0.2)", cursor: "pointer",
-                }}
-              >
-                ▶ Watch Demo Lecture
-              </button>
-            </div>
-
-            {/* stats */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 36, marginTop: 40 }}>
-              {[
-                ["2,700+", "Video Lectures"],
-                ["77", "Chapters Covered"],
-                ["300+", "Practice Tests"],
-                ["4.9★", "Student Rating"],
-              ].map(([v, l]) => (
-                <div key={l}>
-                  <div style={{ fontSize: 20, fontWeight: 700, color: "#a07fff", fontFamily: "monospace" }}>{v}</div>
-                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", marginTop: 3, fontFamily: "sans-serif" }}>{l}</div>
-                </div>
-              ))}
-            </div>
+      <div className="relative mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-12 items-center">
+        
+        {/* LEFT COLUMN: CONTENT */}
+        <div className="z-10">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[rgba(130,100,255,0.12)] border border-[rgba(130,100,255,0.4)] mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#a07fff] animate-pulse" />
+            <span className="text-[10px] sm:text-xs text-[#c0aaff] font-mono font-bold tracking-wider uppercase">
+              CBSE Class 11 — Session 2025–26 · PCM · PCB · Commerce
+            </span>
           </div>
 
-          {/* Lead Form */}
-          <div
-            style={{
-              background: "white", borderRadius: 20, padding: 32,
-              boxShadow: "0 24px 64px rgba(0,0,0,0.5)",
-            }}
-          >
-            <div
-              style={{
-                background: "#06000f", borderRadius: 8, padding: "12px 16px",
-                marginBottom: 20, fontFamily: "monospace", fontSize: 12,
-                color: "#c0aaff", lineHeight: 1.9,
-                borderLeft: "3px solid #6d28d9",
-              }}
-            >
-              <span style={{ color: "#666" }}># Class 11 Planner</span><br />
-              <span style={{ color: "#c0aaff" }}>student</span> = <span style={{ color: "#a07fff" }}>Class11</span>.<span style={{ color: "#86efac" }}>enroll</span>(<span style={{ color: "#fde68a" }}>stream="PCM"</span>)<br />
-              <span style={{ color: "#c0aaff" }}>student</span>.ace_boards_and_jee()
-            </div>
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-[1.1] mb-6 tracking-tight">
+            Class 11 Board + Entrance Prep —<br />
+            <span className="text-[#a07fff]">Score 95+ & Crack JEE / NEET</span>
+          </h1>
 
-            {([
-              ["Student's Full Name", "text", "Ishaan Mehta"],
-              ["Parent's Mobile", "tel", "+91 9876543210"],
-              ["Email", "email", "ishaan@email.com"],
-            ] as [string, string, string][]).map(([label, type, ph]) => (
-              <div key={label} style={{ marginBottom: 16 }}>
-                <label
-                  style={{
-                    fontSize: 12, fontWeight: 600, color: "#555",
-                    display: "block", marginBottom: 5, fontFamily: "sans-serif",
-                  }}
-                >
-                  {label}
+          <p className="text-white/60 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
+            Maths · Physics · Chemistry · Biology · English — complete Class 11 preparation with 
+            <span className="mx-1 bg-purple-500/15 text-[#c0aaff] px-2 py-0.5 rounded font-mono text-sm">HD videos</span>, 
+            <span className="mx-1 bg-purple-500/15 text-[#c0aaff] px-2 py-0.5 rounded font-mono text-sm">JEE/NEET foundation</span>, 
+            and NCERT solutions. Trusted by <strong className="text-white">1,50,000+ Class 11 students</strong> across India.
+          </p>
+
+          <div className="flex flex-wrap gap-4">
+            <button className="bg-purple-700 hover:bg-purple-600 transition-colors text-white px-8 py-3.5 rounded-xl text-base font-bold shadow-lg shadow-purple-900/20">
+              Start Learning Free →
+            </button>
+            <button className="bg-white/5 hover:bg-white/10 transition-colors text-white border border-white/20 px-8 py-3.5 rounded-xl text-base font-semibold backdrop-blur-sm">
+              ▶ Watch Demo Lecture
+            </button>
+          </div>
+
+          {/* Stats Section */}
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-8 mt-12">
+            {[
+              ["2,700+", "Video Lectures"],
+              ["77", "Chapters Covered"],
+              ["300+", "Practice Tests"],
+              ["4.9★", "Student Rating"],
+            ].map(([val, label]) => (
+              <div key={label}>
+                <div className="text-2xl font-bold text-[#a07fff] font-mono">{val}</div>
+                <div className="text-[10px] uppercase tracking-widest text-white/40 mt-1">{label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* RIGHT COLUMN: LEAD FORM */}
+        <div className="bg-white rounded-3xl p-6 md:p-8 shadow-2xl shadow-black/50 z-10 w-full max-w-md mx-auto">
+          {/* Code Snippet Branding */}
+          <div className="bg-[#06000f] rounded-xl p-4 mb-6 font-mono text-[11px] sm:text-xs border-l-4 border-purple-600 leading-relaxed shadow-inner">
+            <div className="text-gray-500"># Class 11 Planner</div>
+            <div className="text-[#c0aaff]">
+              student <span className="text-white">=</span> Class11.<span className="text-green-300">enroll</span>(<span className="text-yellow-200">"PCM"</span>)
+            </div>
+            <div className="text-[#c0aaff]">student.ace_boards_and_jee()</div>
+          </div>
+
+          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+            {[
+              { label: "Student's Full Name", type: "text", ph: "Ishaan Mehta" },
+              { label: "Parent's Mobile", type: "tel", ph: "+91 9876543210" },
+              { label: "Email", type: "email", ph: "ishaan@email.com" },
+            ].map((field) => (
+              <div key={field.label}>
+                <label className="block text-[11px] font-bold text-gray-500 uppercase mb-1.5 ml-1">
+                  {field.label}
                 </label>
                 <input
-                  type={type}
-                  placeholder={ph}
-                  style={{
-                    width: "100%", padding: "11px 14px", borderRadius: 8,
-                    border: "1.5px solid #e0e2ea", fontSize: 14,
-                    outline: "none", color: "#333",
-                    boxSizing: "border-box", fontFamily: "sans-serif",
-                  }}
+                  type={field.type}
+                  placeholder={field.ph}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-500/20 focus:border-purple-500 transition-all outline-none text-gray-800 text-sm placeholder:text-gray-300"
                 />
               </div>
             ))}
 
-            <div style={{ marginBottom: 16 }}>
-              <label
-                style={{
-                  fontSize: 12, fontWeight: 600, color: "#555",
-                  display: "block", marginBottom: 5, fontFamily: "sans-serif",
-                }}
-              >
-                Stream
-              </label>
-              <select
-                style={{
-                  width: "100%", padding: "11px 14px", borderRadius: 8,
-                  border: "1.5px solid #e0e2ea", fontSize: 14,
-                  color: "#333", background: "white", fontFamily: "sans-serif",
-                }}
-              >
-                <option>PCM (Physics, Chemistry, Maths)</option>
-                <option>PCB (Physics, Chemistry, Biology)</option>
-                <option>PCMB (All four)</option>
-                <option>Commerce</option>
-                <option>Humanities / Arts</option>
-              </select>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-[11px] font-bold text-gray-500 uppercase mb-1.5 ml-1">Stream</label>
+                <select className="w-full px-3 py-3 rounded-xl border border-gray-200 bg-white text-sm text-gray-800 focus:border-purple-500 outline-none">
+                  <option>PCM</option>
+                  <option>PCB</option>
+                  <option>PCMB</option>
+                  <option>Commerce</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-[11px] font-bold text-gray-500 uppercase mb-1.5 ml-1">Target Exam</label>
+                <select className="w-full px-3 py-3 rounded-xl border border-gray-200 bg-white text-sm text-gray-800 focus:border-purple-500 outline-none">
+                  <option>JEE Mains</option>
+                  <option>NEET</option>
+                  <option>Boards Only</option>
+                </select>
+              </div>
             </div>
 
-            <div style={{ marginBottom: 20 }}>
-              <label
-                style={{
-                  fontSize: 12, fontWeight: 600, color: "#555",
-                  display: "block", marginBottom: 5, fontFamily: "sans-serif",
-                }}
-              >
-                Target Exam
-              </label>
-              <select
-                style={{
-                  width: "100%", padding: "11px 14px", borderRadius: 8,
-                  border: "1.5px solid #e0e2ea", fontSize: 14,
-                  color: "#333", background: "white", fontFamily: "sans-serif",
-                }}
-              >
-                <option>JEE Mains + Advanced</option>
-                <option>NEET</option>
-                <option>School / Board Exams Only</option>
-                <option>CA Foundation</option>
-                <option>Not decided yet</option>
-              </select>
-            </div>
-
-            <button
-              style={{
-                width: "100%", background: "#3b0764", color: "white",
-                padding: 14, borderRadius: 10, fontSize: 15,
-                fontWeight: 700, border: "none", cursor: "pointer",
-                fontFamily: "monospace",
-              }}
-            >
-              Get Free Class 11 Study Plan →
+            <button className="w-full bg-[#1e0a3d] hover:bg-[#2d0f5c] transition-colors text-white py-4 rounded-xl font-mono font-bold text-sm shadow-lg shadow-purple-900/10 mt-2">
+              Get Free Study Plan →
             </button>
-            <p
-              style={{
-                textAlign: "center", fontSize: 11,
-                color: "#bbb", marginTop: 12, fontFamily: "sans-serif",
-              }}
-            >
-              Free · Includes JEE / NEET Roadmap PDF · Expert callback in 2 hrs
+            
+            <p className="text-center text-[10px] text-gray-400 mt-4 leading-tight">
+              Free · Includes JEE / NEET Roadmap PDF <br />
+              <span className="text-purple-600 font-semibold">Expert callback in 2 hours</span>
             </p>
-          </div>
+          </form>
         </div>
-      </section>
+
+      </div>
+    </section>
+
+    
+
+
 
       {/* ── TICKER ───────────────────────────────────────────────────────── */}
-      <div style={{ background: "#06000f", padding: "10px 24px", overflow: "hidden" }}>
-        <div
-          style={{
-            maxWidth: 1140, margin: "0 auto",
-            display: "flex", alignItems: "center", gap: 16,
-          }}
-        >
-          <span
-            style={{
-              background: "#6d28d9", color: "white", fontSize: 11,
-              fontWeight: 700, padding: "3px 10px", borderRadius: 4,
-              whiteSpace: "nowrap", fontFamily: "monospace",
-            }}
-          >
+     <div className="bg-[#06000f] px-4 md:px-6 py-2.5 overflow-hidden border-b border-white/5">
+      <div className="max-w-[1140px] mx-auto flex items-center gap-4">
+        
+        {/* Fixed "LIVE" Badge */}
+        <div className="relative z-10 flex items-center bg-[#06000f] pr-2">
+          <span className="bg-[#6d28d9] text-white text-[10px] font-bold px-2.5 py-1 rounded-md font-mono tracking-tighter animate-pulse shadow-[0_0_15px_rgba(109,40,217,0.4)]">
             LIVE
           </span>
-          <div style={{ display: "flex", gap: 36, overflow: "hidden" }}>
+        </div>
+
+        {/* Scrolling Container */}
+        <div className="relative flex overflow-hidden group">
+          {/* We duplicate the list to ensure the loop is seamless. 
+            'animate-marquee' is a custom animation (see CSS below).
+          */}
+          <div className="flex gap-12 whitespace-nowrap animate-marquee group-hover:[animation-play-state:paused]">
             {[
               "CBSE Class 11 Annual Exam 2027 — Start strong from Day 1 📚",
               "New PCM batch for Class 11 starting April 10 — Limited seats 🎓",
               "Aarav Mehta — AIR 847 JEE Advanced 2026 — GovPrep Class 11 student 🏆",
               "Free NCERT Solutions Class 11 — All chapters available 📄",
               "JEE Foundation Workshop — Apr 12 — Register Free 🧪",
-            ].map((t, i) => (
-              <span key={i} style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", whiteSpace: "nowrap" }}>
-                <FaBell size={11} style={{ marginRight: 5, verticalAlign: "middle", opacity: 0.6 }} />
-                {t}
+            ].map((text, i) => (
+              <span 
+                key={i} 
+                className="flex items-center gap-2 text-xs md:text-sm text-white/70 hover:text-white transition-colors cursor-default"
+              >
+                <FaBell size={12} className="text-purple-400/60" />
+                {text}
               </span>
             ))}
           </div>
+          
+          {/* Optional: Fade effect on the edges to make the text appear/disappear smoothly */}
+          <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-[#06000f] to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-[#06000f] to-transparent z-10" />
         </div>
       </div>
+    </div>
 
-      <div style={{ maxWidth: 1140, margin: "0 auto", padding: "0 24px" }}>
-
-        {/* ── STREAM BANNER ─────────────────────────────────────────────── */}
-        <section style={{ padding: "40px 0 0" }}>
-          <div
-            style={{
-              background: "white", borderRadius: 20,
-              border: "1px solid #e4d9c8", padding: "24px 32px",
-            }}
-          >
-            <p
-              style={{
-                fontSize: 11, fontWeight: 700, letterSpacing: "0.12em",
-                color: "#6d28d9", textTransform: "uppercase",
-                marginBottom: 16, fontFamily: "sans-serif",
-              }}
-            >
-              🔬 Choose Your Stream
-            </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }}>
-              {[
-                { label: "PCM", sub: "Maths + Physics + Chemistry", color: "#1a237e", badge: "JEE", icon: "📐" },
-                { label: "PCB", sub: "Physics + Chemistry + Biology", color: "#1b5e20", badge: "NEET", icon: "🧬" },
-                { label: "PCMB", sub: "All four science subjects", color: "#4a148c", badge: "JEE + NEET", icon: "⚗️" },
-                { label: "Commerce", sub: "Accounts + Economics + BSt", color: "#bf360c", badge: "CA / BBA", icon: "📊" },
-              ].map((s, i) => (
-                <div
-                  key={i}
-                  style={{
-                    borderRadius: 14, padding: "16px 18px",
-                    background: s.color + "0a",
-                    border: `1.5px solid ${s.color}22`,
-                    cursor: "pointer",
-                    transition: "transform 0.2s",
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
-                  onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
-                >
-                  <div style={{ fontSize: 22, marginBottom: 8 }}>{s.icon}</div>
-                  <div style={{ fontWeight: 700, fontSize: 15, color: s.color, fontFamily: "monospace", marginBottom: 4 }}>{s.label}</div>
-                  <div style={{ fontSize: 12, color: "#777", fontFamily: "sans-serif", marginBottom: 8, lineHeight: 1.4 }}>{s.sub}</div>
-                  <span
-                    style={{
-                      fontSize: 10, fontWeight: 700, color: s.color,
-                      background: s.color + "18", padding: "2px 8px",
-                      borderRadius: 20, fontFamily: "monospace",
-                    }}
-                  >
-                    {s.badge}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── EXAM DATES ───────────────────────────────────────────────── */}
-        <section style={{ padding: "24px 0 0" }}>
-          <div
-            style={{
-              background: "white", borderRadius: 20,
-              border: "1px solid #e4d9c8", padding: "24px 32px",
-            }}
-          >
-            <p
-              style={{
-                fontSize: 11, fontWeight: 700, letterSpacing: "0.12em",
-                color: "#6d28d9", textTransform: "uppercase",
-                marginBottom: 20, fontFamily: "sans-serif",
-              }}
-            >
-              📅 Important Exam Dates 2026–27
-            </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 16 }}>
-              {EXAM_DATES.map((d, i) => (
-                <div key={i} style={{ textAlign: "center" }}>
-                  <div
-                    style={{
-                      fontSize: 13, fontWeight: 700, color: "#6d28d9",
-                      fontFamily: "monospace", marginBottom: 4,
-                    }}
-                  >
-                    {d.date}
-                  </div>
-                  <div style={{ fontSize: 12, color: "#666", lineHeight: 1.4, fontFamily: "sans-serif" }}>{d.event}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── SUBJECT CARDS ─────────────────────────────────────────────── */}
-        <section style={{ padding: "48px 0 0" }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p
-              style={{
-                fontSize: 12, fontWeight: 700, letterSpacing: "0.12em",
-                color: "#6d28d9", textTransform: "uppercase",
-                marginBottom: 10, fontFamily: "sans-serif",
-              }}
-            >
-              All Subjects
-            </p>
-            <h2
-              style={{
-                fontFamily: "'Crimson Pro', Georgia, serif",
-                fontSize: "clamp(1.8rem,3vw,2.5rem)", color: "#111",
-                marginBottom: 14, letterSpacing: "-0.02em",
-              }}
-            >
-              Class 11 — Subject-wise Courses
-            </h2>
-            <p
-              style={{
-                color: "#777", fontSize: 15, maxWidth: 540,
-                margin: "0 auto", lineHeight: 1.65, fontFamily: "sans-serif",
-              }}
-            >
-              Every subject broken into chapters with board-pattern videos, NCERT solutions, and JEE/NEET foundation tests.
-            </p>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(210px, 1fr))", gap: 20 }}>
-            {SUBJECTS.map((s, i) => (
-              <div
-                key={i}
-                style={{
-                  background: "white", borderRadius: 18, overflow: "hidden",
-                  border: `2px solid ${activeSubjectCard === s.name ? s.color : "#e4d9c8"}`,
-                  transition: "transform 0.2s, border-color 0.2s",
-                  cursor: "pointer",
-                }}
-                onClick={() => {
-                  setActiveSubjectCard(s.name);
-                  setActiveSubject(s.name as SubjectTab);
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-4px)")}
-                onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
-              >
-                <div style={{ padding: "22px 20px 18px", background: s.color }}>
-                  {s.tag && (
-                    <span
-                      style={{
-                        background: "rgba(255,255,255,0.18)", color: "white",
-                        fontSize: 10, fontWeight: 700, padding: "3px 9px",
-                        borderRadius: 20, display: "inline-block",
-                        marginBottom: 10, fontFamily: "sans-serif",
-                      }}
-                    >
-                      {s.tag}
-                    </span>
-                  )}
-                  <div
-                    style={{
-                      width: 44, height: 44, borderRadius: 12,
-                      background: "rgba(255,255,255,0.15)",
-                      display: "flex", alignItems: "center",
-                      justifyContent: "center", marginBottom: 12,
-                    }}
-                  >
-                    <s.icon size={22} color="white" />
-                  </div>
-                  <h3
-                    style={{
-                      fontFamily: "'Crimson Pro', Georgia, serif",
-                      fontSize: 16, fontWeight: 700, color: "white", lineHeight: 1.2,
-                    }}
-                  >
-                    {s.name}
-                  </h3>
-                </div>
-
-                <div style={{ padding: "16px 20px 20px" }}>
-                  <div
-                    style={{
-                      display: "grid", gridTemplateColumns: "1fr 1fr 1fr",
-                      gap: 8, marginBottom: 16,
-                    }}
-                  >
-                    {[
-                      [s.chapters, "Chapters"],
-                      [s.videos, "Videos"],
-                      [s.tests, "Tests"],
-                    ].map(([val, lbl], j) => (
-                      <div
-                        key={j}
-                        style={{
-                          textAlign: "center", background: "#f9f7f4",
-                          borderRadius: 8, padding: "8px 4px",
-                        }}
-                      >
-                        <div
-                          style={{
-                            fontSize: 16, fontWeight: 700,
-                            color: s.color, fontFamily: "monospace",
-                          }}
-                        >
-                          {val}
-                        </div>
-                        <div
-                          style={{
-                            fontSize: 10, color: "#999",
-                            fontFamily: "sans-serif",
-                          }}
-                        >
-                          {lbl}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <button
-                    style={{
-                      width: "100%", color: "white",
-                      padding: "9px", borderRadius: 8, fontSize: 12,
-                      fontWeight: 700, border: "none", cursor: "pointer",
-                      background: s.color, fontFamily: "sans-serif",
-                    }}
-                  >
-                    Explore Chapters →
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ── CHAPTER LIST ─────────────────────────────────────────────── */}
-        <section style={{ padding: "48px 0" }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p
-              style={{
-                fontSize: 12, fontWeight: 700, letterSpacing: "0.12em",
-                color: "#6d28d9", textTransform: "uppercase",
-                marginBottom: 10, fontFamily: "sans-serif",
-              }}
-            >
-              Chapter Index
-            </p>
-            <h2
-              style={{
-                fontFamily: "'Crimson Pro', Georgia, serif",
-                fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#111",
-              }}
-            >
-              NCERT Class 11 — Chapter-wise Content
-            </h2>
-          </div>
-
-          <div
-            style={{
-              background: "white", borderRadius: 20,
-              border: "1px solid #e4d9c8", overflow: "hidden",
-            }}
-          >
-            {/* tabs */}
-            <div
-              style={{
-                display: "flex", borderBottom: "1px solid #e4d9c8",
-                overflowX: "auto",
-              }}
-            >
-              {SUBJECT_TABS.map((t) => {
-                const subj = SUBJECTS.find((s) => s.name === t)!;
-                return (
-                  <button
-                    key={t}
-                    onClick={() => setActiveSubject(t)}
-                    style={{
-                      flex: 1, padding: "14px 12px",
-                      fontSize: 13, fontWeight: 600,
-                      cursor: "pointer", border: "none",
-                      whiteSpace: "nowrap", minWidth: 120,
-                      background: activeSubject === t ? subj.color : "white",
-                      color: activeSubject === t ? "white" : "#555",
-                      fontFamily: activeSubject === t ? "monospace" : "sans-serif",
-                      transition: "all 0.2s",
-                    }}
-                  >
-                    {t}
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* chapter rows */}
-            <div>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "48px 1fr 100px 80px 70px 70px 80px",
-                  padding: "10px 24px",
-                  background: "#f9f7f4",
-                  borderBottom: "1px solid #e4d9c8",
-                }}
-              >
-                {["#", "Chapter", "Subject Tag", "Lessons", "Quiz", "Notes", "Access"].map((h, i) => (
-                  <div
-                    key={h}
-                    style={{
-                      fontSize: 10, fontWeight: 700, color: "#aaa",
-                      textTransform: "uppercase", letterSpacing: "0.08em",
-                      fontFamily: "sans-serif",
-                      textAlign: i > 2 ? "center" : "left",
-                    }}
-                  >
-                    {h}
-                  </div>
-                ))}
-              </div>
-
-              {activeChapters.map((ch, i) => (
-                <div
-                  key={i}
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "48px 1fr 100px 80px 70px 70px 80px",
-                    padding: "14px 24px",
-                    borderBottom: "1px solid #f5f0e8",
-                    alignItems: "center",
-                    transition: "background 0.15s",
-                    cursor: "pointer",
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.background = "#faf8f5")}
-                  onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
-                >
-                  <div
-                    style={{
-                      width: 28, height: 28, borderRadius: 8,
-                      background: ch.color, color: "white",
-                      display: "flex", alignItems: "center",
-                      justifyContent: "center", fontSize: 12,
-                      fontWeight: 700, fontFamily: "monospace",
-                    }}
-                  >
-                    {ch.no}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 14, fontWeight: 600,
-                      color: "#111", fontFamily: "sans-serif",
-                      paddingRight: 16, lineHeight: 1.3,
-                    }}
-                  >
-                    {ch.title}
-                  </div>
-                  <div>
-                    <span
-                      style={{
-                        fontSize: 10, fontWeight: 700,
-                        color: ch.color, background: ch.color + "18",
-                        padding: "2px 8px", borderRadius: 4,
-                        fontFamily: "monospace",
-                      }}
-                    >
-                      {ch.subject}
-                    </span>
-                  </div>
-                  <div style={{ textAlign: "center", fontSize: 13, fontFamily: "monospace", color: "#555" }}>
-                    {ch.lessons} lessons
-                  </div>
-                  <div style={{ textAlign: "center" }}>
-                    {ch.quiz
-                      ? <FaCheckCircle size={14} color="#6d28d9" />
-                      : <span style={{ fontSize: 12, color: "#ddd" }}>—</span>}
-                  </div>
-                  <div style={{ textAlign: "center" }}>
-                    {ch.notes
-                      ? <FaCheckCircle size={14} color="#1b5e20" />
-                      : <span style={{ fontSize: 12, color: "#ddd" }}>—</span>}
-                  </div>
-                  <div style={{ textAlign: "center" }}>
-                    {ch.free ? (
-                      <span
-                        style={{
-                          display: "inline-flex", alignItems: "center",
-                          gap: 4, fontSize: 11, fontWeight: 700,
-                          color: "#1b5e20", background: "#dcfce7",
-                          padding: "3px 8px", borderRadius: 20,
-                          fontFamily: "monospace",
-                        }}
-                      >
-                        <FaUnlock size={9} /> Free
-                      </span>
-                    ) : (
-                      <span
-                        style={{
-                          display: "inline-flex", alignItems: "center",
-                          gap: 4, fontSize: 11, fontWeight: 700,
-                          color: "#3b0764", background: "#f3e8ff",
-                          padding: "3px 8px", borderRadius: 20,
-                          fontFamily: "monospace",
-                        }}
-                      >
-                        <FaLock size={9} /> Pro
-                      </span>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* footer */}
-            <div
-              style={{
-                padding: "16px 24px",
-                background: "#f9f7f4",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                borderTop: "1px solid #e4d9c8",
-              }}
-            >
-              <p style={{ fontSize: 12, color: "#888", fontFamily: "sans-serif" }}>
-                Showing {activeChapters.length} of {activeSubjectData.chapters} chapters •{" "}
-                <span style={{ color: "#1b5e20", fontWeight: 700 }}>
-                  {activeChapters.filter((c) => c.free).length} free
-                </span>{" "}
-                chapters available
-              </p>
-              <button
-                style={{
-                  display: "flex", alignItems: "center", gap: 6,
-                  padding: "8px 16px", borderRadius: 8,
-                  background: "#3b0764", color: "white",
-                  fontSize: 12, fontWeight: 700, border: "none",
-                  cursor: "pointer", fontFamily: "monospace",
-                }}
-              >
-                View All Chapters <FaArrowRight size={10} />
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* ── FEATURES ─────────────────────────────────────────────────── */}
-        <section style={{ paddingBottom: 48 }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p
-              style={{
-                fontSize: 12, fontWeight: 700, letterSpacing: "0.12em",
-                color: "#6d28d9", textTransform: "uppercase",
-                marginBottom: 10, fontFamily: "sans-serif",
-              }}
-            >
-              What's Included
-            </p>
-            <h2
-              style={{
-                fontFamily: "'Crimson Pro', Georgia, serif",
-                fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#111",
-              }}
-            >
-              Everything You Need to Score 95+ & Crack JEE / NEET
-            </h2>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
-            {FEATURES.map((f, i) => (
-              <div
-                key={i}
-                style={{
-                  background: "white", borderRadius: 18,
-                  padding: "28px 24px", border: "1px solid #e4d9c8",
-                  transition: "transform 0.2s",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-4px)")}
-                onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
-              >
-                <div
-                  style={{
-                    width: 48, height: 48, borderRadius: 12,
-                    background: f.color + "18",
-                    display: "flex", alignItems: "center",
-                    justifyContent: "center", marginBottom: 16,
-                  }}
-                >
-                  <f.icon size={22} color={f.color} />
-                </div>
-                <h4
-                  style={{
-                    fontFamily: "'Crimson Pro', Georgia, serif",
-                    fontSize: 17, fontWeight: 700, color: "#111",
-                    marginBottom: 8,
-                  }}
-                >
-                  {f.title}
-                </h4>
-                <p style={{ fontSize: 13.5, color: "#666", lineHeight: 1.65, fontFamily: "sans-serif" }}>
-                  {f.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ── FREE RESOURCES ────────────────────────────────────────────── */}
-        <section style={{ paddingBottom: 48 }}>
-          <div
-            style={{
-              background: "linear-gradient(135deg, #06000f, #0d0a2e)",
-              borderRadius: 24, padding: "48px 40px",
-              border: "1px solid rgba(130,100,255,0.15)",
-              position: "relative", overflow: "hidden",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute", top: -40, right: -40,
-                width: 250, height: 250, borderRadius: "50%",
-                background: "rgba(109,40,217,0.12)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute", bottom: 24, right: 40,
-                color: "rgba(130,100,255,0.05)",
-                fontFamily: "monospace", fontSize: 11,
-                lineHeight: 2, pointerEvents: "none",
-              }}
-            >
-              <div>f(x) = sin(x) · cos(x) — Trig Identities</div>
-              <div>F = ma — Newton's Second Law</div>
-              <div>ΔH = ΣE(bonds broken) − ΣE(bonds formed)</div>
-            </div>
-
-            <div
-              style={{
-                display: "grid", gridTemplateColumns: "1fr 1fr",
-                gap: 48, alignItems: "center", position: "relative",
-              }}
-            >
-              <div>
-                <p
-                  style={{
-                    fontSize: 12, fontWeight: 700, letterSpacing: "0.12em",
-                    color: "#a07fff", textTransform: "uppercase",
-                    marginBottom: 10, fontFamily: "sans-serif",
-                  }}
-                >
-                  100% Free Resources
-                </p>
-                <h2
-                  style={{
-                    fontFamily: "'Crimson Pro', Georgia, serif",
-                    fontSize: "clamp(1.6rem,2.5vw,2rem)",
-                    color: "white", marginBottom: 14,
-                  }}
-                >
-                  Free Study Material for Class 11
-                </h2>
-                <p
-                  style={{
-                    color: "rgba(255,255,255,0.6)", fontSize: 15,
-                    lineHeight: 1.75, fontFamily: "sans-serif",
-                  }}
-                >
-                  Download NCERT Solutions, school exam papers and JEE/NEET foundation notes — no login required. Includes revision notes with marking scheme.
-                </p>
-              </div>
-
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
-                {RESOURCES.map((r, i) => (
-                  <div
-                    key={i}
-                    style={{
-                      background: "rgba(255,255,255,0.06)", borderRadius: 16,
-                      padding: "18px 16px",
-                      border: "1px solid rgba(255,255,255,0.1)",
-                      display: "flex", flexDirection: "column", gap: 10,
-                      cursor: "pointer", transition: "transform 0.3s",
-                    }}
-                    onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
-                    onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
-                  >
-                    <div
-                      style={{
-                        width: 42, height: 42, borderRadius: 10,
-                        display: "flex", alignItems: "center",
-                        justifyContent: "center", background: r.color + "30",
-                      }}
-                    >
-                      <r.icon size={18} color={r.color} />
-                    </div>
-                    <div>
-                      <div style={{ fontSize: 13, fontWeight: 600, color: "white", marginBottom: 3 }}>{r.label}</div>
-                      <div style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", fontFamily: "sans-serif" }}>{r.desc}</div>
-                    </div>
-                    <div
-                      style={{
-                        display: "flex", alignItems: "center",
-                        gap: 4, fontSize: 12, fontWeight: 600,
-                        color: r.color, marginTop: 2,
-                      }}
-                    >
-                      <FaDownload size={10} /> Free Download
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ── TOPPERS ───────────────────────────────────────────────────── */}
-        <section style={{ paddingBottom: 48 }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p
-              style={{
-                fontSize: 12, fontWeight: 700, letterSpacing: "0.12em",
-                color: "#6d28d9", textTransform: "uppercase",
-                marginBottom: 10, fontFamily: "sans-serif",
-              }}
-            >
-              Student Success Stories
-            </p>
-            <h2
-              style={{
-                fontFamily: "'Crimson Pro', Georgia, serif",
-                fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#111",
-              }}
-            >
-              Class 11 Toppers from GovPrep
-            </h2>
-          </div>
-
-          {/* <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
-            {TOPPERS.map((t, i) => (
-              <div
-                key={i}
-                style={{
-                  background: "white", borderRadius: 18,
-                  padding: 28, border: "1px solid #e4d9c8",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex", alignItems: "center",
-                    justifyContent: "space-between", marginBottom: 16,
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: 38, color: "#6d28d9",
-                      lineHeight: 1,
-                      fontFamily: "'Crimson Pro', serif",
-                    }}
-                  >
-                    &ldquo;
-                  </div>
-                  <span
-                    style={{
-                      background: "#f3e8ff", color: "#6d28d9",
-                      fontSize: 11, fontWeight: 700, padding: "4px 10px",
-                      borderRadius: 20, fontFamily: "monospace",
-                    }}
-                  >
-                    {t.tag}
-                  </span>
-                </div>
-                <p
-                  style={{
-                    fontSize: 14, color: "#555", lineHeight: 1.75,
-                    marginBottom: 20, fontFamily: "sans-serif",
-                  }}
-                >
-                  {t.quote}
-                </p>
-                <div
-                  style={{
-                    display: "flex", alignItems: "center", gap: 12,
-                    paddingTop: 16, borderTop: "1px solid #f5f0e8",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: 44, height: 44, borderRadius: "50%",
-                      background: "#3b0764", color: "white",
-                      display: "flex", alignItems: "center",
-                      justifyContent: "center", fontWeight: 700,
-                      fontSize: 16, fontFamily: "serif",
-                    }}
-                  >
-                    {t.name[0]}
-                  </div>
-                  <div>
-                    <div
-                      style={{
-                        fontWeight: 700, fontSize: 14, color: "#111",
-                        fontFamily: "'Crimson Pro', serif",
-                      }}
-                    >
-                      {t.name}
-                    </div>
-                    <div style={{ fontSize: 12, color: "#888", fontFamily: "sans-serif" }}>
-                      {t.school}
-                    </div>
-                  </div>
-                  <span
-                    style={{
-                      marginLeft: "auto", background: "#f3e8ff", color: "#3b0764",
-                      fontSize: 12, fontWeight: 700, padding: "4px 10px",
-                      borderRadius: 20, fontFamily: "monospace",
-                    }}
-                  >
-                    {t.score}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div> */}
-        </section>
-
-        {/* ── FAQs ─────────────────────────────────────────────────────── */}
-        <section style={{ paddingBottom: 80 }}>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <p
-              style={{
-                fontSize: 12, fontWeight: 700, letterSpacing: "0.12em",
-                color: "#6d28d9", textTransform: "uppercase",
-                marginBottom: 10, fontFamily: "sans-serif",
-              }}
-            >
-              Got Questions?
-            </p>
-            <h2
-              style={{
-                fontFamily: "'Crimson Pro', Georgia, serif",
-                fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "#111",
-              }}
-            >
-              Frequently Asked Questions
-            </h2>
-          </div>
-
-          <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            {FAQS.map((f, i) => (
-              <div
-                key={i}
-                onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                style={{
-                  background: "white", borderRadius: 14, marginBottom: 10,
-                  border: "1px solid #e4d9c8", overflow: "hidden", cursor: "pointer",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex", alignItems: "center",
-                    justifyContent: "space-between", padding: "16px 24px",
-                  }}
-                >
-                  <span
-                    style={{
-                      fontSize: 14, fontWeight: 600, color: "#111",
-                      paddingRight: 20, fontFamily: "sans-serif",
-                    }}
-                  >
-                    {f.q}
-                  </span>
-                  <FaChevronDown
-                    size={16}
-                    color="#888"
-                    style={{
-                      flexShrink: 0,
-                      transform: openFaq === i ? "rotate(180deg)" : "none",
-                      transition: "transform 0.2s",
-                    }}
-                  />
-                </div>
-                {openFaq === i && (
-                  <div
-                    style={{
-                      padding: "16px 24px 20px", fontSize: 14,
-                      color: "#666", lineHeight: 1.75,
-                      borderTop: "1px solid #f5f0e8", fontFamily: "sans-serif",
-                    }}
-                  >
-                    {f.a}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-      </div>
+    <Class11Dashboard/>
+     
 
       {/* ── FOOTER CTA ───────────────────────────────────────────────────── */}
       <div
