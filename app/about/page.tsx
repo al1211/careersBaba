@@ -42,25 +42,41 @@ export default function AboutPage() {
   return (
     <div className="pt-16">
       {/* Hero */}
-      <section className="relative py-28 overflow-hidden  text-white">
-        <div className="absolute inset-0 h-screen ">
+      <section className="relative h-[300px] sm:h-[450px] lg:h-[70vh] overflow-hidden text-white">
+
+        {/* Background Image */}
+        <div className="absolute inset-0">
           <Image
             src="/4.jpeg"
             fill
-            alt='about_image'
-            className="object-cover "
+            alt="about_image"
+            className="object-cover object-center"
+            priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-dark/90 to-dark" />
+          {/* Light overlay for text readability */}
+          <div className="absolute inset-0 bg-black/30" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-brand-400 text-sm font-semibold tracking-widest uppercase">Our Story</span>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mt-3 mb-6">
-            About CareersBaba
-          </h1>
-          <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
-            Founded with a mission to make world-class exam preparation accessible to every aspiring student in India—regardless of location or background.
-          </p>
-        </div>
+
+        {/* Content - vertically & horizontally centered */}
+        {/* <div className="absolute right-0 h-full  w-1/2  flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <span className="text-brand-400 text-xs sm:text-xl font-semibold tracking-widest uppercase">
+              Our Story
+            </span>
+
+            <h1 className="font-display text-3xl sm:text-5xl lg:text-7xl font-bold mt-3 mb-4 sm:mb-6">
+              About CareersBaba
+            </h1>
+
+            <p className="text-white/70 text-sm sm:text-base lg:text-lg max-w-xl sm:max-w-2xl mx-auto leading-relaxed">
+              Founded with a mission to make world-class exam preparation accessible
+              to every aspiring student in India—regardless of location or background.
+            </p>
+
+          </div>
+        </div> */}
+
       </section>
 
       {/* Mission / Vision */}
@@ -76,7 +92,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-             
+
             </div>
             <div>
               <span className="text-brand-500 text-sm font-semibold tracking-widest uppercase">Who We Are</span>
@@ -108,7 +124,7 @@ export default function AboutPage() {
       </section>
 
       {/* Content */}
-      <AboutCareersBaba/>
+      <AboutCareersBaba />
 
       {/* Timeline */}
       <section className="py-24 bg-white">

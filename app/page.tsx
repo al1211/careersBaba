@@ -171,7 +171,7 @@ export default function Home() {
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-semibold text-dark text-xl">{t.name}</div>
-                    <div className="text-dark/40 text-lg">{t.exam}</div>
+                    {/* <div className="text-dark/40 text-lg">{t.exam}</div> */}
                   </div>
                   {/* <div className="bg-brand-50 text-brand-600 text-xs font-bold px-3 py-1.5 rounded-full border border-brand-200">
                     {t.score}
