@@ -43,14 +43,14 @@ export default function AboutPage() {
     <div className="pt-16">
       {/* Hero */}
       <section className="relative py-28 overflow-hidden  text-white">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 h-screen ">
           <Image
-            src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/4.jpeg"
             fill
             alt='about_image'
-            className="object-cover opacity-60"
+            className="object-cover "
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-dark/60 to-dark" />
+          <div className="absolute inset-0 bg-gradient-to-b from-dark/90 to-dark" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-brand-400 text-sm font-semibold tracking-widest uppercase">Our Story</span>
@@ -70,7 +70,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/5.jpeg  "
+                  src="/5.jpeg "
                   alt="Students learning"
                   fill
                   className="object-cover"
