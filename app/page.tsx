@@ -41,21 +41,21 @@ const services = [
 
 const testimonials = [
   {
-    name: 'Priyanka',
+    name: 'Anushree',
     exam: 'UPTET',
     text: 'CareerBaba helped me build strong fundamentals in data science. The projects and guidance gave me real confidence.',
     score: 'Completed 10+ Projects'
   },
   {
-    name: 'Dhruv',
+    name: 'Aakash',
     exam: 'Gov Exam',
     text: 'The structured roadmap and hands-on learning made complex topics like ML and Python easy to understand.',
     score: 'Built ML Models'
   },
   {
     name: 'Shruti',
-    exam: 'UPSC',
-    text: 'I improved my practical skills a lot. The mentorship support really helped me clear my doubts quickly.',
+    exam: 'SSC',
+    text: 'The mentorship support really helped me clear my doubts quickly.',
     score: 'Internship Ready'
   },
   {
@@ -77,9 +77,9 @@ const testimonials = [
     score: 'Real-world Projects'
   },
   {
-    name: 'Riya',
-    exam: 'Data Science Program',
-    text: 'The learning environment is very supportive. It helped me stay consistent and improve every day.',
+    name: 'Priyanka',
+    exam: 'UPTET',
+    text: 'The UPTET preparation environment was very motivating. The study material and mock tests helped me understand the exam pattern and improve my performance step by step.',
     score: 'Job Preparation'
   }
 ];
@@ -93,7 +93,7 @@ export default function Home() {
       <Crausel/>
       <TextMarquee/>
       <ListAllCourse/>
-        {/* <Testimonials/> */}
+      
 
       
 
