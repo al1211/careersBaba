@@ -1,3 +1,4 @@
+import AiChat from '@/components/AIchatbot';
 import Crausel from '@/components/Crausel';
 import ListAllCourse from '@/components/ListAllCourse';
 import Testimonials from '@/components/Testimonials';
@@ -42,20 +43,20 @@ const services = [
 const testimonials = [
   {
     name: 'Anushree',
-    exam: 'UPTET',
-    text: 'CareerBaba helped me build strong fundamentals in data science. The projects and guidance gave me real confidence.',
+    exam: 'DataScinece',
+    text: 'CareerBaba helped me build a solid foundation in Data Science. The hands-on projects and expert mentorship gave me the confidence to work with real-world data.',
     score: 'Completed 10+ Projects'
   },
   {
     name: 'Aakash',
-    exam: 'Gov Exam',
-    text: 'The structured roadmap and hands-on learning made complex topics like ML and Python easy to understand.',
+    exam: 'DataSecience',
+    text: 'CareerBaba transformed my understanding of Data Science by combining theory with real-world projects, helping me gain both skills and confidence.',
     score: 'Built ML Models'
   },
   {
     name: 'Shruti',
     exam: 'SSC',
-    text: 'The mentorship support really helped me clear my doubts quickly.',
+    text: 'CareerBaba made SSC preparation easy for me. The guidance and practice tests helped me stay consistent and confident.',
     score: 'Internship Ready'
   },
   {
@@ -93,8 +94,7 @@ export default function Home() {
       <Crausel/>
       <TextMarquee/>
       <ListAllCourse/>
-      
-
+      <AiChat/>
       
 
       {/* Why Us */}
@@ -171,7 +171,7 @@ export default function Home() {
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-semibold text-dark text-xl">{t.name}</div>
-                    {/* <div className="text-dark/40 text-lg">{t.exam}</div> */}
+                    <div className="text-dark/40 text-lg">{t.exam}</div> 
                   </div>
                   {/* <div className="bg-brand-50 text-brand-600 text-xs font-bold px-3 py-1.5 rounded-full border border-brand-200">
                     {t.score}

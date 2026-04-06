@@ -64,7 +64,7 @@ export default function TopBar() {
                 <div className="flex  sm:flex-row sm:items-center items-center justify-between sm:justify-between py-2 sm:py-0 sm:h-10 gap-2 sm:gap-0">
 
                     {/* ── Left: Email + Address ── */}
-                    <div className="flex  items-center gap-x-1.5 gap-y-1.5">
+                    <div className="flex  items-center gap-x-5 gap-y-1.5">
 
                         {/* Email */}
                         <Link
@@ -113,29 +113,8 @@ export default function TopBar() {
                             <FaFacebookF size={16}  />
                         </a>
 
-                        {/* LinkedIn */}
-                        <a
-                            href="https://www.linkedin.com/in/yourprofile"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-5 h-5 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-blue-700 text-white flex items-center justify-center transition-colors shadow-md"
-                            aria-label="LinkedIn"
-                        >
-                            <FaLinkedinIn size={16} />
-                        </a>
-
-                        {/* Twitter */}
-                        <a
-                            href="https://twitter.com/yourhandle"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-5 h-5 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-sky-400 text-white flex items-center justify-center transition-colors shadow-md"
-                            aria-label="Twitter"
-                        >
-                            <FaTwitter size={16} />
-                        </a>
-
-                        {/* Instagram */}
+                       
+                       
                         <a
                             href="https://www.instagram.com/careersbaba?igsh=MThvZGRrbDBnaHRmeQ=="
                             target="_blank"

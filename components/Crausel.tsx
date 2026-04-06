@@ -12,14 +12,14 @@ const SLIDES = [
     sub: "Expert coaching for CUET, CAT, CLAT, and IPMAT. Join thousands of successful students who cracked their exams with CareersBaba.",
     tag: "🎯 #1 CUET Platform in India",
   },
-  {
-    image: "/3.jpeg",
-    badge: "CUET 2026",
-    heading: "Your Success,",
-    highlight: "Our Vision",
-    sub: "Expert coaching for CUET, CAT, CLAT, and IPMAT. Join thousands of successful students who cracked their exams with CareersBaba.",
-    tag: "🎯 #1 CUET Platform in India",
-  },
+  // {
+  //   image: "/3.jpeg",
+  //   badge: "CUET 2026",
+  //   heading: "Your Success,",
+  //   highlight: "Our Vision",
+  //   sub: "Expert coaching for CUET, CAT, CLAT, and IPMAT. Join thousands of successful students who cracked their exams with CareersBaba.",
+  //   tag: "🎯 #1 CUET Platform in India",
+  // },
   {
     image: "/001.jpeg",
     badge: "CUET 2026",
