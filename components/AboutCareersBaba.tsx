@@ -159,11 +159,7 @@ export default function AboutCareersBaba() {
 
         {/* Grid: 1 col mobile, 2 col tablet, 3 col desktop */}
        <div className="grid  grid-cols-1 sm:grid-cols-2 place-items-center  gap-10">
-  <Card 
-    title="Er. Ankur Singhal" 
-    description="Appeared for the Civil Services Interview" 
-    imageSrc="/7.jpeg" 
-  />
+ 
    <Card 
     title="Er. Ankur Singhal" 
     description="Appeared for the Civil Services Interview" 
